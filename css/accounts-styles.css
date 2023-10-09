@@ -88,6 +88,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     flex-direction: row;
     margin-top: 10%;
     font-size: 14px;
+    
    
 }
 
@@ -117,6 +118,15 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     font-weight: 800;
 }
 
+.external-accounts-card-assets-value {
+   display: flex;
+   flex-direction: row;
+   
+
+}
+
+
+
 
 
 /* IDs */
@@ -136,7 +146,42 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 }
 
 /*extended external accounts card */
+
+/*classes*/
+.extended-external-accounts-card-table-row {
+    border: none;
+ 
+    
+}
+
+.extended-external-accounts-card-table-header {
+    border: none;
+    
+}
+
+.extended-external-accounts-card-table-hr-div {
+    width: 100%;
+}
+
+
 /* IDs */
+
+#extended-external-accounts-card-left {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 6px;
+    justify-content: space-between;
+    padding-bottom: 1%;
+    padding: 1%;
+   
+}
+#extended-external-accounts-card-right {
+    margin-top: 1%;
+    margin-right: 2%;
+}
+
+
 #extended-eternal-accounts-card-container {
     display: flex;
     flex-direction: column;
@@ -164,6 +209,8 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 }
 
 #extended-external-accounts-card-bottom {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 6px;
     border-top-right-radius: 0px;
@@ -173,12 +220,93 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     border-left-width: 1px;
     border-bottom-width: 1px;
     border-top-width: 0.5px;
+    padding: 2%;
+    
+}
+
+#extended-external-accounts-card-bottom-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    
 }
 
 #extended-external-accounts-card-info-title {
     font-size: 16px;
     font-weight: 500;
 }
+
+#extended-external-accounts-card-table {
+    border: none;
+    border-collapse: collapse;
+    width: 90%;
+    
+}
+
+
+#extended-external-accounts-card-table-rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    
+
+}
+
+#extended-external-accounts-card-table-headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+#extended-external-accounts-card-table-values-div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+    
+    
+    
+    
+}
+
+#extended-external-accounts-card-table-hr-1 {
+    border: 1px solid #bcbcbc;
+  
+    
+   
+    
+}
+
+#extended-external-accounts-card-table-hr-2 {
+    border: 0.7px dashed #bcbcbc;
+    
+    
+    
+}
+
+#extended-external-accounts-card-center-table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#extended-external-accounts-card-updated-at {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 5%;
+    font-size: 14px;
+}
+
+
 
 
 /*get notified card styles*/

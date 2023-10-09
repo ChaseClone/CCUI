@@ -46,6 +46,7 @@
         $scope.greyBackground = "#eceff1";
         $scope.arrowButtonColor = '#666666';
         $scope.greyLabelColor = '#717171';
+        $scope.lines = '#bcbcbc';
     
         //user states
         $scope.isEnrolledInNotifications = false;
@@ -53,6 +54,7 @@
         //user external account info
         $scope.externalBankName = "TD Bank";
         $scope.numberOfExternalAccountsLinked = 1;
+        
 
         
         //user funds
@@ -63,9 +65,15 @@
 
         //these are for if a user extends something
         $scope.hasExtendedExternalAccounts = true;
+
+        //functions
         $scope.extendExternalAccounts = function(){
             $scope.hasExtendedExternalAccounts = !$scope.hasExtendedExternalAccounts;
         };
+
+        $scope.sampleExternalAccounts = [
+            { account: "TD CHECKING (..4400)", type: "Checking", value: "154.96", timeUpdated: "10:57 AM ET", dateUpdated: "10/5/2023"}
+        ];
 
         })
     </script>

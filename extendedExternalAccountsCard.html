@@ -9,27 +9,54 @@
 
             <div id="extended-external-accounts-card-left">
                 <div class="external-accounts-card-title">External accounts</div>
-                <div class="external-accounts-card-key-value-flex">
-                <div class="external-accounts-card-key-value-row" id="external-accounts-card-assets-row"><div ng-style="{'color': greyLabelColor}">Total Assets </div><div>{{ '$' + totalAssetsDollarAmount + '.' + totalAssetsChangeAmount }}</div></div>
-               <div class="external-accounts-card-key-value-row" id="external-accounts-card-liability-row"><div ng-style="{'color': greyLabelColor}">Total Liabilities </div><div>{{ '$' + totalLiabilitiesDollarAmount + '.' + totalLiabilitiesChangeAmount}}</div></div>
+                <div class="external-accounts-card-key-value-flex" id="extended-external-accounts-card-key-value-flex">
+                <div class="external-accounts-card-key-value-row" class="external-accounts-card-assets-row"><span class="external-accounts-card-assets-value" ng-style="{'color': greyLabelColor}">Total Assets</span><span class="external-accounts-card-label-value" ng-style="{'padding-left': '10px', 'padding-right': '10px'}">{{ '$' + totalAssetsDollarAmount + '.' + totalAssetsChangeAmount }}</span></div>
+               <div class="external-accounts-card-key-value-row" class="external-accounts-card-liability-row"><span class="external-accounts-card-liabilities-value" ng-style="{'color': greyLabelColor}">Total Liabilities</span> <span class="external-accounts-card-label-value" ng-style="{'padding-left': '10px'}">{{ '$' + totalLiabilitiesDollarAmount + '.' + totalLiabilitiesChangeAmount}}</span></div>
                 </div>
             </div>
-            <div id="external-accounts-card-right">
-                <div class="external-accounts-card-buttons-and-links-row"><a class="external-accounts-card-sync-link" href="" ng-style="{'color': linkColor}">Sync</a> <span> | </span> <button class="external-accounts-card-ellipsis-button" ng-style="{'color': linkColor}">...</button> <button class="external-accounts-card-down-arrow-link" href="" ng-click="extendExternalAccounts()">^</button></div>
+            <div id="extended-external-accounts-card-right">
+                <div class="external-accounts-card-buttons-and-links-row"><a class="external-accounts-card-sync-link" href="" ng-style="{'color': linkColor}">Sync</a> <span> | </span> <button class="external-accounts-card-ellipsis-button" ng-style="{'color': linkColor}">...</button> <button class="external-accounts-card-down-arrow-link" ng-click="extendExternalAccounts()">^</button></div>
             </div>
             </div>
             
             <div id="extended-external-accounts-card-bottom">
                 <div id="extended-external-accounts-card-bottom-top">
                 <div class="external-accounts-card-title" id="extended-external-accounts-card-info-title">{{externalBankName + " " + "(" + numberOfExternalAccountsLinked + ")"}}</div>
+                <div><button class="external-accounts-card-down-arrow-link">^</button></div>
                 </div>
-                <div id="extended-external-accounts-card=bottom">
-
+                <div id="extended-external-accounts-card-center-table">
+                    
+                        <div id="extended-external-accounts-card-table-values-div" >
+                            <div id="extended-external-accounts-card-table-top">
+                        <table id="extended-external-accounts-card-table" border="1">
+                            <tr id="extended-external-accounts-card-table-headers">
+                                <th class="extended-external-accounts-card-table-header">Accounts</th>
+                                <th class="extended-external-accounts-card-table-header" id="extended-external-accounts-card-table-middle-header">Type</th>
+                                <th class="extended-external-accounts-card-table-header">Value</th>
+                            </tr>
+                            </table>
+                            </div>
+                            <div class="extended-external-accounts-card-table-hr-div">
+                            <hr id="extended-external-accounts-card-table-hr-1">
+                            </div>
+                            <div id="extended-external-accounts-card-table-bottom">
+                            <table id="extended-external-accounts-card-table" border="1">
+                        <tr id="extended-external-accounts-card-table-rows" ng-repeat="account in sampleExternalAccounts"> 
+                        <td class="extended-external-accounts-card-table-row">{{ account.account + " >" }}</th>
+                        <td class="extended-external-accounts-card-table-row" id="extended-external-accounts-card-table-middle-row">{{ account.type }}</th>
+                        <td class="extended-external-accounts-card-table-row">{{ account.value }}</td>    
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="extended-external-accounts-card-table-hr-div">
+                    <hr id="extended-external-accounts-card-table-hr-2">
+                    </div>
+                    </div>
                 </div>
-
+                <div id="extended-external-accounts-card-updated-at">
+                    <div ng-style="{'color': greyLabelColor}">As of {{sampleExternalAccounts[0].timeUpdated + " on " + sampleExternalAccounts[0].dateUpdated}}</div>
+                </div>
             </div>
-            
-
         </div>
     </body>
 </html>
