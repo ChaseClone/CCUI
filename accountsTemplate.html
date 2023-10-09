@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="css/accounts-styles.css">
+</head>
+<body class="accounts-body">
+    <div class="body-container" ng-style="{'background-color': greyBackground}">
+    <div class="top-container">
+
+    <div class="left-container">
+        <div class="bank-accounts" ng-include="'bankAccountsCard.html'"></div>
+        <div class="external-accounts" ng-if="hasExtendedExternalAccounts === false" ng-include="'externalAccountsCard.html'"></div>
+        <div class="extended-external-accounts" ng-if="hasExtendedExternalAccounts" ng-include="'extendedExternalAccountsCard.html'"></div>
+        <div class="get-notified" ng-if="isEnrolledInNotifications === false" ng-include="'getNotifiedCard.html'"></div>
+        <div class="see-all-transactions" ng-include="'seeAllTransactionsCard.html'"></div>
+    </div>
+
+    <div class="right-container">
+        <div class="plan-track-manage" ng-include="'planTrackManageCard.html'"></div>
+        <div class="explore-products" ng-include="'exploreProductsCard.html'"></div>
+        <div class="help-and-support" ng-include="'helpAndSupportCard.html'"></div>
+    </div>
+    </div>
+     </div>
+     <footer id="accounts-footer">
+        <div class="disclosures-part-one">
+            <h2 id="disclosures-title" ng-style="{'color': cardHeaderColor}">Disclosures</h2>
+            <p id="disclosure-desc"><span class="jpmorgan-text">JPMorgan Chase Bank, N.A.</span> and its affiliates (collectively “JPMCB”) offer investment products, which may include bank managed accounts and custody, as part of its trust and fiduciary services. Other investment products and services, such as brokerage and advisory accounts, are offered through <span class="jpmorgan-text">J.P. Morgan Securities LLC</span> (JPMS), a member of <a href="">FINRA</a> and <a href="">SIPC</a>. Annuities are made available through Chase Insurance Agency, Inc. (CIA), a licensed insurance agency, doing business as Chase Insurance Agency Services, Inc. in Florida. JPMCB, JPMS and CIA are affiliated companies under the common control of JPMorgan Chase & Co. Products not available in all states.</p>
+         </div>
+         <div class="disclosures-part-two" ng-style="{'color': cardHeaderColor}">
+            <p id="disclaimer-title">INVESTMENT AND INSURANCE PRODUCTS ARE:</p>
+            <ul class="disclosure-list">
+                <li>NOT FDIC INSURED</li>
+                <li>NOT INSURED BY ANY FEDERAL GOVERNMENT AGENCY</li>
+                <li>NOT A DEPOSIT OR OTHER OBLIGATION OF, OR GUARANTEED BY, JPMORGAN CHASE BANK, N.A. OR ANY OF ITS AFFILIATES</li>
+                <li>SUBJECT TO INVESTMENT RISKS, INCLUDING POSSIBLE LOSS OF THE PRINCIPLE AMOUNT INVESTED</li>
+            </ul>
+         </div>
+         </footer>
+</body>
+</html>

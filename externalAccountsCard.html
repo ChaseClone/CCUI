@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="external-accounts-card-container">
+            <div id="external-accounts-card-left">
+                <div class="external-accounts-card-title">External accounts</div>
+                <div class="external-accounts-card-key-value-flex">
+                <div class="external-accounts-card-key-value-row" class="external-accounts-card-assets-row"><div ng-style="{'color': greyLabelColor}">Total Assets </div><div>{{ '$' + totalAssetsDollarAmount + '.' + totalAssetsChangeAmount }}</div></div>
+               <div class="external-accounts-card-key-value-row" class="external-accounts-card-liability-row"><div ng-style="{'color': greyLabelColor}">Total Liabilities </div><div>{{ '$' + totalLiabilitiesDollarAmount + '.' + totalLiabilitiesChangeAmount}}</div></div>
+                </div>
+            </div>
+            <div id="external-accounts-card-right">
+                <div id="external-accounts-card-buttons-and-links-row"><a href="" ng-style="{'color': linkColor}">Sync</a> <span> | </span> <button id="" ng-style="{'color': linkColor}">...</button> <button class="external-accounts-card-down-arrow-link" href="" ng-click="extendExternalAccounts()">^</button></div>
+            </div>
+        </div>
+    </body>
+</html>

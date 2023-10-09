@@ -1,0 +1,48 @@
+#nav-body {
+    background-color: #0946a8;
+    color: white;
+   
+}
+
+.nav-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.nav-button {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 110%;
+    font-weight: 500;
+    line-height: 24px;
+    
+}
+
+
+
+#top-nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+
+#nav-bottom-ul {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1%;
+   
+
+}
+
+#explore-prod-nav-button {
+    color: #0060F0;
+    background-color: white;
+    border-radius: 4px;
+}
+

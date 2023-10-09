@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chase</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="css/index-styles.css">
+
+</head>
+<body ng-style="'background-color': greyBackground">
+    <div ng-app="chase-app" ng-controller="appCtrl">
+
+        <!--Accounts section-->
+        <div ng-style="{'background-color': greyBackground, 'margin': '0'}" class="accounts-container">
+            <div class="nav-section">
+                <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
+            </div>
+            <div class="accounts-child-bottom">
+                <div ng-include="'accountsTemplate.html'"></div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var app = angular.module('chase-app', []);
+        app.controller('appCtrl', function($scope){
+        //fonts
+        $scope.globalFont = 'Open Sans, "Helvetica Neue", Helvetica, Arial, sans-serif';
+
+        // colors
+        //Blue
+        $scope.chaseBlue = '#0946a8';
+        $scope.blueBorder = '#0060f0';
+        $scope.blueHeader = '#0060f0';
+        $scope.linkColor = '#0060F0';
+        $scope.blueText = "#005eb8";
+        $scope.linkArrowColor = '#005eb8';
+        $scope.blueButtonColor = '#0360F0';
+        $scope.bulletPoint = '#094386';
+
+        //Grey
+        $scope.darkGreyText = "#262626";
+        $scope.lightGreyText = '#717171';
+        $scope.cardHeaderColor ='#414042';
+        $scope.cardText = '#414042';
+        $scope.greyCardBorder ='#414042';
+        $scope.greyBackground = "#eceff1";
+        $scope.arrowButtonColor = '#666666';
+        $scope.greyLabelColor = '#717171';
+    
+        //user states
+        $scope.isEnrolledInNotifications = false;
+
+        //user external account info
+        $scope.externalBankName = "TD Bank";
+        $scope.numberOfExternalAccountsLinked = 1;
+
+        
+        //user funds
+        $scope.totalAssetsDollarAmount = 0;
+        $scope.totalAssetsChangeAmount = '00';
+        $scope.totalLiabilitiesDollarAmount = 0;
+        $scope.totalLiabilitiesChangeAmount = '00';
+
+        //these are for if a user extends something
+        $scope.hasExtendedExternalAccounts = false;
+        $scope.extendExternalAccounts = function(){
+            $scope.hasExtendedExternalAccounts = !$scope.hasExtendedExternalAccounts;
+        }
+
+        })
+    </script>
+</body>
+</html>

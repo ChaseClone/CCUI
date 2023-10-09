@@ -1,0 +1,333 @@
+/* Accounts template styling */
+
+/* DO NOT MAKE SEPERATE CSS FILES FOR THE CARDS AND TRY TO LINK THEM INSIDE THE FILES- 
+IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD OF IDs AND CLASSES */
+
+/* classes */
+
+.accounts-body {
+    background-color: #eceff1;
+}
+
+.external-accounts {
+    margin: 2%;
+}
+
+.get-notified {
+    margin: 2%;
+}
+
+.see-all-transactions {
+    margin: 2%;
+}
+
+.extended-external-accounts{
+    margin: 2%;
+
+}
+
+/* footer styling */
+
+/* classes */
+.disclosure-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    margin-top: -1%;
+    margin-bottom: 3%;
+   
+    
+}
+
+.disclosures-part-two {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #cccccc;
+    margin-bottom: 5%;
+
+}
+
+.jpmorgan-text {
+    font-weight: 700;
+}
+
+/* IDs */
+
+#accounts-footer{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+   
+}
+
+#disclaimer-title{
+    margin-top: 2%;
+    margin-left: 2%;
+
+}
+
+#disclosures-title {
+    font-size: 12px;
+    padding-bottom: 24px;
+}
+
+#disclosure-desc {
+    font-size: 12px;
+}
+
+
+
+
+/* cards on page */
+
+/*external accounts card styles- the classes are for externalAccountsCard and extendedExternalAccountsCard */
+/* classes */
+.external-accounts-card-key-value-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+}
+
+.external-accounts-card-key-value-flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+.external-accounts-card-down-arrow-link {
+    font-size: 132%;
+    border: none;
+    background: none;
+}
+
+.external-accounts-card-title {
+    font-weight: 500;
+}
+
+
+
+/* IDs */
+
+#external-accounts-card-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+
+}
+
+/*extended external accounts card */
+/* IDs */
+#extended-eternal-accounts-card-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#extended-external-accounts-card-top {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 0.5px;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+#extended-external-accounts-card-bottom {
+    background-color: white;
+    border-radius: 6px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border: 1px solid #bcbcbc;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 0.5px;
+}
+
+#extended-external-accounts-card-info-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/*get notified card styles*/
+
+/* classes */
+
+/* IDs */
+#get-notified-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+    background-color: white;
+    padding: 1%;
+    padding-bottom: 2%;
+
+}
+
+#get-notified-card-title {
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+#get-notified-card-text {
+    font-size: 12px;
+}
+
+#get-notified-card-right {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin-left: -10%;
+
+}
+
+#get-notified-card-icon {
+    width: 35%;
+    padding: 5%;
+}
+
+#get-notified-card-link-div {
+    margin-top: 3%;
+}
+
+#get-notified-card-enroll-now-link {
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+#get-notified-card-enroll-link-arrow {
+    text-decoration: none;
+    font-size: 130%;
+    margin-left: 2%;
+    font-weight: 400;
+}
+
+/* See all transactions card styles*/
+
+/* classes */
+
+.see-all-transactions-card-message-and-bullet-point {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+/* IDs */
+ #see-all-transactions-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+}
+
+#see-all-transactions-card-arrow-button {
+    font-size: 150%;
+    background: none;
+    border: none;
+    margin-top: -3%;
+    padding-bottom: 20%;
+    
+}
+
+#see-all-transactions-card-button {
+    background: white;
+    border: 1px solid #0360f0;
+    border-radius: 4px;
+    font-size: 16px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 400;
+    margin-top: 30%;
+}
+
+#arrow-button-flex {
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+ }
+
+
+#see-all-transactions-card-left{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+   
+}
+
+#see-all-transactions-card-right {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-top: 2%;
+    margin-right: 2%;
+
+}
+
+#see-all-transactions-card-title {
+    font-weight: 500;
+    
+}
+
+
+
+#see-all-transactions-card-list {
+    font-size: 14px;
+    margin-top: 8%;
+    margin-left: -4%;
+    
+
+    
+   
+    
+}
+
+#circle {
+    margin-left: 10px;
+    padding-left: 20px;
+    margin-top: -4%;
+    position: relative;
+}
+
+#circle::before{
+    content: "\2022";
+    position: absolute;
+    left: -15px;
+    color: #094386;
+    font-size: 370%;
+}
+
+
+#see-all-transactions-card-title-div {
+    margin-bottom: 10%;
+
+}
