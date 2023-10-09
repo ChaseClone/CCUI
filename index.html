@@ -20,6 +20,10 @@
         </div>
 
     </div>
+        <div>
+            <div ng-if="state === 'investments'" ng-include="'investmentsTemplate.html'"></div>
+        </div>
+
     <script>
         var app = angular.module('chase-app', []);
         app.controller('appCtrl', function($scope){
@@ -47,6 +51,7 @@
         $scope.arrowButtonColor = '#666666';
         $scope.greyLabelColor = '#717171';
         $scope.lines = '#bcbcbc';
+        $scope.state = 'accounts';
     
         //user states
         $scope.isEnrolledInNotifications = false;
@@ -65,17 +70,23 @@
 
         //these are for if a user extends something
         $scope.hasExtendedExternalAccounts = true;
+        $scope.sampleExternalAccounts = [
+            { account: "TD CHECKING (..4400)", type: "Checking", value: "154.96", timeUpdated: "10:57 AM ET", dateUpdated: "10/5/2023"}
+        ];
+
+        })
+        
 
         //functions
         $scope.extendExternalAccounts = function(){
             $scope.hasExtendedExternalAccounts = !$scope.hasExtendedExternalAccounts;
         };
 
-        $scope.sampleExternalAccounts = [
-            { account: "TD CHECKING (..4400)", type: "Checking", value: "154.96", timeUpdated: "10:57 AM ET", dateUpdated: "10/5/2023"}
-        ];
+       
 
-        })
+        $scope.investmentsTemplate = function() {
+            $scope.state = 'investments';
+        }
     </script>
 </body>
 </html>
