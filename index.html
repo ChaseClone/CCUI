@@ -15,14 +15,11 @@
                 <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
             </div>
             <div class="accounts-child-bottom">
-                <div ng-include="'accountsTemplate.html'"></div>
+                <div ng-if="state === 'accounts'" ng-include="'accountsTemplate.html'"></div>
+                <div ng-if="state === 'investments'" ng-include="'investmentsTemplate.html'"></div>
             </div>
         </div>
-
     </div>
-        <div>
-            <div ng-if="state === 'investments'" ng-include="'investmentsTemplate.html'"></div>
-        </div>
 
     <script>
         var app = angular.module('chase-app', []);
@@ -73,8 +70,6 @@
         $scope.sampleExternalAccounts = [
             { account: "TD CHECKING (..4400)", type: "Checking", value: "154.96", timeUpdated: "10:57 AM ET", dateUpdated: "10/5/2023"}
         ];
-
-        })
         
 
         //functions
@@ -87,6 +82,8 @@
         $scope.investmentsTemplate = function() {
             $scope.state = 'investments';
         }
+
+        })
     </script>
 </body>
 </html>
