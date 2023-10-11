@@ -4,19 +4,31 @@
     <title>Chase</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="css/index-styles.css">
+    <script src="https://kit.fontawesome.com/9beae211b7.js" crossorigin="anonymous"></script>
 
 </head>
 <body ng-style="'background-color': greyBackground">
     <div ng-app="chase-app" ng-controller="appCtrl">
 
         <!--Accounts section-->
-        <div ng-style="{'background-color': greyBackground, 'margin': '0'}" class="accounts-container">
+        <div ng-style="{'background-color': greyBackground, 'margin': '0'}" class="accounts-container" ng-if="state === 'accounts'" >
             <div class="nav-section">
                 <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
             </div>
             <div class="accounts-child-bottom">
-                <div ng-if="state === 'accounts'" ng-include="'accountsTemplate.html'"></div>
-                <div ng-if="state === 'investments'" ng-include="'investmentsTemplate.html'"></div>
+                <div ng-include="'accountsTemplate.html'"></div>
+                
+            </div>
+        </div>
+
+        <!--Investments section-->
+        <div ng-style="{'background-color': 'white', 'margin': '0'}" class="accounts-container" ng-if="state === 'investments'">
+            <div class="nav-section">
+                <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
+            </div>
+            <div class="accounts-child-bottom">
+                <div ng-include="'investmentsTemplate.html'"></div>
+                
             </div>
         </div>
     </div>
