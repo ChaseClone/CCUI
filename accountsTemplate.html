@@ -6,7 +6,7 @@
     <div class="body-container" ng-style="{'background-color': greyBackground}">
     <div class="top-container">
 
-    <div class="left-container">
+    <div class="accounts-left-container">
         <div class="bank-accounts" ng-include="'bankAccountsCard.html'"></div>
         <!--External accounts cards-->
         <div class="external-accounts" ng-if="hasCollapsedExternalAccounts" ng-hide="hasExtendedExternalAccounts || hasHalfExtendedExternalAccounts" ng-include="'externalAccountsCard.html'"></div>
@@ -16,7 +16,7 @@
         <div class="see-all-transactions" ng-include="'seeAllTransactionsCard.html'"></div>
     </div>
 
-    <div class="right-container">
+    <div class="accounts-right-container">
         <div class="plan-track-manage" ng-include="'planTrackManageCard.html'"></div>
         <div class="explore-products" ng-include="'exploreProductsCard.html'"></div>
         <div class="chase-offers" ng-include="'chaseOffersCard.html'"></div>

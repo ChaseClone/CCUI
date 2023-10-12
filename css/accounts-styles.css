@@ -5,6 +5,18 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 /* classes */
 
+.top-container {
+    display: flex;
+}
+
+.accounts-left-container {
+    width: 100%;
+}
+
+.accounts-right-container {
+    width: 50%;
+    margin-right: 0.5%;
+}
 .accounts-body {
     background-color: #eceff1;
 }
@@ -27,6 +39,10 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 }
 
 .half-extended-external-accounts {
+    margin: 2%;
+}
+
+.help-and-support {
     margin: 2%;
 }
 
@@ -84,6 +100,56 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 
 /* cards on page */
+
+/* explore products cards */
+
+/* IDs */
+#explore-products-card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding: 2%;
+
+}
+
+#explore-products-card-bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/*help and support card*/
+/* IDs */ 
+
+#help-and-support-card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding: 2%;
+}
+
+#help-and-support-card-bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+#help-and-support-card-top{
+    display: flex;
+    flex-direction: row;
+}
 
 /*external accounts card styles- the classes are for externalAccountsCard and extendedExternalAccountsCard */
 /* classes */
