@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="half-extended-external-accounts-card-container">
+            <div id="half-extended-external-accounts-card-left">
+                <div class="external-accounts-card-title">External accounts</div>
+                <div class="external-accounts-card-key-value-flex" id="half-extended-external-accounts-card-key-value-flex">
+                    <div class="external-accounts-card-key-value-row" class="external-accounts-card-assets-row"><div class="external-accounts-card-assets-value" ng-style="{'color': greyLabelColor}">Total Assets</div><div class="external-accounts-card-label-value">{{ '$' + totalAssetsDollarAmount + '.' + totalAssetsChangeAmount }}</div></div>
+                   <div class="external-accounts-card-key-value-row" class="external-accounts-card-liability-row"><div class="external-accounts-card-liabilities-value" ng-style="{'color': greyLabelColor}">Total Liabilities</div> <div class="external-accounts-card-label-value">{{ '$' + totalLiabilitiesDollarAmount + '.' + totalLiabilitiesChangeAmount}}</div></div>
+                    </div>
+            </div>
+            <div class="external-accounts-card-right">
+                <div id="half-extended-external-accounts-card-buttons-and-links-row"><a class="external-accounts-card-sync-link" href="" ng-style="{'color': linkColor}">Sync</a> <span> | </span> <button class="external-accounts-card-ellipsis-button" ng-style="{'color': linkColor}">...</button> <button class="external-accounts-card-down-arrow-link" ng-click="extend()">^</button></div>
+            </div>
+            <div id="half-extended-external-accounts-card-bottom">
+                <div class="extended-external-accounts-card-bottom-top">
+                    <div class="external-accounts-card-title" class="extended-external-accounts-card-info-title">{{externalBankName + " " + "(" + numberOfExternalAccountsLinked + ")"}}</div>
+                    <div class="extended-external-accounts-card-down-arrow-link-div"><button class="external-accounts-card-down-arrow-link" ng-click="extendExternalAccounts()">^</button></div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

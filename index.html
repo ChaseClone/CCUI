@@ -65,11 +65,31 @@
 
         //these are for if a user extends something
         $scope.hasExtendedExternalAccounts = true;
+        $scope.hasHalfExtendedExternalAccounts = false;
+        $scope.hasCollapsedExternalAccounts = false;
+
 
         //functions
         $scope.extendExternalAccounts = function(){
             $scope.hasExtendedExternalAccounts = !$scope.hasExtendedExternalAccounts;
+            $scope.hasCollapsedExternalAccounts = true;
+            $scope.hasHalfExtendedExternalAccounts = false;
         };
+
+        $scope.collapseExternalAccounts = function (){
+            $scope.hasCollapsedExternalAccounts = !hasCollapsedExternalAccounts;
+           $scope.hasHalfExtendedExternalAccounts = false;
+            $scope.hasExtendedExternalAccounts = false;
+        };
+
+        $scope.displayHalfExternalAccounts = function () {
+            $scope.hasHalfExtendedExternalAccounts = true;
+            $scope.hasExtendedExternalAccounts = false;
+            $scope.hasCollapsedExternalAccounts = false;
+
+        };
+
+
 
         $scope.sampleExternalAccounts = [
             { account: "TD CHECKING (..4400)", type: "Checking", value: "154.96", timeUpdated: "10:57 AM ET", dateUpdated: "10/5/2023"}

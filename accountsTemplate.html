@@ -8,7 +8,9 @@
 
     <div class="left-container">
         <div class="bank-accounts" ng-include="'bankAccountsCard.html'"></div>
-        <div class="external-accounts" ng-if="hasExtendedExternalAccounts === false" ng-include="'externalAccountsCard.html'"></div>
+        <!--External accounts cards-->
+        <div class="external-accounts" ng-if="hasCollapsedExternalAccounts" ng-hide="hasExtendedExternalAccounts || hasHalfExtendedExternalAccounts" ng-include="'externalAccountsCard.html'"></div>
+        <div class="half-extended-external-accounts" ng-if="hasHalfExtendedExternalAccounts" ng-hide="hasCollapsedExternalAccounts || hasExtendedExternalAccounts" ng-include="'halfExtendedExternalAccountsCard.html'"></div>
         <div class="extended-external-accounts" ng-if="hasExtendedExternalAccounts" ng-include="'extendedExternalAccountsCard.html'"></div>
         <div class="get-notified" ng-if="isEnrolledInNotifications === false" ng-include="'getNotifiedCard.html'"></div>
         <div class="see-all-transactions" ng-include="'seeAllTransactionsCard.html'"></div>
