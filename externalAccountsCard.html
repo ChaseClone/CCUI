@@ -7,9 +7,9 @@
         <div id="external-accounts-card-container">
             <div id="external-accounts-card-left">
                 <div class="external-accounts-card-title">External accounts</div>
-                <div class="external-accounts-card-key-value-flex" id="external-accounts-card-key-value-flex">
-                    <div class="external-accounts-card-key-value-row" class="external-accounts-card-assets-row"><div class="external-accounts-card-assets-value" ng-style="{'color': greyLabelColor}">Total Assets</div><div class="external-accounts-card-label-value">{{ '$' + totalAssetsDollarAmount + '.' + totalAssetsChangeAmount }}</div></div>
-                   <div class="external-accounts-card-key-value-row" class="external-accounts-card-liability-row"><div class="external-accounts-card-liabilities-value" ng-style="{'color': greyLabelColor}">Total Liabilities</div> <div class="external-accounts-card-label-value">{{ '$' + totalLiabilitiesDollarAmount + '.' + totalLiabilitiesChangeAmount}}</div></div>
+                <div class="external-accounts-card-key-value-flex" id="extended-external-accounts-card-key-value-flex">
+                    <div class="external-accounts-card-key-value-row" class="external-accounts-card-assets-row"><span class="external-accounts-card-assets-value" ng-style="{'color': greyLabelColor}">Total Assets</span><span class="external-accounts-card-label-value" ng-style="{'padding-left': '10px', 'padding-right': '10px'}">{{ '$' + totalAssetsDollarAmount + '.' + totalAssetsChangeAmount }}</span></div>
+                   <div class="external-accounts-card-key-value-row" class="external-accounts-card-liability-row"><span class="external-accounts-card-liabilities-value" ng-style="{'color': greyLabelColor}">Total Liabilities</span> <span class="external-accounts-card-label-value" ng-style="{'padding-left': '10px'}">{{ '$' + totalLiabilitiesDollarAmount + '.' + totalLiabilitiesChangeAmount}}</span></div>
                     </div>
             </div>
             <div class="external-accounts-card-right">

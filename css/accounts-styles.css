@@ -160,6 +160,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 .extended-external-accounts-card-table-header {
     border: none;
+    font-size: 14px;
     
 }
 
@@ -226,8 +227,13 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     border-top-width: 0.5px;
     padding: 2%;
     
+    
 }
 
+
+#extended-external-accounts-card-table-and-title {
+    margin-left: -3%;
+}
 #extended-external-accounts-card-bottom-top {
     display: flex;
     flex-direction: row;
@@ -238,9 +244,12 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     
 }
 
+
+
 #extended-external-accounts-card-info-title {
     font-size: 16px;
     font-weight: 500;
+    padding-top: 3%;
 }
 
 #extended-external-accounts-card-table {
@@ -256,7 +265,8 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    
+    padding-top: 1px;
+    padding-bottom: 1px;
 
 }
 
@@ -264,6 +274,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 
 
 }
@@ -272,28 +283,14 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     width: 90%;
     display: flex;
     flex-direction: column;
-    
-    
-    
-    
-    
-    
-    
 }
 
 #extended-external-accounts-card-table-hr-1 {
     border: 1px solid #bcbcbc;
-  
-    
-   
-    
 }
 
 #extended-external-accounts-card-table-hr-2 {
     border: 0.7px dashed #bcbcbc;
-    
-    
-    
 }
 
 #extended-external-accounts-card-center-table{
@@ -302,12 +299,19 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     justify-content: center;
 }
 
+#extended-external-accounts-card-name-link {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
 #extended-external-accounts-card-updated-at {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 5%;
     font-size: 14px;
+    margin-top: 0.5%;
 }
 
 /* half extended external accounts card styles */
@@ -316,7 +320,20 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 #half-extended-external-accounts-card-container {
     display: flex;
     flex-direction: column;
+
 }
+
+#half-extended-external-accounts-card-left {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 6px;
+    justify-content: space-between;
+    padding-bottom: 1%;
+    padding: 1%;
+}
+
+
 
 #half-extended-external-accounts-card-top {
     display: flex;
@@ -350,6 +367,9 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     border-bottom-width: 1px;
     border-top-width: 0.5px;
     padding: 2%;
+    padding-top: 3%;
+    padding-left: 4%;
+    padding-bottom: 3%;
 }
 
 #half-extended-external-accounts-card-bottom-top {
@@ -359,7 +379,14 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     justify-content: space-between;
 }
 
+#half-extended-external-accounts-card-right {
+    margin-top: 1%;
+    margin-right: 2%;
+}
 
+#half-extended-external-accounts-card-key-value-flex {
+
+}
 
 
 /*get notified card styles*/

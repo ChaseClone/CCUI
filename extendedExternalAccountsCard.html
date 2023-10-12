@@ -20,6 +20,7 @@
             </div>
             
             <div id="extended-external-accounts-card-bottom">
+                <div id="extended-external-accounts-card-table-and-title">
                 <div id="extended-external-accounts-card-bottom-top">
                 <div class="external-accounts-card-title" id="extended-external-accounts-card-info-title">{{externalBankName + " " + "(" + numberOfExternalAccountsLinked + ")"}}</div>
                 <div><button class="external-accounts-card-down-arrow-link" ng-click="displayHalfExternalAccounts()">^</button></div>
@@ -42,7 +43,7 @@
                             <div id="extended-external-accounts-card-table-bottom">
                             <table id="extended-external-accounts-card-table" border="1">
                         <tr id="extended-external-accounts-card-table-rows" ng-repeat="account in sampleExternalAccounts"> 
-                        <td class="extended-external-accounts-card-table-row">{{ account.account + " >" }}</th>
+                        <td class="extended-external-accounts-card-table-row"><a href="" id="extended-external-accounts-card-name-link" ng-style="{'color': linkColor}">{{ account.account + " >" }}</a></th>
                         <td class="extended-external-accounts-card-table-row" id="extended-external-accounts-card-table-middle-row">{{ account.type }}</th>
                         <td class="extended-external-accounts-card-table-row">{{ account.value }}</td>    
                         </tr>
@@ -55,6 +56,7 @@
                 </div>
                 <div id="extended-external-accounts-card-updated-at">
                     <div ng-style="{'color': greyLabelColor}">As of {{sampleExternalAccounts[0].timeUpdated + " on " + sampleExternalAccounts[0].dateUpdated}}</div>
+                </div>
                 </div>
             </div>
         </div>
