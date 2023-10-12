@@ -26,6 +26,10 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 }
 
+.half-extended-external-accounts {
+    margin: 2%;
+}
+
 /* footer styling */
 
 /* classes */
@@ -304,6 +308,55 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     justify-content: flex-end;
     margin-right: 5%;
     font-size: 14px;
+}
+
+/* half extended external accounts card styles */
+
+/* IDs */
+#half-extended-external-accounts-card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#half-extended-external-accounts-card-top {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 0.5px;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+#half-extended-external-accounts-card-bottom {
+    display: flex;
+    background-color: white;
+    border-radius: 6px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border: 1px solid #bcbcbc;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 0.5px;
+    padding: 2%;
+}
+
+#half-extended-external-accounts-card-bottom-top {
+    display: flex; 
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
