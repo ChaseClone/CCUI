@@ -50,6 +50,10 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     margin: 2%;
 }
 
+.plan-track-manage {
+    margin: 2%;
+}
+
 /* footer styling */
 
 /* classes */
@@ -99,9 +103,80 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 #disclosure-desc {
     font-size: 12px;
 }
-/* cards on page */
 
-/* explore products cards */
+
+/* cards on page */
+/* plan track and manage card */
+/*classes*/
+
+.plan-track-manage-card-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    
+}
+
+.plan-track-manage-card-logo-and-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1%;
+    margin-left: 3%;
+    
+}
+
+.plan-track-manage-card-title-desc {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin-left: 2%;
+    
+}
+
+.plan-track-manage-card-hr {
+    width: 95%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    
+}
+
+.plan-track-manage-card-section-title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.plan-track-manage-card-arrow-link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80%;
+    font-size: 150%;
+    margin-left: -150%;
+  
+}
+
+/* IDs */
+#plan-track-manage-card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+    padding-top: 4%;
+    padding-bottom: 6%;
+    padding-left: 5%;
+    padding-right: 2%;
+   
+}
+
+#plan-track-manage-card-top{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5%;
+} 
+
+
+/* explore products card */
 /*classes*/
 .explore-products-card-icon-and-link {
     display: flex;
