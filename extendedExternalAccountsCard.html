@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div id="extended-external-accounts-card-right">
-                <div class="external-accounts-card-buttons-and-links-row"><a class="external-accounts-card-sync-link" href="" ng-style="{'color': linkColor}">Sync</a> <span> | </span> <button class="external-accounts-card-ellipsis-button" ng-style="{'color': linkColor}">...</button> <button class="external-accounts-card-down-arrow-link" ng-click="extendExternalAccounts()">^</button></div>
+                <div class="external-accounts-card-buttons-and-links-row"><a class="external-accounts-card-sync-link" href="" ng-style="{'color': linkColor}">Sync</a> <span> | </span> <button class="external-accounts-card-ellipsis-button" ng-style="{'color': linkColor}">...</button> <button class="external-accounts-card-down-arrow-link" ng-click="extendExternalAccounts()" ng-style="{'color': arrowButtonColor}">^</button></div>
             </div>
             </div>
             
@@ -23,7 +23,7 @@
                 <div id="extended-external-accounts-card-table-and-title">
                 <div id="extended-external-accounts-card-bottom-top">
                 <div class="external-accounts-card-title" id="extended-external-accounts-card-info-title">{{externalBankName + " " + "(" + numberOfExternalAccountsLinked + ")"}}</div>
-                <div><button class="external-accounts-card-down-arrow-link" ng-click="displayHalfExternalAccounts()">^</button></div>
+                <div><button class="external-accounts-card-down-arrow-link" ng-click="displayHalfExternalAccounts()" ng-style="{'color': arrowButtonColor}">^</button></div>
                 </div>
                 <div id="extended-external-accounts-card-center-table">
                     

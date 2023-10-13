@@ -14,7 +14,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 }
 
 .accounts-right-container {
-    width: 50%;
+    width: 55%;
     margin-right: 0.5%;
 }
 .accounts-body {
@@ -23,35 +23,51 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 .external-accounts {
     margin: 2%;
+    margin-left: 10%;
 }
 
 .get-notified {
     margin: 2%;
+    margin-left: 10%;
+
 }
 
 .see-all-transactions {
     margin: 2%;
+    margin-left: 10%;
 }
 
 .extended-external-accounts{
     margin: 2%;
+    margin-left: 10%;
 
 }
 
 .half-extended-external-accounts {
     margin: 2%;
+    margin-left: 10%;
+
 }
 
 .help-and-support {
     margin: 2%;
+    margin-right: 15%;
 }
 
 .explore-products {
     margin: 2%;
+    margin-right: 15%;
 }
 
 .plan-track-manage {
     margin: 2%;
+    margin-right: 15%;
+}
+
+.bank-accounts {
+    margin: 2%;
+    margin-left: 10%;
+
 }
 
 /* footer styling */
@@ -106,6 +122,68 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 
 /* cards on page */
+
+/*bank accounts card */
+/* IDs */
+
+#bank-accounts-card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding: 2%;
+}
+
+#bank-accounts-card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#bank-accounts-card-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#bank-accounts-card-info-button {
+    display: flex;
+    flex-direction: column;
+    margin-top: -90%;
+    margin-left: -45%;
+   color: white;
+   border: none;
+   background: none;
+   font-weight: 500;
+   font-size:  100%;
+   
+}
+
+#bank-accounts-card-circle-button {
+    width: 8px;
+    height: 8px;
+    padding-top: 16%;
+    padding-bottom: 14%;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-radius: 50%;
+}
+
+#bank-accounts-card-arrow-button {
+    background: none;
+    border: none;
+}
+
+#bank-accounts-card-bullet-and-text {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 /* plan track and manage card */
 /*classes*/
 
@@ -138,7 +216,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     width: 95%;
     margin-top: 3%;
     margin-bottom: 3%;
-    
+
 }
 
 .plan-track-manage-card-section-title {
@@ -726,14 +804,14 @@ justify-content: flex-end;
     
 }
 
-#circle {
+.circle {
     margin-left: 10px;
     padding-left: 20px;
     margin-top: -4%;
     position: relative;
 }
 
-#circle::before{
+.circle::before{
     content: "\2022";
     position: absolute;
     left: -15px;
