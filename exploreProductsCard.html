@@ -5,43 +5,47 @@
     </head>
     <body>
         <div id="explore-products-card-container">
-            <div id="explore-products-card-top">
+            <div id="explore-products-card-top" ng-style="{'color': cardHeaderColor}">
                 Explore Products
             </div>
             <div id="explore-products-card-bottom">
-                <div>
-                    <img src="images/credit-cards.svg">
-                    <a href="">Credit Cards</a>
+                <!-- <div class="explore-products-card-row"> -->
+                <div class="explore-products-card-icon-and-link">
+                    <img class="explore-products-card-icons" src="images/credit-cards.svg">
+                    <a ng-style="{'color': exploreLinks}" class="explore-products-card-links" href="">Credit Cards</a>
                 </div>
-                <div>
-                    <img src="images/checking-accounts.svg">
-                <a href="">Checking accounts</a>
+                <div class="explore-products-card-icon-and-link">
+                    <img class="explore-products-card-icons" src="images/checking-accounts.svg">
+                <a ng-style="{'color': exploreLinks}" class="explore-products-card-links" href="">Checking accounts</a>
 
                 </div>
-                <div>
-                    <img src="images/savings-and-cds-icon.svg">
-                <a href="">Savings & CDs</a>
+                <div class="explore-products-card-icon-and-link">
+                    <img class="explore-products-card-icons" src="images/savings-and-cds-icon.svg">
+                <a ng-style="{'color': exploreLinks}" class="explore-products-card-links" href="">Savings & <br> CDs</a>
                 </div>
-                <div>
-                    <img src="images/auto-financing-icon.svg">
-                    <a href="">Auto financing</a>
+                <div class="explore-products-card-icon-and-link">
+                    <img class="explore-products-card-icons" src="images/auto-financing-icon.svg">
+                    <a ng-style="{'color': exploreLinks}" class="explore-products-card-links" href=""><span id="explore-products-card-text-auto">Auto</span> <br>financing</a>
                 </div>
-                <div>
-                    <img src="images/mortgage-icon.svg">
-                    <a href="">Mortgage</a>
+                <!-- </div>
+                <div class="explore-products-card-row" id="explore-products-bottom-row"> -->
+                <div class="explore-products-card-icon-and-link">
+                    <img class="explore-products-card-icons" src="images/mortgage-icon.svg">
+                    <a ng-style="{'color': exploreLinks}" class="explore-products-card-links" href="">Mortgage</a>
                 </div>
-                <div>
-                    <img src="images/investing-icon.svg">
-                <a href="">Investing</a>
+                <div class="explore-products-card-icon-and-link">
+                    <img class="explore-products-card-icons" src="images/investing-icon.svg">
+                <a ng-style="{'color': exploreLinks}" class="explore-products-card-links" href="">Investing</a>
                 </div>
-                <div>
-                    <img src="images/chase-for-business-icon.svg">
-                <a href="">Chase for Business</a>
+                <div class="explore-products-card-icon-and-link">
+                    <img class="explore-products-card-icons" id="explore-products-card-chase-business-icon" src="images/chase-for-business-icon.svg">
+                <a ng-style="{'color': exploreLinks}" class="explore-products-card-links" href="">Chase for Business</a>
                 </div>
-                <div>
-                    <img src="images/just-for-you-icon.svg">
-                    <a href="">Just for you</a>
+                <div class="explore-products-card-icon-and-link">
+                    <img class="explore-products-card-icons" src="images/just-for-you-icon.svg">
+                    <a ng-style="{'color': exploreLinks}" class="explore-products-card-links" href="">Just for you</a>
                 </div>
+                <!-- </div> -->
             </div>
         </div>
     </body>

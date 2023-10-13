@@ -46,6 +46,10 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     margin: 2%;
 }
 
+.explore-products {
+    margin: 2%;
+}
+
 /* footer styling */
 
 /* classes */
@@ -95,13 +99,37 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 #disclosure-desc {
     font-size: 12px;
 }
-
-
-
-
 /* cards on page */
 
 /* explore products cards */
+/*classes*/
+.explore-products-card-icon-and-link {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-bottom: 8%; 
+
+}
+
+.explore-products-card-links {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.explore-products-card-icons {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 5%;
+}
+
+/* .explore-products-card-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2%;
+ 
+} */
 
 /* IDs */
 #explore-products-card-container {
@@ -110,7 +138,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     background-color: white;
     border: 1px solid #bcbcbc;
     border-radius: 6px;
-    justify-content: space-between;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
@@ -122,6 +149,33 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding-left: 4%;
+    padding-right: 5%;
+    margin-left: 2%;
+}
+/* 
+#explore-products-bottom-row {
+    display: flex;
+} */
+
+#explore-products-card-chase-business-icon {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+}
+
+#explore-products-card-text-auto {
+    padding-left: 12%;
+}
+
+#explore-products-card-top {
+    margin-bottom: 5%;
+    padding-top: 16px;
+    margin-left: 2%;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 
