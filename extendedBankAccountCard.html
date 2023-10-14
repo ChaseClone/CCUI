@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+   </head>
+   <body>
+    <div id="extended-bank-accounts-card-container">
+        <div id="extended-bank-accounts-card-top">
+        <div class="bank-accounts-card-top" >
+            <div class="bank-accounts-card-title" ng-style="{'color': cardHeaderColor}">Bank accounts</div>
+            <div class="bank-accounts-card-buttons">
+                <div class="bank-accounts-card-circle-button" ng-style="{'background': infoButtonColor}"><button class="bank-accounts-card-info-button">i</button></div>
+                <div class="bank-accounts-card-arrow-button-div"><button class="bank-accounts-card-arrow-button" ng-style="{'color': arrowButtonColor}" ng-click="toggleBankAccountCard()">^</button></div>
+            </div>
+        </div>
+        <div class="bank-accounts-card-bottom">
+            <div class="bank-accounts-card-bullet-and-text"><div class="circle" class="bank-accounts-card-bullet-point"></div><div class="bank-accounts-card-text"><div class="bank-accounts-card-notif" ng-style="{'color': cardText}">Some of your account features have moved.</div>
+            <div class="bank-accounts-card-notif-desc" ng-style="{'color': lightGreyText}">Find additional options uner the "More" button.</div></div></div>
+        </div>
+        </div>
+
+
+        <div id="extended-bank-accounts-card-sec-two">
+            <div id="extended-bank-accounts-card-sec-two-top">
+
+                <div id="extended-bank-accounts-card-sec-two-top-left">
+                <div id="extended-bank-account-card-account-name" ng-style="{'color': linkColor}">{{ sampleChaseAccount[0].account}} <span id="extended-bank-account-card-account-name-arrow">></span></div>
+                </div>
+
+                <div id="extended-bank-accounts-card-sec-two-top-right">
+                <div id="extended-bank-account-card-transfer-money-button-div"><button class="extended-bank-accounts-card-blue-buttons" id="extended-bank-account-card-transfer-money-button" ng-style="{'color': blueButtonColor}">Transfer Money</button></div>
+                <div id="extended-bank-account-card-transfer-money-button-div"><button class="extended-bank-accounts-card-blue-buttons" id="extended-bank-account-card-more-button" ng-style="{'color': blueButtonColor}">More ^</button></div>
+                </div>
+
+            </div>
+            <div id="extended-bank-accounts-card-sec-two-middle">
+                <div id="extended-bank-accounts-card-sec-two-bullet-link" ng-style="{'background-color': highlightedSection}"><div class="extended-bank-accounts-card-orange-circle"></div> <div id="extended-bank-accounts-card-sec-two-link"><a href="" ng-style="{'color': linkColor}">Learn how to add money to your account.</a></div></div>
+            </div>
+            </div>
+        
+        </div>
+    </body>
+   
+</html>

@@ -67,6 +67,11 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 .bank-accounts {
     margin: 2%;
     margin-left: 10%;
+}
+
+.extended-bank-accounts {
+    margin: 2%;
+    margin-left: 10%;
 
 }
 
@@ -123,6 +128,116 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 /* cards on page */
 
+/* extended bank accounts card */
+
+/* classes */
+.extended-bank-accounts-card-blue-buttons {
+    background: none;
+    border: 1px solid #0060f0;
+    background: white;
+    border-radius: 4px;
+    font-size: 16px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 400;
+   
+}
+
+/* IDs */
+#extended-bank-accounts-card-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#extended-bank-accounts-card-top{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding: 2%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 0px;
+    
+    
+    
+}
+
+#extended-bank-accounts-card-sec-two {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 6px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border: 1px solid #bcbcbc;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 0.5px;
+    padding: 2%;
+    
+}
+
+#extended-bank-accounts-card-sec-two-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#extended-bank-accounts-card-sec-two-bullet-link {
+    display: flex;
+}
+
+#extended-bank-accounts-sec-two-middle {
+
+}
+
+#extended-bank-accounts-card-sec-two-top-right {
+    display: flex;
+    flex-direction: row;
+}
+
+#extended-bank-account-card-account-name {
+    font-size: 16px;
+}
+
+.extended-bank-accounts-card-orange-circle {
+    content: "\2022";
+    position: absolute;
+    font-size: 250%;
+
+    margin-left: 10px;
+    padding-left: 20px;
+
+    margin-top: -4%;
+    position: relative;
+}
+
+.extended-bank-accounts-card-orange-circle::before {
+    border: 2.5px solid #e06f00;
+    border-radius: 50%;
+    content: "\2022";
+    position: absolute;
+    left: -15px;
+    height: 10px;
+    width: 10 px;
+    font-size: 50%;
+}
+
 /*bank accounts card */
 /* IDs */
 
@@ -138,48 +253,91 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     padding: 2%;
 }
 
-#bank-accounts-card-top {
+/* Classes */
+
+.bank-accounts-card-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
-#bank-accounts-card-buttons {
-    display: flex;
-    flex-direction: row;
+.bank-accounts-card-bottom {
+    margin-top: 2%;
+    margin-left: 2%;
 }
 
-#bank-accounts-card-info-button {
+.bank-accounts-card-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bank-accounts-card-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 1%;
+}
+
+.bank-accounts-card-info-button {
     display: flex;
     flex-direction: column;
-    margin-top: -90%;
-    margin-left: -45%;
+    margin-top: -70%;
+    margin-left: -48%;
    color: white;
    border: none;
    background: none;
-   font-weight: 500;
+   font-weight: 550;
    font-size:  100%;
    
 }
 
-#bank-accounts-card-circle-button {
+.bank-accounts-card-circle-button {
     width: 8px;
     height: 8px;
     padding-top: 16%;
-    padding-bottom: 14%;
+    padding-bottom: 10%;
     padding-left: 15%;
     padding-right: 15%;
     border-radius: 50%;
+    margin-left: -10%;
+    margin-right: 20%;
 }
 
-#bank-accounts-card-arrow-button {
+.bank-accounts-card-bullet-point{
+   margin-left: 3.5%;
+
+}
+
+.bank-accounts-card-arrow-button {
     background: none;
     border: none;
+    font-size: 155%;
+    margin-top: -5%;
+    margin-left: 18%;
+    
 }
 
-#bank-accounts-card-bullet-and-text {
+.bank-accounts-card-arrow-button-div {
+    margin-left: 10%;
+}
+
+.bank-accounts-card-bullet-and-text {
     display: flex;
     flex-direction: row;
+}
+
+.bank-accounts-card-notif {
+    font-size: 14px;
+    margin-left: -1.5%;
+}
+
+.bank-accounts-card-notif-desc {
+    font-size: 12px;
+    margin-left: -1.5%;
+    margin-top: 2%;
+}
+
+.bank-accounts-card-text {
+    margin-left: -0.8%;
+    margin-top: -0.8%;
 }
 
 
@@ -248,7 +406,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 }
 
 #plan-track-manage-card-top{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 5%;
 } 
@@ -375,7 +533,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     margin-top: 1%;
 }
 .external-accounts-card-down-arrow-link {
-    font-size: 132%;
+    font-size: 155%;
     border: none;
     background: none;
 }
@@ -479,7 +637,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     border-top-width: 1px;
     border-right-width: 1px;
     border-left-width: 1px;
-    border-bottom-width: 0.5px;
+    border-bottom-width: 0px;
     justify-content: space-between;
     padding-top: 1%;
     padding-bottom: 1%;

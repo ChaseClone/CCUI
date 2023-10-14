@@ -51,6 +51,9 @@
         $scope.greyLabelColor = '#717171';
         $scope.lines = '#bcbcbc';
         $scope.ptmLines = '#cccccc';
+
+        //orange 
+        $scope.highlightedSection = '#f6f6f6';
     
         //user states
         $scope.isEnrolledInNotifications = false;
@@ -71,6 +74,17 @@
         $scope.hasExtendedExternalAccounts = true;
         $scope.hasHalfExtendedExternalAccounts = false;
         $scope.hasCollapsedExternalAccounts = false;
+        $scope.isBankAccountCardExtended = true;
+
+        //sample data 
+        $scope.sampleExternalAccounts = [
+            { account: "TD CHECKING (..4400)", type: "Checking", value: "154.96", timeUpdated: "10:57 AM ET", dateUpdated: "10/5/2023"}
+        ];
+
+        $scope.sampleChaseAccount = [
+            { account: "CHASE SECURE BANKING (...0465)", type: "Checking", balance: "103.53", depositsThisMonth: "50.25", withdrawalsThisMonth: "23.76"}
+        ];
+
 
 
         //functions
@@ -93,11 +107,10 @@
 
         };
 
+        $scope.toggleBankAccountCard = function () {
+            $scope.isBankAccountCardExtended = !$scope.isBankAccountCardExtended;
+        }
 
-
-        $scope.sampleExternalAccounts = [
-            { account: "TD CHECKING (..4400)", type: "Checking", value: "154.96", timeUpdated: "10:57 AM ET", dateUpdated: "10/5/2023"}
-        ];
 
         })
     </script>

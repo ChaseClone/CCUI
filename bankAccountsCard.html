@@ -5,17 +5,17 @@
    </head>
    <body>
     <div id="bank-accounts-card-container">
-        <div id="bank-accounts-card-top">
-            <div id="bank-accounts-card-title">Bank accounts</div>
-            <div id="bank-accounts-card-buttons">
-                <div id="bank-accounts-card-circle-button" ng-style="{'background': infoButtonColor}"><button id="bank-accounts-card-info-button">i</button></div>
-                <button id="bank-accounts-card-arrow-button" ng-style="{'color': arrowButtonColor}">^</button>
+        <div class="bank-accounts-card-top">
+            <div class="bank-accounts-card-title" ng-style="{'color': cardHeaderColor}">Bank accounts</div>
+            <div class="bank-accounts-card-buttons">
+                <div class="bank-accounts-card-circle-button" ng-style="{'background': infoButtonColor}"><button class="bank-accounts-card-info-button">i</button></div>
+                <div class="bank-accounts-card-arrow-button-div"><button class="bank-accounts-card-arrow-button" ng-style="{'color': arrowButtonColor}" ng-click="toggleBankAccountCard()">^</button></div>
             </div>
         </div>
-        <div id="bank-accounts-card-bottom">
-            <div id="bank-accounts-card-bullet-and-text"><div class="circle"></div><div id="bank-accounts-card-notif">Some of your account features have moved.</div></div>
-            <div id="bank-accounts-card-notif-desc">Find additional options uner the "More" button.</div>
+        <div class="bank-accounts-card-bottom">
+            <div class="bank-accounts-card-bullet-and-text"><div class="circle" class="bank-accounts-card-bullet-point"></div><div class="bank-accounts-card-text"><div class="bank-accounts-card-notif" ng-style="{'color': cardText}">Some of your account features have moved.</div>
+            <div class="bank-accounts-card-notif-desc" ng-style="{'color': lightGreyText}">Find additional options uner the "More" button.</div></div></div>
         </div>
-    </div>
+        </div> 
    </body>
 </html>

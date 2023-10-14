@@ -7,7 +7,9 @@
     <div class="top-container">
 
     <div class="accounts-left-container">
-        <div class="bank-accounts" ng-include="'bankAccountsCard.html'"></div>
+        <!--Bank accounts cards-->
+        <div class="extended-bank-accounts" ng-if="isBankAccountCardExtended" ng-include="'extendedBankAccountCard.html'"></div>
+        <div class="bank-accounts" ng-if="isBankAccountCardExtended === false" ng-include="'bankAccountsCard.html'"></div>
         <!--External accounts cards-->
         <div class="external-accounts" ng-if="hasCollapsedExternalAccounts" ng-hide="hasExtendedExternalAccounts || hasHalfExtendedExternalAccounts" ng-include="'externalAccountsCard.html'"></div>
         <div class="half-extended-external-accounts" ng-if="hasHalfExtendedExternalAccounts" ng-hide="hasCollapsedExternalAccounts || hasExtendedExternalAccounts" ng-include="'halfExtendedExternalAccountsCard.html'"></div>
