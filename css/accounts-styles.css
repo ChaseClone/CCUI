@@ -8,6 +8,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 .top-container {
     display: flex;
     overflow: hidden;
+    
    
 }
 
@@ -53,17 +54,17 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 .help-and-support {
     margin: 2%;
-    margin-right: 2%;
+    margin-right: 4%;
 }
 
 .explore-products {
     margin: 2%;
-    margin-right: 2%;
+    margin-right: 4%;
 }
 
 .plan-track-manage {
     margin: 2%;
-    margin-right: 2%;
+    margin-right: 4%;
 }
 
 .bank-accounts {
@@ -96,6 +97,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     align-items: flex-start;
     border: 1px solid #cccccc;
     margin-bottom: 5%;
+    
 
 }
 
