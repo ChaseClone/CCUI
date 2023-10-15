@@ -5,6 +5,11 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 /* classes */
 
+.accounts-body-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .top-container {
     display: flex;
     overflow: hidden;
@@ -19,6 +24,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 .accounts-right-container {
     width: 55%;
+
     
 }
 .accounts-body {
@@ -85,6 +91,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     font-weight: 500;
     margin-left: 2%;
     color: black;
+    margin-top: 0.5%;
     
 }
 
@@ -150,12 +157,12 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     border: 1px solid #0060f0;
     background: white;
     border-radius: 4px;
-    font-size: 16px;
-    padding-bottom: 4px;
-    padding-top: 4px;
+    font-size: 14px;
+    padding-bottom: 2px;
+    padding-top: 2px;
     padding-left: 8px;
     padding-right: 8px;
-    font-weight: 400;
+    font-weight: 500;
    
 }
 
@@ -319,6 +326,23 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     font-size: 155%;
 }
 
+#extended-bank-account-card-more-button-arrow {
+    font-size: 155%;
+}
+
+#extended-bank-account-card-more-button {
+    width: 90%;
+    
+}
+
+
+#extended-bank-account-card-more-button-div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -6px;
+
+    
+}
 
 /*bank accounts card */
 /* IDs */
@@ -472,10 +496,15 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 .plan-track-manage-card-arrow-link {
     display: flex;
     flex-direction: column;
-    margin-top: 80%;
-    font-size: 150%;
-    margin-left: -150%;
-  
+    margin-top: 90%;
+    font-size: 155%;
+    
+}
+
+.plan-track-manage-card-arrow-div {
+    margin-top: 5%;
+    margin-right: 3%;
+    
 }
 
 /* IDs */
@@ -622,7 +651,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 }
 
 #help-and-support-card-icon {
-    width: 65px;
+    width: 50%;
     height: 65px;
     margin-right: 4%;
     padding-left: 15%;
