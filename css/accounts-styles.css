@@ -84,6 +84,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     font-size: 22px;
     font-weight: 500;
     margin-left: 2%;
+    color: black;
     
 }
 
@@ -360,26 +361,25 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 .bank-accounts-card-info-button {
     display: flex;
     flex-direction: column;
-    margin-top: -90%;
-    margin-left: -48%;
    color: white;
    border: none;
    background: none;
-   font-weight: 550;
-   font-size:  100%;
+   font-weight: 500;
+   font-size:  110%;
+   background: none;
+   margin-top: -32%;
+   margin-left: 2%;
+;
+
+ 
    
 }
 
 .bank-accounts-card-circle-button {
-    width: 8px;
-    height: 8px;
-    padding-top: 16%;
-    padding-bottom: 10%;
-    padding-left: 15%;
-    padding-right: 15%;
+    width: 20px;
+    height: 17px;
     border-radius: 50%;
-    margin-left: -10%;
-    margin-right: 20%;
+  
    
 }
 

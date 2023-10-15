@@ -134,7 +134,7 @@
             if ($scope.hour < 12 && $scope.hour > 3) {
                 $scope.transformedHour = $scope.hour;
                 $scope.amOrPM = 'AM';
-                $scope.timeSensitiveGreeting = "Good Morning";
+                $scope.timeSensitiveGreeting = "Good morning";
             } else if($scope.hour === 12){
                 $scope.transformedHour = $scope.hour - 12;
                 $scope.amOrPM = 'PM';
@@ -142,7 +142,7 @@
             } else if($scope.hour > 12 && $scope.hour < 18) {
                 $scope.transformedHour = $scope.hour - 12;
                 $scope.amOrPM = 'PM';
-                $scope.timeSensitiveGreeting = "Good Afternoon";
+                $scope.timeSensitiveGreeting = "Good afternoon";
             } else if($scope.hour >= 18 && $scope.hour <= 20) {
                 $scope.amOrPM = "PM";
                 $scope.transformedHour = $scope.hour - 12;
