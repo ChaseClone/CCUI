@@ -1,13 +1,19 @@
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+}
+
 .leftcontainer {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    margin-top: 2%;
 }
+
 
 .rightcontainer {
     display: flex;
     flex-direction: column;
-    width: 38%;
+    width: 28%;
 }
 
 .cards {
@@ -18,6 +24,20 @@
     border-radius: 6px;
     justify-content: center;
     align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding: 2%;
+}
+
+.left-cards {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: flex-start;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
@@ -43,8 +63,26 @@
     text-align: center;
 }
 
+.sub-card a {
+    color:#004cff;
+}
+
+.sub-card2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 2%;
+}
+
+.btn-holder {
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%;
+}
+
 .rowContainer {
     display: flex;
+    margin-top: 2%;
 }
 
 .flexContainer {
@@ -67,4 +105,44 @@
     display: flex;
     justify-content: space-between;
     margin: 2%;
+}
+
+.boldElement {
+    font-weight: 600;
+}
+
+.fadeElement {
+    opacity: .6;
+}
+
+.left-card {
+    display: flex;
+    margin-top: 2%;
+}
+
+.left-sub-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4% 0;
+}
+
+
+.buttons {
+    background: white;
+    border: 1px solid #0360f0;
+    border-radius: 4px;
+    font-size: 16px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 400;
+    color: #0360f0;
 }
