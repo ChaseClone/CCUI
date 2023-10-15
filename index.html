@@ -64,7 +64,7 @@
         
         //time and date
         $scope.hour = new Date().getHours();
-        $scope.minute = new Date.getMinutes();
+        $scope.minute = new Date().getMinutes();
         $scope.transformedHour = 0;
         $scope.transformedMinute = 0;
         $scope.transformedTime = '00:00';
@@ -127,7 +127,7 @@
 // the variables for am and pm, or the transformed hour, minute, or time
         $scope.currentTime = function () {
             if ($scope.hour < 12 && $scope.hour > 3) {
-                scope.transformedHour = $scope.hour;
+                $scope.transformedHour = $scope.hour;
                 $scope.amOrPM = 'AM';
                 $scope.timeSensitiveGreeting = "Good Morning";
             } else if($scope.hour === 12){

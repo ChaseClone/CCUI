@@ -16,6 +16,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     width: 100%;
 }
 
+
 .accounts-right-container {
     width: 55%;
     
@@ -76,6 +77,14 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     margin: 2%;
     margin-left: 2%;
 
+}
+
+/* IDs */
+#accounts-template-greeting {
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 2%;
+    
 }
 
 /* footer styling */
