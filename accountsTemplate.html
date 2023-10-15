@@ -5,7 +5,7 @@
 <body class="accounts-body">
     <div class="body-container" ng-style="{'background-color': greyBackground}">
     <div class="top-container">
-
+ <div ng-show="showGreeting" ng-style="{'font-size': '30px'}">{{ timeSensitiveGreeting }}</div>
     <div class="accounts-left-container">
         <!--Bank accounts cards-->
         <div class="extended-bank-accounts" ng-if="isBankAccountCardExtended" ng-include="'extendedBankAccountCard.html'"></div>

@@ -156,27 +156,15 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
    
    
    .extended-bank-accounts-card-orange-circle {
-       content: "\2022";
-       position: absolute;
-       font-size: 250%;
-   
-       margin-left: 10px;
-       padding-left: 20px;
-   
-       margin-top: -4%;
-       position: relative;
-   }
-   
-   .extended-bank-accounts-card-orange-circle::before {
        border: 2px solid #e06f00;
+       background: none;
        border-radius: 50%;
-       content: "\2022";
-       position: absolute;
        left: -15px;
        height: 10px;
        width: 10px;
-       font-size: 50%;
-       margin-top: 180%;
+       position: absolute;
+       margin-top: 0.1%;
+       position: relative;
    }
    
    
@@ -236,9 +224,9 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 #extended-bank-accounts-card-sec-two-bullet-link {
     display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    padding-left: 35px;
     margin-top: 2%;
     border-radius: 8px;
 }

@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="css/index-styles.css">
 
 </head>
-<body ng-style="'background-color': greyBackground">
-    <div ng-app="chase-app" ng-controller="appCtrl">
+<body ng-style="'background-color': greyBackground" >
+    <div ng-app="chase-app" ng-controller="appCtrl" >
 
         <!--Accounts section-->
-        <div ng-style="{'background-color': greyBackground, 'margin': '0'}" class="accounts-container">
+        <div ng-init="currentTime()" ng-style="{'background-color': greyBackground, 'margin': '0'}" class="accounts-container">
             <div class="nav-section">
                 <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
             </div>
@@ -62,15 +62,24 @@
         $scope.externalBankName = "TD Bank";
         $scope.numberOfExternalAccountsLinked = 1;
         
+        //time and date
+        $scope.hour = new Date().getHours();
+        $scope.minute = new Date.getMinutes();
+        $scope.transformedHour = 0;
+        $scope.transformedMinute = 0;
+        $scope.transformedTime = '00:00';
+        $scope.amOrPM = 'AM'; 
 
-        
+        //time and date greeting 
+        $scope.showGreeting = true;
+
         //user funds
         $scope.totalAssetsDollarAmount = 0;
         $scope.totalAssetsChangeAmount = '00';
         $scope.totalLiabilitiesDollarAmount = 0;
         $scope.totalLiabilitiesChangeAmount = '00';
 
-        //these are for if a user extends something
+        //toggle state of cards
         $scope.hasExtendedExternalAccounts = true;
         $scope.hasHalfExtendedExternalAccounts = false;
         $scope.hasCollapsedExternalAccounts = false;
@@ -87,7 +96,7 @@
 
 
 
-        //functions
+        //functions to toggle cards state
         $scope.extendExternalAccounts = function(){
             $scope.hasExtendedExternalAccounts = !$scope.hasExtendedExternalAccounts;
             $scope.hasCollapsedExternalAccounts = true;
@@ -111,8 +120,42 @@
             $scope.isBankAccountCardExtended = !$scope.isBankAccountCardExtended;
         }
 
+        //function to get date/time 
+//if we are going to use this function for other things like if 
+//someone updates something or posts something ad we need to save the time, we are going to have to
+// refactor the if statement to handle times before 4 am because this isnt going to change
+// the variables for am and pm, or the transformed hour, minute, or time
+        $scope.currentTime = function () {
+            if ($scope.hour < 12 && $scope.hour > 3) {
+                scope.transformedHour = $scope.hour;
+                $scope.amOrPM = 'AM';
+                $scope.timeSensitiveGreeting = "Good Morning";
+            } else if($scope.hour === 12){
+                $scope.transformedHour = $scope.hour - 12;
+                $scope.amOrPM = 'PM';
+                $scope.showGreeting = false;
+            } else if($scope.hour > 12 && $scope.hour < 18) {
+                $scope.transformedHour = $scope.hour - 12;
+                $scope.amOrPM = 'PM';
+                $scope.timeSensitiveGreeting = "Good Afternoon";
+            } else if($scope.hour >= 18 && $scope.hour <= 20) {
+                $scope.amOrPM = "PM";
+                $scope.transformedHour = $scope.hour - 12;
+                $scope.timeSensitiveGreeting = "Good evening";
+            } else {
+                $scope.showGreeting = false;
+            }
 
-        })
+            if($scope.minute > 10 ){
+                $scope.transformedMinute = "0" + $scope.minute;
+            } else {
+                $scope.transformedMinute = $scope.minute;
+            }
+            $scope.transformedTime = $scope.transformedHour + ":" + $scope.transformedMinute;
+        };
+
+
+ })
     </script>
 </body>
 </html>
