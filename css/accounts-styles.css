@@ -393,23 +393,16 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
    background: none;
    margin-top: -32%;
    margin-left: 2%;
-;
-
- 
-   
 }
 
 .bank-accounts-card-circle-button {
     width: 20px;
     height: 17px;
     border-radius: 50%;
-  
-   
 }
 
 .bank-accounts-card-bullet-point{
    margin-left: 3.5%;
-
 }
 
 .bank-accounts-card-arrow-button {
@@ -418,7 +411,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     font-size: 155%;
     margin-top: -5%;
     margin-left: 18%;
-    
 }
 
 .bank-accounts-card-arrow-button-div {
@@ -445,7 +437,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     margin-left: -0.8%;
     margin-top: -0.8%;
 }
-
 
 
 /* plan track and manage card */
@@ -498,13 +489,11 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     flex-direction: column;
     margin-top: 90%;
     font-size: 155%;
-    
 }
 
 .plan-track-manage-card-arrow-div {
     margin-top: 5%;
     margin-right: 3%;
-    
 }
 
 /* IDs */
@@ -535,8 +524,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     display: flex;
     flex-direction: column;
     width: 25%;
-    margin-bottom: 8%; 
-
+    margin-bottom: 8%;
 }
 
 .explore-products-card-links {
@@ -550,14 +538,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     margin-bottom: 5%;
 }
 
-/* .explore-products-card-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding: 2%;
- 
-} */
+
 
 /* IDs */
 #explore-products-card-container {
@@ -570,7 +551,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     padding-bottom: 1%;
     padding-left: 1%;
     padding: 2%;
-
 }
 
 #explore-products-card-bottom {
@@ -583,10 +563,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     padding-right: 5%;
     margin-left: 2%;
 }
-/* 
-#explore-products-bottom-row {
-    display: flex;
-} */
 
 #explore-products-card-chase-business-icon {
     display: flex;
@@ -647,7 +623,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     background: none;
     border: none;
     font-size: 155%;
-
 }
 
 #help-and-support-card-icon {
@@ -670,8 +645,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     flex-direction: row;
     margin-top: 10%;
     font-size: 14px;
-    
-   
 }
 
 .external-accounts-card-key-value-flex {
@@ -679,6 +652,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     flex-direction: row;
     margin-top: 1%;
 }
+
 .external-accounts-card-down-arrow-link {
     font-size: 155%;
     border: none;
@@ -703,11 +677,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 .external-accounts-card-assets-value {
    display: flex;
    flex-direction: row;
-   
-
 }
-
-
 
 
 
@@ -724,7 +694,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     padding-bottom: 1%;
     padding-left: 1%;
     padding: 2%;
-
 }
 
 /*extended external accounts card */
@@ -732,14 +701,11 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 /*classes*/
 .extended-external-accounts-card-table-row {
     border: none;
- 
-    
 }
 
 .extended-external-accounts-card-table-header {
     border: none;
     font-size: 14px;
-    
 }
 
 .extended-external-accounts-card-table-hr-div {
@@ -757,18 +723,15 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     justify-content: space-between;
     padding-bottom: 1%;
     padding: 1%;
-   
 }
 #extended-external-accounts-card-right {
     margin-top: 1%;
     margin-right: 2%;
 }
 
-
 #extended-eternal-accounts-card-container {
     display: flex;
     flex-direction: column;
-
 }
 
 #extended-external-accounts-card-top {
@@ -804,8 +767,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     border-bottom-width: 1px;
     border-top-width: 0.5px;
     padding: 2%;
-    
-    
 }
 
 
@@ -834,9 +795,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     border: none;
     border-collapse: collapse;
     width: 90%;
-    
 }
-
 
 #extended-external-accounts-card-table-rows {
     display: flex;
@@ -845,16 +804,12 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     text-align: center;
     padding-top: 1px;
     padding-bottom: 1px;
-
 }
 
 #extended-external-accounts-card-table-headers {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-
-
 }
 
 #extended-external-accounts-card-table-values-div {
@@ -898,7 +853,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 #half-extended-external-accounts-card-container {
     display: flex;
     flex-direction: column;
-
 }
 
 #half-extended-external-accounts-card-left {
@@ -910,8 +864,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     padding-bottom: 1%;
     padding: 1%;
 }
-
-
 
 #half-extended-external-accounts-card-top {
     display: flex;
@@ -962,11 +914,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     margin-right: 2%;
 }
 
-#half-extended-external-accounts-card-key-value-flex {
-
-}
-
-
 /*get notified card styles*/
 
 /* classes */
@@ -981,13 +928,11 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     background-color: white;
     padding: 1%;
     padding-bottom: 2%;
-
 }
 
 #get-notified-card-title {
     font-size: 16px;
     font-weight: 500;
-
 }
 
 #get-notified-card-text {
@@ -999,7 +944,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     flex-direction: column;
     align-content: space-around;
     margin-left: -10%;
-
 }
 
 #get-notified-card-icon {
@@ -1014,7 +958,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 #get-notified-card-enroll-now-link {
     text-decoration: none;
     font-size: 14px;
-
 }
 
 #get-notified-card-enroll-link-arrow {
@@ -1031,7 +974,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 .see-all-transactions-card-message-and-bullet-point {
     display: flex;
     flex-direction: row;
-    
 }
 
 
@@ -1051,7 +993,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     border: none;
     margin-top: -3%;
     padding-bottom: 0%;
-    
 }
 
 #see-all-transactions-card-button {
@@ -1071,8 +1012,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 display: flex;
 flex-direction: row;
 justify-content: flex-end;
- }
-
+}
 
 #see-all-transactions-card-left{
     display: flex;
@@ -1081,7 +1021,6 @@ justify-content: flex-end;
     margin-left: 2%;
     margin-top: 2%;
     margin-bottom: 5%;
-   
 }
 
 #see-all-transactions-card-right {
@@ -1090,23 +1029,16 @@ justify-content: flex-end;
     align-content: space-between;
     margin-top: 2%;
     margin-right: 2%;
-
 }
 
 #see-all-transactions-card-title {
-    font-weight: 500;
-    
+    font-weight: 500;   
 }
-
-
 
 #see-all-transactions-card-list {
     font-size: 14px;
     margin-top: 8%;
-    margin-left: -4%;
-
-   
-    
+    margin-left: -4%;    
 }
 
 .circle {
@@ -1127,5 +1059,4 @@ justify-content: flex-end;
 
 #see-all-transactions-card-title-div {
     margin-bottom: 10%;
-
 }

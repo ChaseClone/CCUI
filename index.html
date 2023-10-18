@@ -126,12 +126,12 @@
 
         $scope.toggleBankAccountCard = function () {
             $scope.isBankAccountCardExtended = !$scope.isBankAccountCardExtended;
-        }
+        };
 
         //function to get date/time 
 //if we are going to use this function for other things like if 
-//someone updates something or posts something ad we need to save the time, we are going to have to
-// refactor the if statement to handle times before 4 am because this isnt going to change
+//someone updates something or posts something and we need to save the time, we are going to have to
+// refactor the if statements to handle times before 4 am because this isnt going to change
 // the variables for am and pm, or the transformed hour, minute, or time
         $scope.currentTime = function () {
             if ($scope.hour < 12 && $scope.hour > 3) {
