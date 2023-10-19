@@ -13,10 +13,7 @@
                 <div class="bank-accounts-card-arrow-button-div"><span class="material-icons" class="bank-accounts-card-arrow-button" ng-style="{'color': arrowButtonColor}" ng-click="toggleBankAccountCard()">expand_less</span></div>
             </div>
         </div>
-        <div class="bank-accounts-card-bottom">
-            <div class="bank-accounts-card-bullet-and-text"><div class="circle" class="bank-accounts-card-bullet-point"></div><div class="bank-accounts-card-text"><div class="bank-accounts-card-notif" ng-style="{'color': cardText}">Some of your account features have moved.</div>
-            <div class="bank-accounts-card-notif-desc" ng-style="{'color': lightGreyText}">Find additional options uner the "More" button.</div></div></div>
-        </div>
+       
         </div>
 
 
@@ -24,7 +21,7 @@
             <div id="extended-bank-accounts-card-sec-two-top">
 
                 <div id="extended-bank-accounts-card-sec-two-top-left">
-                <div id="extended-bank-account-card-account-name" ng-style="{'color': linkColor}">{{ sampleChaseAccount[0].account + " "}} <span id="extended-bank-account-card-account-name-arrow"> ></span></div>
+                <div id="extended-bank-account-card-account-name" ng-style="{'color': linkColor}"><div>{{ sampleChaseAccount[0].account + " "}}</div> <div class="material-icons" id="extended-bank-account-card-account-name-arrow">arrow_forward_ios</div></div>
                 </div>
 
                 <div id="extended-bank-accounts-card-sec-two-top-right">

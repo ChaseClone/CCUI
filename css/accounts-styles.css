@@ -5,13 +5,16 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 /* classes */
 
+
 .accounts-body-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 35%;
 }
 
 .top-container {
     display: flex;
+    flex-direction: row;
     overflow: hidden;
     
    
@@ -102,24 +105,36 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     display: flex;
     flex-direction: column;
     list-style-type: disc;
-    margin-top: -1%;
-    margin-bottom: 3%;
-   
+    margin-top: -1.2%;
+    font-size: 14px;
+    margin-left: -1%;
+    line-height: 1.3;
+    padding-bottom: 0.2%;
     
 }
+
 
 .disclosures-part-two {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     border: 1px solid #cccccc;
-    margin-bottom: 5%;
+    margin-top: -0.8%;
+    padding-top: 1%;
+    margin-bottom: 1.7%;
+    
+    
     
 
 }
 
+.links-in-footer-text {
+    text-decoration: underline;
+}
+
 .jpmorgan-text {
     font-weight: 700;
+    
 }
 
 /* IDs */
@@ -132,18 +147,29 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 }
 
 #disclaimer-title{
-    margin-top: 2%;
-    margin-left: 2%;
+    padding-top: 2%;
+    margin-top: -1%;
+    margin-left: 1%;
+    font-size: 14px;
 
 }
 
 #disclosures-title {
     font-size: 12px;
     padding-bottom: 24px;
+    margin-top: -4%;
 }
 
 #disclosure-desc {
     font-size: 12px;
+    margin-bottom: -0.5;
+    padding-top: 1%;
+   
+}
+
+/* media queries for whole page */
+@media (min-width: 780px) {
+
 }
 
 
@@ -177,10 +203,10 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
        background: none;
        border-radius: 50%;
        left: -15px;
-       height: 10px;
-       width: 10px;
+       height: 13px;
+       width: 13px;
        position: absolute;
-       margin-top: 0.1%;
+       margin-top: 1%;
        position: relative;
    }
    
@@ -236,13 +262,14 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin-top: -0.4%;
     
 }
 
 #extended-bank-accounts-card-sec-two-bullet-link {
     display: flex;
-    padding-top: 15px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 35px;
     margin-top: 2%;
     border-radius: 8px;
@@ -251,6 +278,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 #extended-bank-accounts-card-sec-two-link {
     margin-left: -1%;
     font-size: 14px;
+    text-decoration: underline;
 }
 
 
@@ -260,6 +288,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 }
 
 #extended-bank-account-card-account-name {
+    display: flex;
     font-size: 16px;
     font-weight: 500;
 }
@@ -268,8 +297,8 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 2%;
-    margin-bottom: -0.8%;
+    margin-top: 1%;
+    margin-bottom: -1.7%;
 }
 
 #extended-bank-account-card-transfer-money-button {
@@ -286,11 +315,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 #extended-bank-accounts-card-sec-two-deposits-div {
    margin-right: 25%;
 }
-
-#extended-bank-accounts-card-sec-two-withdrawals-div {
-    
- }
-
  .extended-bank-accounts-card-labels {
     font-size: 14px;
  }
@@ -303,13 +327,18 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     border: 0.5px dashed #0060f0;
     margin: 2px 90;
     width: 82%;
-    margin-top: 1.5%;
+    margin-top: 8%;
     margin-left: 0.8%;
  }
 
 #extended-bank-accounts-card-sec-two-available-balance {
     font-size: 36px;
     font-weight: 500;
+}
+
+#extended-bank-accounts-card-balance-label{
+margin-top: -4%;
+margin-bottom: -10%;
 }
 
 #extended-bank-accounts-card-sec-two-deposits-this-month {
@@ -322,6 +351,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 }
 
 #extended-bank-account-card-account-name-arrow {
+  
     font-weight: 450;
     font-size: 155%;
 }
@@ -374,6 +404,9 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 .bank-accounts-card-title {
     font-size: 16px;
     font-weight: 500;
+    padding-bottom: 0;
+    
+    
 }
 
 .bank-accounts-card-buttons {
@@ -405,6 +438,10 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
    margin-left: 3.5%;
 }
 
+#test {
+   
+}
+
 .bank-accounts-card-arrow-button {
     background: none;
     border: none;
@@ -420,6 +457,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 .bank-accounts-card-bullet-and-text {
     display: flex;
     flex-direction: row;
+    margin-top: 2%;
 }
 
 .bank-accounts-card-notif {
@@ -435,7 +473,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 .bank-accounts-card-text {
     margin-left: -0.8%;
-    margin-top: -0.8%;
+    margin-top: -3%;
 }
 
 
@@ -985,6 +1023,8 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     background-color: white;
     border: 1px solid #bcbcbc;
     border-radius: 6px;
+    padding-bottom: 1.5%;
+    
 }
 
 #see-all-transactions-card-arrow-button {
@@ -1000,12 +1040,12 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     border: 1px solid #0360f0;
     border-radius: 4px;
     font-size: 16px;
-    padding-bottom: 4px;
-    padding-top: 4px;
+    padding-bottom: 1px;
+    padding-top: 1px;
     padding-left: 8px;
     padding-right: 8px;
     font-weight: 400;
-    margin-top: 30%;
+    margin-top: 50%;
 }
 
 #arrow-button-flex {
@@ -1044,7 +1084,7 @@ justify-content: flex-end;
 .circle {
     margin-left: 10px;
     padding-left: 20px;
-    margin-top: -4%;
+    margin-top: -6.8%;
     position: relative;
 }
 
