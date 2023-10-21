@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/investment-styles.css">
+</head>
+<body>
+        <div class="flexContainer">
+            <h1 style="font-size: x-large;">J.P.Morgan</h1>
+            <div>
+                <i class="fas fa-search" style="color: #004cff;"></i>
+                <a href="">Search stocks, ETFs and more</a>
+            </div>
+        </div>
+
+        <!-- Left container stuff -->
+        
+        <div class="contentContainer" >
+            <div style="width: 70%;">
+                <div ng-include="'./investments/waysToInvestCard.html'"></div>
+                <div ng-include="'./investments/topStoriesCard.html'"></div>
+                <div ng-include="'./investments/topStocksCard.html'"></div>
+            </div>
+            
+            <!-- Right container stuff -->
+
+            <div class="rightcontainer">
+                <div class="left-cards">
+                    <h3>Indices</h3>
+                    <span class="fadeElement">It looks like this part of the site isn't working right now. Please try again later.</span>
+                </div>
+
+                <div ng-include="'./investments/latestNewsCard.html'"></div>
+            </div>
+        </div>
+</body>
+</html>

@@ -146,3 +146,29 @@
     font-weight: 400;
     color: #0360f0;
 }
+
+td, thead, th, table {
+    border: none; /* Remove borders from all <td> elements */
+}
+
+td {
+    margin: 3% 0;
+}
+
+tr {
+    text-align: center;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+tbody tr {
+    margin-bottom: 15%;    
+}
+
+
+td img {
+    margin-top: 10%;
+}
+
+tbody tr td:first-child, thead tr th:first-child{
+    margin-right: 4rem;
+  }
