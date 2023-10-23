@@ -3,6 +3,10 @@
 /* DO NOT MAKE SEPERATE CSS FILES FOR THE CARDS AND TRY TO LINK THEM INSIDE THE FILES- 
 IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD OF IDs AND CLASSES */
 
+
+
+
+
 /* classes */
 
 
@@ -12,14 +16,12 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     margin-bottom: 35%;
 }
 
-.top-container {
+.accounts-top-container {
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    
-   
 }
-
+    
 .accounts-left-container {
     width: 100%;
 }
@@ -166,12 +168,6 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
     padding-top: 1%;
    
 }
-
-/* media queries for whole page */
-@media (min-width: 780px) {
-
-}
-
 
 /* cards on page */
 
@@ -1100,3 +1096,6 @@ justify-content: flex-end;
 #see-all-transactions-card-title-div {
     margin-bottom: 10%;
 }
+
+/* media queries for whole page */
+
