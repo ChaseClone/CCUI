@@ -16,7 +16,7 @@
 <body ng-style="'background-color': greyBackground" >
     <div ng-app="chase-app" ng-controller="appCtrl" >
         <!--Accounts section-->
-        <div ng-init="currentTime()" ng-style="{'background-color': greyBackground, 'margin': '0'}" class="accounts-container">
+        <div ng-init="currentTime()" ng-style="{'background-color': greyBackground, 'margin': '0'}" class="accounts-container" ng-if="state === 'accounts'">
             <div class="nav-section">
                 <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
             </div>
@@ -60,6 +60,10 @@
         $scope.greyLabelColor = '#717171';
         $scope.lines = '#bcbcbc';
         $scope.ptmLines = '#cccccc';
+        
+
+        //website state
+        $scope.state = 'accounts';
 
         //orange 
         $scope.highlightedSection = '#f6f6f6';
@@ -102,6 +106,15 @@
         $scope.sampleChaseAccount = [
             { account: "CHASE SECURE BANKING (...0465)", type: "Checking", balance: "103.53", depositsThisMonth: "50.25", withdrawalsThisMonth: "23.76"}
         ];
+
+         // nav bar links
+         $scope.investmentsTemplate = function() {
+            $scope.state = 'investments';
+        }
+
+        $scope.accountsTemplate = function() {
+            $scope.state = 'accounts';
+        }
 
 
 
