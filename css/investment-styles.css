@@ -16,6 +16,25 @@
     width: 28%;
 }
 
+
+  /* raquel */
+/* latest news card */
+/* IDs */
+
+#latest-news-card-container {
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+}
+
+#indices-card-container {
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+}
+
+
+
 .cards {
     display: flex;
     flex-direction: column;
@@ -171,6 +190,5 @@ tbody tr td:first-child, thead tr th:first-child{
   }
 
 
-  /* raquel */
 
   
