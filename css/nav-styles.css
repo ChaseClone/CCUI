@@ -4,6 +4,35 @@
    
 }
 
+#nav-flag-icon-img {
+    width: 50%;
+}
+
+#nav-profile-icon-img {
+    width: 60%;
+}
+
+#nav-chase-icon-img {
+    width: 200%;
+    margin-top: -1%;
+}
+
+#nav-chase-icon-button {
+    margin-top: -10%;
+    margin-left: 15%;
+}
+
+#nav-profile-icon-button {
+    margin-top: -2%;
+}
+
+#sign-out-nav-button {
+    font-size: 14px;
+    
+}
+
+
+
 .nav-ul {
     list-style: none;
     display: flex;
@@ -16,7 +45,7 @@
     background: none;
     color: white;
     border: none;
-    font-size: 110%;
+    font-size: 105%;
     font-weight: 500;
     line-height: 24px;
     
@@ -28,7 +57,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    padding-top: 2%;
+    padding-right: 2%;
     
 }
 
@@ -44,5 +74,9 @@
     color: #0060F0;
     background-color: white;
     border-radius: 4px;
+    font-size: 14px;
 }
 
+#nav-hamburger-menu {
+    color: white;
+}
