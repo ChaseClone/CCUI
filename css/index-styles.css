@@ -4,3 +4,25 @@ body {
     background-color: #eceff1;
 }
 
+/*      
+        **Do all the media queries here**
+        I couldn't figure out why the media queries aren't working for the individual 
+        stylesheets but I don't think it is worth spending time to figure it out since they
+        work here.
+
+        we can use classes like page-body for stuff that is consistent throughout all the templates
+        im assuming all the templates change into columns at the same screen size, but 
+        still check before you add page-body to an element.
+
+        page-body is only for the container that holds the cards. in the accounts template, it does not include
+        the greeting at the top of the page.
+*/
+
+
+@media screen and (min-width: 795px) {
+    .page-body{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    }

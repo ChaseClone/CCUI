@@ -16,7 +16,7 @@
 <body ng-style="'background-color': greyBackground" >
     <div ng-app="chase-app" ng-controller="appCtrl" >
         <!--Accounts section-->
-        <div ng-init="currentTime()" ng-style="{'background-color': greyBackground, 'margin': '0'}" class="accounts-container">
+        <div ng-init="currentTime()" ng-style="{'background-color': greyBackground, 'margin': '0'}" class="accounts-container" ng-if="state === 'accounts'">
             <div class="nav-section">
                 <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
             </div>
@@ -24,6 +24,18 @@
                 <div ng-include="'accountsTemplate.html'"></div>
             </div>
         </div>
+
+          <!--Investments section-->
+          <div ng-style="{'background-color': 'white', 'margin': '0'}" class="investments-container" ng-if="state === 'investments'" >
+            <div class="nav-section">
+                <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
+            </div>
+            <div class="investments-child-bottom">
+                <div ng-include="'./investments/investmentsTemplate.html'"></div>
+                
+            </div>
+        </div>
+    </div>
 
 
     <script>
@@ -61,6 +73,10 @@
         $scope.lines = '#bcbcbc';
         $scope.state = 'accounts';
         $scope.ptmLines = '#cccccc';
+        
+
+        //website state
+        $scope.state = 'accounts';
 
         //orange 
         $scope.highlightedSection = '#f6f6f6';
@@ -100,6 +116,80 @@
         $scope.sampleExternalAccounts = [
             { account: "TD CHECKING (..4400)", type: "Checking", value: "154.96", timeUpdated: "10:57 AM ET", dateUpdated: "10/5/2023"}
         ];
+
+        $scope.sampleChaseAccount = [
+            { account: "CHASE SECURE BANKING (...0465)", type: "Checking", balance: "103.53", depositsThisMonth: "50.25", withdrawalsThisMonth: "23.76"}
+        ];
+
+         // nav bar links
+         $scope.investmentsTemplate = function() {
+            $scope.state = 'investments';
+        }
+
+        $scope.accountsTemplate = function() {
+            $scope.state = 'accounts';
+        }
+
+
+
+        //functions to toggle cards state
+        $scope.extendExternalAccounts = function(){
+            $scope.hasExtendedExternalAccounts = !$scope.hasExtendedExternalAccounts;
+            $scope.hasCollapsedExternalAccounts = true;
+            $scope.hasHalfExtendedExternalAccounts = false;
+        };
+
+        $scope.collapseExternalAccounts = function (){
+            $scope.hasCollapsedExternalAccounts = true;
+            $scope.hasHalfExtendedExternalAccounts = false;
+            $scope.hasExtendedExternalAccounts = false;
+        };
+
+        $scope.displayHalfExternalAccounts = function () {
+            $scope.hasHalfExtendedExternalAccounts = true;
+            $scope.hasExtendedExternalAccounts = false;
+            $scope.hasCollapsedExternalAccounts = false;
+
+        };
+
+        $scope.toggleBankAccountCard = function () {
+            $scope.isBankAccountCardExtended = !$scope.isBankAccountCardExtended;
+        };
+
+        //function to get date/time 
+//if we are going to use this function for other things like if 
+//someone updates something or posts something and we need to save the time, we are going to have to
+// refactor the if statements to handle times before 4 am because this isnt going to change
+// the variables for am and pm, or the transformed hour, minute, or time
+        $scope.currentTime = function () {
+            if ($scope.hour < 12 && $scope.hour > 3) {
+                $scope.transformedHour = $scope.hour;
+                $scope.amOrPM = 'AM';
+                $scope.timeSensitiveGreeting = "Good morning";
+            } else if($scope.hour === 12){
+                $scope.transformedHour = $scope.hour - 12;
+                $scope.amOrPM = 'PM';
+                $scope.showGreeting = false;
+            } else if($scope.hour > 12 && $scope.hour < 18) {
+                $scope.transformedHour = $scope.hour - 12;
+                $scope.amOrPM = 'PM';
+                $scope.timeSensitiveGreeting = "Good afternoon";
+            } else if($scope.hour >= 18 && $scope.hour <= 20) {
+                $scope.amOrPM = "PM";
+                $scope.transformedHour = $scope.hour - 12;
+                $scope.timeSensitiveGreeting = "Good evening";
+            } else {
+                $scope.showGreeting = false;
+            }
+
+            if($scope.minute > 10 ){
+                $scope.transformedMinute = "0" + $scope.minute;
+            } else {
+                $scope.transformedMinute = $scope.minute;
+            }
+            $scope.transformedTime = $scope.transformedHour + ":" + $scope.transformedMinute;
+        };
+
 
         })
     </script>
