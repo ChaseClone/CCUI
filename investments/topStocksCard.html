@@ -3,10 +3,12 @@
 <head>
 </head>
 <body>
-    <div class="left-cards" style="margin-top: 2%;">
-        <div class="rowContainer" style="align-items: center;">
-            <h3>Top Stocks</h3>
-            <i class="fas fa-info-circle" style="color: #4db2ff;"></i>
+    <div class="cards" id="top-stocks-card-container">
+
+    <div class="left-cards" id="top-stocks-card-content">
+        <div class="rowContainer" >
+            <h3 id="top-stocks-card-header" ng-style="{'color': cardHeaderColor}">Top Stocks</h3>
+            <div ng-include="'./investments/infoIcon.html'"></div>
         </div>
 
         <p style="margin-bottom: 2%;">Keep up to date with these and other stocks by adding them to your first watchlist.</p>
@@ -24,18 +26,17 @@
                 <tr>
                     <td>
                         <div class="rowContainer">
-                            <span style="margin-right: 3%;"><i class="fab fa-apple" style="font-size: 30px;"></i></span>
+                            <span style="margin-right: 3%;"><img class="top-stocks-card-logos" src="../images/apple-logo.png"></span>
                             <span style="display:flex; align-items: flex-start; flex-direction: column;">
                                 <span style="margin-bottom: 2px;"><a href="">AAPL</a></span>
-                                <span>Apple Inc</div>
-                            </span>
+                                <span>Apple Inc</span>
                         </div>
                     </td>
                     <td>
                         172.88
                     </td>
                     <td>
-                        <span style="color: red;">-2.58 (-1.47%)</span>
+                        <span ng-style="{'color': stocksNumbers}">-2.58 (-1.47%)</span>
                     </td>
                     <td style="display: flex; justify-content: end;">
                         <img src="https://placehold.jp/75x75.png" alt="">
@@ -44,18 +45,17 @@
                 <tr>
                     <td>
                         <div class="rowContainer">
-                            <span style="margin-right: 3%;"><i class="fab fa-apple" style="font-size: 30px;"></i></span>
+                            <span style="margin-right: 3%;"><img class="top-stocks-card-logos" src="../images/microsoft-logo.png"></span>
                             <span style="display:flex; align-items: flex-start; flex-direction: column;">
-                                <span style="margin-bottom: 2px;"><a href="">AAPL</a></span>
-                                <span>Apple Inc</div>
-                            </span>
+                                <span style="margin-bottom: 2px;"><a href="">MSFT</a></span>
+                                <span>Apple Inc</span>
                         </div>
                     </td>
                     <td>
                         172.88
                     </td>
                     <td>
-                        <span style="color: red;">-2.58 (-1.47%)</span>
+                        <span ng-style="{'color': stocksNumbers}">-2.58 (-1.47%)</span>
                     </td>
                     <td style="display: flex; justify-content: end;">
                         <img src="https://placehold.jp/75x75.png" alt="">
@@ -64,18 +64,17 @@
                 <tr>
                     <td>
                         <div class="rowContainer">
-                            <span style="margin-right: 3%;"><i class="fab fa-apple" style="font-size: 30px;"></i></span>
+                            <span style="margin-right: 3%;"><img class="top-stocks-card-logos" src="../images/google-logo.png"></span>
                             <span style="display:flex; align-items: flex-start; flex-direction: column;">
-                                <span style="margin-bottom: 2px;"><a href="">AAPL</a></span>
-                                <span>Apple Inc</div>
-                            </span>
+                                <span style="margin-bottom: 2px;"><a href="">GOOG</a></span>
+                                <span>Apple Inc</span>
                         </div>
                     </td>
                     <td>
                         172.88
                     </td>
                     <td>
-                        <span style="color: red;">-2.58 (-1.47%)</span>
+                        <span ng-style="{'color': stocksNumbers}">-2.58 (-1.47%)</span>
                     </td>
                     <td style="display: flex; justify-content: end;">
                         <img src="https://placehold.jp/75x75.png" alt="">
@@ -84,15 +83,17 @@
             </tbody>
         </table>
 
-        <div class="rowContainer" style="justify-content: space-around; width: 100%;">
+        <div class="rowContainer" style="justify-content: space-between; width: 100%; font-size: 12px;">
             <div class="rowContainer">
-                <div>As of 4:00 PM EDT 10/20/2023</div>
-                <i class="fas fa-info-circle" style="color: #4db2ff;"></i>
+                <div ng-style="{'color': lightGreyText}">As of 4:00 PM EDT 10/20/2023</div>
+                <div ng-include="'./investments/infoIcon.html'"></div>
             </div>
             <div class="btn-holder">
-                <button class="buttons">Read more stories</button>
+                <button id="top-stocks-card-create-watchlist-button"  class="buttons">Create a watchlist</button>
             </div>
         </div>
     </div>
+    </div>
+    </body>
 </body>
 </html>

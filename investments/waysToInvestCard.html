@@ -5,10 +5,12 @@
 <body>
     <div class="leftcontainer" style="margin-top: 0;">
         <div class="cards">
-            <h3>Ways to invest with J.P.Morgan</h3>
+            <div>
+            <h3 id="ways-to-invest-card-header" ng-style="{'color': cardHeaderColor}">Ways to invest with J.P.Morgan</h3>
+            </div>
             <div class="rowContainer">
                 <div class="sub-card">    
-                    <span>Logo</span>
+                    <span><img src="../images/trade-on-your-own-logo.svg"></span>
                     <span class="boldElement">Trade on your own</span>
                     <span class="fadeElement">Enjoy $0 commission online trades.</span>
                     <span>
@@ -16,7 +18,7 @@
                     </span>
                 </div>
                 <div class="sub-card">    
-                    <span>Logo</span>
+                    <span><img src="../images/work-with-team-logo.svg"></span>
                     <span class="boldElement">Work with a team of advisors</span>
                     <span class="fadeElement">Get a financial plan and be matched to expert-built portfolios.</span>
                     <span>
@@ -24,7 +26,7 @@
                     </span>
                 </div>
                 <div class="sub-card">    
-                    <span>Logo</span>
+                    <span><img src="../images/work-with-advisor-logo.svg"></span>
                     <span class="boldElement">Work 1:1 with an advisor</span>
                     <span class="fadeElement">Build a custom investment strategy.</span>
                     <span>
@@ -32,7 +34,9 @@
                     </span>
                 </div>
             </div>
+            
             <div class="rowContainer">
+                <hr ng-style="{'color': lines}">
                 <div class="sub-card">    
                     <span class="boldElement">Not sure where to begin?</span>
                     <span class="fadeElement">We can help you decide on the right approach.</span>
