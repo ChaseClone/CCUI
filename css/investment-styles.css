@@ -1,6 +1,10 @@
-.contentContainer {
+.investments-top-container {
     display: flex;
     flex-direction: row;
+}
+
+#investments-right-container {
+    margin-top: 0.8%;
 }
 
 .leftcontainer {
@@ -15,6 +19,154 @@
     flex-direction: column;
     width: 28%;
 }
+
+.buttons {
+    background: white;
+    border: 1px solid #0360f0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #0360f0;
+}
+
+
+
+td, thead, th, table {
+    border: none; /* Remove borders from all <td> elements */
+}
+
+td {
+    margin: 3% 0;
+}
+
+tr {
+    text-align: center;
+    border-bottom: 1px solid #bcbcbc;
+    width: 100%;
+}
+
+
+td img {
+    margin-top: 10%;
+}
+
+tbody tr td:first-child, thead tr th:first-child{
+    margin-right: 4rem;
+  }
+
+
+
+  
+
+
+  /* raquel */
+/*investments template global styles */
+/* IDs */
+
+
+/* latest news card */
+/* IDs */
+
+#latest-news-card-container {
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+    padding: 6%;
+}
+
+#latest-news-card-header {
+    font-size: 16px;
+    padding-top: 2%;
+}
+
+/* indices card */
+/* IDs */
+
+#indices-card-container {
+    padding: 4%;
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+}
+
+
+#indices-card-header {
+font-size: 16px;
+}
+
+
+/*ways to invest card */
+/* IDs */
+
+#ways-to-invest-card-header {
+    font-size: 18px;
+}
+
+/* top stories */
+/* IDs */
+#top-stories-card-container {
+  
+}
+#top-stories-card-header {
+    font-size: 16px;
+}
+
+#top-stories-card-read-more-button-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+   
+}
+
+/*  info icon */
+.info-circle-button {
+    border: 1.5px solid #0060f0;
+    border-radius: 50%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: -10;
+    font-size: 10px;
+    font-weight: 500;
+    padding-left: 5.5px;
+    padding-right: 5.5px;
+
+   
+    
+}
+
+/* top stocks */
+/* classes*/
+.top-stocks-card-logos {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+
+
+/* IDs */
+#top-stocks-card-container {
+    width: 100%;
+}
+
+#top-stocks-card-content {
+    width: 100%;
+}
+
+#top-stocks-card-header {
+    font-size: 16px;
+}
+
+#top-stocks-card-create-watchlist-button {
+    padding-top: 1px;
+}
+
+
 
 .cards {
     display: flex;
@@ -33,15 +185,15 @@
 .left-cards {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border: 1px solid #bcbcbc;
     border-radius: 6px;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 1%;
-    padding: 2%;
+    margin: 2%;
+    
+}
+
+.right-cards {
+    margin: 2%;
 }
 
 .cards h3, .cards h6 {
@@ -76,18 +228,19 @@
 
 .btn-holder {
     display: flex;
-    justify-content: flex-end; 
-    width: 100%;
+    justify-content: flex-start; 
+    
 }
 
 .rowContainer {
     display: flex;
     margin-top: 2%;
+   
 }
 
 .flexContainer {
     display: flex;
-    align-items: center;
+   
     justify-content: space-between;
     margin: 2%;
 }
@@ -134,43 +287,3 @@
 }
 
 
-.buttons {
-    background: white;
-    border: 1px solid #0360f0;
-    border-radius: 4px;
-    font-size: 16px;
-    padding-bottom: 4px;
-    padding-top: 4px;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-weight: 400;
-    color: #0360f0;
-}
-
-td, thead, th, table {
-    border: none; /* Remove borders from all <td> elements */
-}
-
-td {
-    margin: 3% 0;
-}
-
-tr {
-    text-align: center;
-    border-bottom: 1px solid #bcbcbc;
-    width: 100%;
-}
-
-
-td img {
-    margin-top: 10%;
-}
-
-tbody tr td:first-child, thead tr th:first-child{
-    margin-right: 4rem;
-  }
-
-
-  /* raquel */
-
-  

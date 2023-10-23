@@ -5,7 +5,9 @@
 </head>
 <body class="investments-body">
         <div class="flexContainer">
-            <h1 style="font-size: x-large;">J.P.Morgan</h1>
+            <div id="investments-template-jpmorgan-header-img-div">
+            <h1 id="investments-template-jpmorgan-header-img"><img src="../images/jpmorgan-header-logo.svg"></h1>
+            </div>
             <div>
                 <i class="fas fa-search" style="color: #004cff;"></i>
                 <a href="">Search stocks, ETFs and more</a>
@@ -14,22 +16,18 @@
 
         <!-- Left container stuff -->
         
-        <div class="contentContainer" >
-            <div style="width: 70%;">
-                <div ng-include="'./investments/waysToInvestCard.html'"></div>
-                <div ng-include="'./investments/topStoriesCard.html'"></div>
-                <div ng-include="'./investments/topStocksCard.html'"></div>
+        <div class="investments-top-container" >
+            <div id="investments-left-container">
+                <div class="left-cards" ng-include="'./investments/waysToInvestCard.html'"></div>
+                <div class="left-cards" ng-include="'./investments/topStoriesCard.html'"></div>
+                <div class="left-cards" ng-include="'./investments/topStocksCard.html'"></div>
             </div>
             
             <!-- Right container stuff -->
 
-            <div class="rightcontainer">
-                <div class="left-cards">
-                    <h3>Indices</h3>
-                    <span class="fadeElement">It looks like this part of the site isn't working right now. Please try again later.</span>
-                </div>
-
-                <div ng-include="'./investments/latestNewsCard.html'"></div>
+            <div id="investments-right-container">
+                <div class="right-cards" ng-include="'./investments/indicesCard.html'"></div>
+                <div class="right-cards" ng-include="'./investments/latestNewsCard.html'"></div>
             </div>
         </div>
 </body>
