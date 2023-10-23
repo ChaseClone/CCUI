@@ -17,7 +17,7 @@
 <body ng-style="'background-color': greyBackground" >
     <div ng-app="chase-app" ng-controller="appCtrl" >
         <!--Accounts section-->
-        <div ng-init="currentTime()" ng-style="{'background-color': greyBackground, 'margin': '0'}" class="accounts-container">
+        <div ng-init="currentTime()" ng-style="{'background-color': greyBackground, 'margin': '0'}" class="accounts-container" ng-if="state === 'accounts'">
             <div class="nav-section">
                 <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
             </div>
@@ -28,7 +28,7 @@
         </div>
 
         <!--Investments section-->
-        <div ng-style="{'background-color': 'white', 'margin': '0'}" class="accounts-container" ng-if="state === 'investments'">
+        <div ng-style="{'background-color': 'white', 'margin': '0'}" class="accounts-container" ng-if="state === 'investments'" >
             <div class="nav-section">
                 <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
             </div>
@@ -119,8 +119,13 @@
             [{ account: "TD CHECKING (..4400)", type: "Checking", value: "154.96", timeUpdated: "10:57 AM ET", dateUpdated: "10/5/2023"}]
         };
 
+        // nav bar links
         $scope.investmentsTemplate = function() {
             $scope.state = 'investments';
+        }
+
+        $scope.accountsTemplate = function() {
+            $scope.state = 'accounts';
         }
     });
     </script>
