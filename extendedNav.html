@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/nav-styles.css">
+</head>
+<body id="nav-body">
+    <div class="nav-container">
+        <div id="top-nav-container">
+            <div id="nav-right-links">
+                <ul class="nav-ul" id="nav-left-ul">
+                <li><span id="nav-hamburger-menu" class="material-icons">menu</span></li>
+                <li id="nav-chase-icon-button" ><button class="nav-button"><img id="nav-chase-icon-img" src="images/icons8-chase-bank.svg" alt="chase logo"></button></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav-ul"  id="nav-left-links">
+                <li><button class="nav-button"><span class="material-symbols-outlined">search</span></button></li>
+                <li><button class="nav-button"><img id="nav-flag-icon-img" src="images/icons8-flag-48.png" alt="flag logo"></button></li>
+                <li id="nav-profile-icon-button"><button class="nav-button"><img id="nav-profile-icon-img" src="images/profile.icon.png" alt="profile logo"></button></li>
+                <li><button class="nav-button" id="explore-prod-nav-button">Explore Products</button></li>
+                <li><button class="nav-button" id="sign-out-nav-button">Sign Out</button></li>
+                </ul>
+            </div>
+            </div>
+    <div id="bottom-nav">
+        <ul class="nav-ul" id="nav-bottom-ul" ng-style="{'font-size': '16px'}">
+            <li><button class="nav-button" ng-click="accountsTemplate()">Accounts</button></li>
+            <li><button class="nav-button">Pay & Transfer</button></li>
+            <li><button class="nav-button">Plan & Track</button></li>
+            <li><button class="nav-button" ng-click="investmentsTemplate()" ng-click="investmentsTemplate()" >Investments</button></li>
+            <li><button class="nav-button">Security & Privacy</button></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
