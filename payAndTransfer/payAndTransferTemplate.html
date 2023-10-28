@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div ng-include="'./payAndTransfer/payBillsSendMoneyWithZelleTemplate.html'" ng-if="state === 'payBillsZelleTemp'"></div>
+        <div ng-include="'./payAndTransfer/transferMoneyTemplate.html'" ng-if="state === 'transferMoneyTemp'"></div>
+        <div ng-include="'./payAndTransfer/sendAGiftTemplate.html'" ng-if="state === 'sendAGiftTemp'"></div>
+        <div ng-include="'./payAndTransfer/paymentActivityTemplate.html'" ng-if="state === 'paymentActivityTemp'"></div>
+    </body>
+</html>
