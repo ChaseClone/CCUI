@@ -8,8 +8,8 @@
         <div ng-include="'./payAndTransfer/navs/sendAGiftNav.html'"></div>
         </div>
         <div>
-            <div ng-include="'./payAndTransfer/sections/sendAGiftSection.html'" ng-if="showSendAGiftSection"></div>
-            <div ng-include="'./payAndTransfer/sections/giftActivitySection.html'" ng-if="showGiftActivitySection"></div>
+            <div ng-if="showSendAGiftSection" ng-include="'./payAndTransfer/sections/sendAGiftSection.html'" ng-if="showSendAGiftSection"></div>
+            <div ng-if="showGiftActivitySection" ng-include="'./payAndTransfer/sections/giftActivitySection.html'" ng-if="showGiftActivitySection"></div>
         </div>
     </body>
 </html> 
