@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="">
+        <div ng-include="'./payAndTransfer/navs/paymentActivityNav.html'"></div>
+        </div>
+        <div>
+            <div ng-include="'./payAndTransfer/sections/paySection.html'" ng-if="showPaySection"></div>
+            <div ng-include="'./payAndTransfer/sections/paymentActivitySection.html'" ng-if="showPaymentActivitySection"></div>
+        </div>
+    </body>
+</html> 
