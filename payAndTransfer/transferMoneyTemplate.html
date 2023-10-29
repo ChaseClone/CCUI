@@ -5,7 +5,12 @@
     </head>
     <body>
         <div id="">
-        <div ng-include="'transferMoneyNav.html'"></div>
+        <div ng-include="'./payAndTransfer/transferMoneyNav.html'"></div>
+        </div>
+        <div>
+            <div ng-include="'./payAndTransfer/scheduleTransferSection.html'" ng-if="showScheduleTransferSection"></div>
+            <div ng-include="'./payAndTransfer/transferActivitySection.html'" ng-if="showTransferActivitySection"></div>
+            <div ng-include="'./payAndTransfer/externalAccountsSection.html'" ng-if="showExternalAccountsSection"></div>
         </div>
     </body>
 </html> 

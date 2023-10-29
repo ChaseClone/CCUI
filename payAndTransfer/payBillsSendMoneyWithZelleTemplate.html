@@ -4,8 +4,13 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <div id="">
-        <div ng-include="'payBillSendMoneyWithZelleNav.html'"></div>
+        <div>
+        <div ng-include="'./payAndTransfer/payBillSendMoneyWithZelleNav.html'"></div>
         </div>
+        <div>
+            <div ng-if="showPaySection" ng-include="'./payAndTransfer/paySection.html'"></div>
+            <div ng-if="showPaymentActivitySection" ng-include="'./payAndTransfer/paymentActivitySection.html'"></div>
+        </div>
+
     </body>
 </html> 

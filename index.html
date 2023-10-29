@@ -33,10 +33,33 @@
             </div>
             <div class="investments-child-bottom">
                 <div ng-include="'./investments/investmentsTemplate.html'"></div>
-                
             </div>
         </div>
+    
+
+    <!-- test dropdown/ delete this later-->
+    <div ng-style="{'background-color': greyBackground, 'margin': '0'}" class="test-dropdown-container" ng-if="state === 'testdropdown'" >
+        <div class="nav-section">
+            <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
+        </div>
+        <div class="test-dropdown-child-bottom">
+            <div ng-include="'./payAndTransfer/testDropDownDeleteLater.html'"></div>
+        </div>
     </div>
+
+
+    <!-- pay and transfer -->
+    <div ng-style="{'background-color': greyBackground, 'margin': '0'}" class="pay-and-transfer-container" ng-if="state === 'payAndTransfer'" >
+        <div class="nav-section">
+            <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
+        </div>
+        <div class="pay-and-transfer-child-bottom">
+            <div ng-include="'./payAndTransfer/payAndTransferTemplate.html'"></div>
+        </div>
+    </div>
+</div>
+
+
 
     <script>
         var app = angular.module('chase-app', []);
@@ -77,9 +100,13 @@
         //red 
         $scope.stocksNumbers = '#BF2155';
         
-
+        //test state
+        
+        
         //website state
         $scope.state = 'accounts';
+        $scope.stateOfPayAndTransfer = 'payBillsZelleTemp';
+
 
         //orange 
         $scope.highlightedSection = '#f6f6f6';
@@ -112,6 +139,21 @@
         $scope.hasExtendedExternalAccounts = true;
         $scope.isBankAccountCardExtended =  true;
 
+        //toggle sections of pay & transfer 
+
+        $scope.showPaySection = true;
+        $scope.showPaymentActivitySection = false;
+
+        //send a gift template
+        $scope.showSendAGiftSection = true;
+        $scope.showGiftActivitySection = false;
+
+        //transfer money template
+        $scope.showTransferActivitySection = false;
+        $scope.showScheduleTransferSection = true;
+        $scope.showExternalAccountsSection = false;
+
+
         $scope.sampleExternalAccounts = [
             { account: "TD CHECKING (..4400)", type: "Checking", value: "154.96", timeUpdated: "10:57 AM ET", dateUpdated: "10/5/2023"}
         ];
@@ -139,6 +181,76 @@
             $scope.state = 'accounts';
         }
 
+        $scope.payAndTransferDropdown = function() {
+            $scope.state = 'testdropdown';
+        }
+
+        //pay & transfer sections
+
+        $scope.payBillsZelleTemplate = function() {
+            $scope.state = 'payAndTransfer';
+            $scope.payAndTransferSec = 'payBillsZelleTemp';
+            
+        }
+
+        $scope.transferMoneyTemplate = function() {
+            $scope.state = 'payAndTransfer';
+            $scope.payAndTransferSec = 'transferMoneyTemp';
+        }
+
+        $scope.paymentActivityTemplate = function() {
+            $scope.state = 'payAndTransfer';
+            $scope.payAndTransferSec = 'paymentActivityTemp';
+
+            //we have to switch which section opens 
+            //first for this tab
+            $scope.showPaySection = false;
+            $scope.showPaymentActivitySection = true;
+        }
+
+        $scope.sendAGiftTemplate = function() {
+            $scope.state = 'payAndTransfer';
+            $scope.payAndTransferSec = 'sendAGiftTemp';
+        }
+
+        //pay and transfer sub sections
+        $scope.togglePaySection = function () {
+            $scope.showPaySection = true;
+            $scope.showPaymentActivitySection = false;
+        }
+        
+        $scope.togglePaymentActivitySection = function () {
+            $scope.showPaymentActivitySection = true;
+            $scope.showPaySection = false;
+        }
+
+        $scope.toggleExternalAccountsSection = function() {
+            $scope.showExternalAccountsSection = true;
+            $scope.showScheduleTransferSection = false;
+            $scope.showTransferActivitySection = false;
+        }
+
+        $scope.toggleGiftActivitySection = function() {
+            $scope.showGiftActivitySection = true;
+            $scope.showSendAGiftSection = false;
+        }
+
+        $scope.toggleSendAGiftSection = function () {
+            $scope.showSendAGiftSection = true;
+            $scope.showGiftActivitySection = false;
+        }
+
+        $scope.toggleScheduleTransferSection = function() {
+            $scope.showScheduleTransferSection = true;
+            $scope.showTransferActivitySection = false;
+            $scope.showExternalAccountsSection = false;
+        }
+
+        $scope.toggleTransferActivitySection = function() {
+            $scope.showExternalAccountsSection = false;
+            $scope.showTransferActivitySection = true;
+            $scope.showScheduleTransferSection = false;
+        }
 
 
         //functions to toggle cards state
@@ -148,13 +260,13 @@
             $scope.hasHalfExtendedExternalAccounts = false;
         };
 
-        $scope.collapseExternalAccounts = function (){
+        $scope.collapseExternalAccounts = function(){
             $scope.hasCollapsedExternalAccounts = true;
             $scope.hasHalfExtendedExternalAccounts = false;
             $scope.hasExtendedExternalAccounts = false;
         };
 
-        $scope.displayHalfExternalAccounts = function () {
+        $scope.displayHalfExternalAccounts = function() {
             $scope.hasHalfExtendedExternalAccounts = true;
             $scope.hasExtendedExternalAccounts = false;
             $scope.hasCollapsedExternalAccounts = false;
