@@ -2,10 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./payAndTransfer/css/templates.css">
     </head>
     <body>
         <div>
-        <div ng-include="'./payAndTransfer/navs/payBillSendMoneyWithZelleNav.html'"></div>
+        <div class="nav-file" ng-include="'./payAndTransfer/navs/payBillSendMoneyWithZelleNav.html'"></div>
         </div>
         <div>
             <div ng-if="showPaySection" ng-include="'./payAndTransfer/sections/paySection.html'"></div>

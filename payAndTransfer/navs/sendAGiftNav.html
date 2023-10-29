@@ -2,12 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./payAndTransfer/css/navs-styles.css">
     </head>
-    <body>
-        <ul class="nav-ul">
-            <li>Send a gift</li>
-            <li><button ng-click="toggleSendAGiftSection()">Send a gift</button></li>
-            <li><button ng-click="toggleGiftActivitySection()">Gift activity</button></li>
-        </ul>
+    <body class="navs-container">
+        <div class="all-navs">
+            <div class="title-in-nav">Send a gift</div>
+            <div ng-style="{'color': cardText}"><button class="all-navs-buttons" ng-click="toggleSendAGiftSection()">Send a gift</button></div>
+            <div ng-style="{'color': cardText}"><button class="all-navs-buttons" ng-click="toggleGiftActivitySection()">Gift activity</button></div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,43 @@
+/* all navs */
+.navs-container {
+    width: 100%;
+}
+
+.all-navs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: 450;
+    background-color: white;
+ 
+    
+
+    
+    
+}
+
+.all-uls {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.title-in-nav {
+    display: flex;
+    color: white;
+    background-color: #128842;
+    
+}
+
+.all-navs-buttons {
+    padding: 0.6%;
+    border: none;
+    box-shadow: none;
+    background: white;
+    margin-left: 2%;
+ 
+   
+    
+}

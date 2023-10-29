@@ -2,14 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./payAndTransfer/css/navs-styles.css">
     </head>
-    <body>
-        
-        <ul class="nav-ul">
-            <li>Transfer Money</li>
-            <li><button  ng-click="toggleScheduleTransferSection()">Schedule transfer</button></li>
-            <li><button ng-click="toggleTransferActivitySection()">Transfer Activity</button></li>
-            <li><button ng-click="toggleExternalAccountsSection()">External Accounts</button></li>
-        </ul>
+    <body class="navs-container">
+        <div class="all-navs">
+            <div class="title-in-nav">Transfer Money</div>
+            <div ng-style="{'color': cardText}"><button class="all-navs-buttons" ng-click="toggleScheduleTransferSection()">Schedule transfer</button></div>
+            <div ng-style="{'color': cardText}"><button class="all-navs-buttons" ng-click="toggleTransferActivitySection()">Transfer Activity</button></div>
+            <div ng-style="{'color': cardText}"><button class="all-navs-buttons" ng-click="toggleExternalAccountsSection()">External Accounts</button></div>
+        </div>
     </body>
 </html>

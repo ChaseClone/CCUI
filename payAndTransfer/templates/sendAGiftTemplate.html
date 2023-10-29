@@ -2,10 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./payAndTransfer/css/templates.css">
     </head>
     <body>
         <div id="">
-        <div ng-include="'./payAndTransfer/navs/sendAGiftNav.html'"></div>
+        <div class="nav-file" ng-include="'./payAndTransfer/navs/sendAGiftNav.html'"></div>
         </div>
         <div>
             <div ng-if="showSendAGiftSection" ng-include="'./payAndTransfer/sections/sendAGiftSection.html'" ng-if="showSendAGiftSection"></div>
