@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="css/accounts-styles.css">
+    <link rel="stylesheet" href="./accounts/css/accounts-styles.css">
 </head>
 <body class="accounts-body">
     <div class="accounts-body-container" ng-style="{'background-color': greyBackground}">
@@ -10,21 +10,21 @@
     <div class="page-body" class="accounts-top-container">
     <div class="accounts-left-container">
         <!--Bank accounts cards-->
-        <div class="extended-bank-accounts" ng-if="isBankAccountCardExtended" ng-include="'extendedBankAccountCard.html'"></div>
-        <div class="bank-accounts" ng-if="isBankAccountCardExtended === false" ng-include="'bankAccountsCard.html'"></div>
+        <div class="extended-bank-accounts" ng-if="isBankAccountCardExtended" ng-include="'./accounts/cards/extendedBankAccountCard.html'"></div>
+        <div class="bank-accounts" ng-if="isBankAccountCardExtended === false" ng-include="'./accounts/cards/bankAccountsCard.html'"></div>
         <!--External accounts cards-->
-        <div class="external-accounts" ng-if="hasCollapsedExternalAccounts" ng-hide="hasExtendedExternalAccounts || hasHalfExtendedExternalAccounts" ng-include="'externalAccountsCard.html'"></div>
-        <div class="half-extended-external-accounts" ng-if="hasHalfExtendedExternalAccounts" ng-hide="hasCollapsedExternalAccounts || hasExtendedExternalAccounts" ng-include="'halfExtendedExternalAccountsCard.html'"></div>
-        <div class="extended-external-accounts" ng-if="hasExtendedExternalAccounts" ng-include="'extendedExternalAccountsCard.html'"></div>
-        <div class="get-notified" ng-if="isEnrolledInNotifications === false" ng-include="'getNotifiedCard.html'"></div>
-        <div class="see-all-transactions" ng-include="'seeAllTransactionsCard.html'"></div>
+        <div class="external-accounts" ng-if="hasCollapsedExternalAccounts" ng-hide="hasExtendedExternalAccounts || hasHalfExtendedExternalAccounts" ng-include="'./accounts/cards/externalAccountsCard.html'"></div>
+        <div class="half-extended-external-accounts" ng-if="hasHalfExtendedExternalAccounts" ng-hide="hasCollapsedExternalAccounts || hasExtendedExternalAccounts" ng-include="'./accounts/cards/halfExtendedExternalAccountsCard.html'"></div>
+        <div class="extended-external-accounts" ng-if="hasExtendedExternalAccounts" ng-include="'./accounts/cards/extendedExternalAccountsCard.html'"></div>
+        <div class="get-notified" ng-if="isEnrolledInNotifications === false" ng-include="'./accounts/cards/getNotifiedCard.html'"></div>
+        <div class="see-all-transactions" ng-include="'./accounts/cards/seeAllTransactionsCard.html'"></div>
     </div>
 
     <div class="accounts-right-container">
-        <div class="plan-track-manage" ng-include="'planTrackManageCard.html'"></div>
-        <div class="explore-products" ng-include="'exploreProductsCard.html'"></div>
-        <div class="chase-offers" ng-include="'chaseOffersCard.html'"></div>
-        <div class="help-and-support" ng-include="'helpAndSupportCard.html'"></div>
+        <div class="plan-track-manage" ng-include="'./accounts/cards/planTrackManageCard.html'"></div>
+        <div class="explore-products" ng-include="'./accounts/cards/exploreProductsCard.html'"></div>
+        <div class="chase-offers" ng-include="'./accounts/cards/chaseOffersCard.html'"></div>
+        <div class="help-and-support" ng-include="'./accounts/cards/helpAndSupportCard.html'"></div>
     </div>
   </div>
 </div>
