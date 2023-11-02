@@ -112,6 +112,15 @@
         $scope.highlightedSection = '#f6f6f6';
     
         //user states
+        $scope.recentPaymentsMessage = "You have no scheduled payments right now.";
+        $scope.repeatingPaymentSeriesMessage = "You don't have any active repeating payment series."
+        $scope.sampleUser = [
+            {firstName: 'Raquel', lastName: 'Cruz', username: 'raquelcruz', password: 'testPassword123', birthDate: '06/01/2000'}
+        ];
+        $scope.sampleUserData = [
+            {username: "raquelcruz", paymentsDue: "0", scheduledPaymentsMessage:  $scope.recentPaymentsMessage, repeatingPaymentSeriesMessage: $scope.repeatingPaymentSeriesMessage}
+        ];
+        $scope.sampleUserData =
         $scope.isEnrolledInNotifications = false;
 
         //user external account info

@@ -5,6 +5,11 @@
     </head>
     <body>
         <div>
+            <div>
+                <div><h1>Transfer from</h1></div>
+                <select ng-options="account as account.account for account in sampleChaseAccount track by account" ng-model="selected"></select>
+                <option value="" disabled selected>View current values</option>
+            </div>
             
         </div>
     </body>
