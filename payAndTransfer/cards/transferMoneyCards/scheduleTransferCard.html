@@ -9,6 +9,13 @@
                 <div><h1>Transfer from</h1></div>
                 <select ng-options="account as account.account for account in sampleChaseAccount track by account" ng-model="selected"></select>
                 <option value="" disabled selected>View current values</option>
+
+                <!--
+                    <select>
+        <option ng-repeat="i in [].constructor(length) track by $index">{{items[$index].label}}</option>
+      </select>
+    </div>
+                -->
             </div>
             
         </div>
