@@ -100,12 +100,11 @@
         //red 
         $scope.stocksNumbers = '#BF2155';
         
-        //test state
-        
-        
         //website state
         $scope.state = 'accounts';
         $scope.stateOfPayAndTransfer = 'payBillsZelleTemp';
+        $scope.clickedSelectTransferFrom = false;
+        $scope.clickedSelectTransferTo = false;
 
 
         //orange 
@@ -114,13 +113,6 @@
         //user states
         $scope.recentPaymentsMessage = "You have no scheduled payments right now.";
         $scope.repeatingPaymentSeriesMessage = "You don't have any active repeating payment series."
-        $scope.sampleUser = [
-            {firstName: 'Raquel', lastName: 'Cruz', username: 'raquelcruz', password: 'testPassword123', birthDate: '06/01/2000'}
-        ];
-        $scope.sampleUserData = [
-            {username: "raquelcruz", paymentsDue: "0", scheduledPaymentsMessage:  $scope.recentPaymentsMessage, repeatingPaymentSeriesMessage: $scope.repeatingPaymentSeriesMessage}
-        ];
-        $scope.sampleUserData =
         $scope.isEnrolledInNotifications = false;
 
         //user external account info
@@ -162,17 +154,7 @@
         $scope.showScheduleTransferSection = true;
         $scope.showExternalAccountsSection = false;
 
-
-        $scope.sampleExternalAccounts = [
-            { account: "TD CHECKING (..4400)", type: "Checking", value: "154.96", timeUpdated: "10:57 AM ET", dateUpdated: "10/5/2023"}
-        ];
-        
-
-        //functions
-        $scope.extendExternalAccounts = function(){
-            $scope.hasExtendedExternalAccounts = !$scope.hasExtendedExternalAccounts;
-        };
-
+        //sample data/ arrays for accounts
         $scope.sampleExternalAccounts = [
             { account: "TD CHECKING (..4400)", type: "Checking", value: "154.96", timeUpdated: "10:57 AM ET", dateUpdated: "10/5/2023"}
         ];
@@ -180,6 +162,23 @@
         $scope.sampleChaseAccount = [
             { account: "CHASE SECURE BANKING (...0465)", type: "Checking", balance: "103.53", depositsThisMonth: "50.25", withdrawalsThisMonth: "23.76"}
         ];
+        
+        $scope.sampleUser = [
+            {firstName: 'Raquel', lastName: 'Cruz', username: 'raquelcruz', password: 'testPassword123', birthDate: '06/01/2000'}
+        ];
+        $scope.sampleUserData = [
+            {username: "raquelcruz", paymentsDue: "0", scheduledPaymentsMessage:  $scope.recentPaymentsMessage, repeatingPaymentSeriesMessage: $scope.repeatingPaymentSeriesMessage}
+        ];
+
+        //lengths/count of data
+        $scope.sampleChaseAccountLength = $scope.sampleChaseAccount.length;
+        $scope.sampleExternalAccountsLength = $scope.sampleExternalAccounts.length;
+        $scope.sampleUserLength = $scope.sampleUser.length;
+
+        //functions
+        $scope.extendExternalAccounts = function(){
+            $scope.hasExtendedExternalAccounts = !$scope.hasExtendedExternalAccounts;
+        };
 
          // nav bar links
          $scope.investmentsTemplate = function() {
@@ -286,6 +285,12 @@
             $scope.isBankAccountCardExtended = !$scope.isBankAccountCardExtended;
         };
 
+        $scope.toggleSelectTransferFrom = function () {
+            $scope.clickedSelectTransferFrom = true;
+        }
+        $scope.toggleSelectTransferTo = function () {
+            $scope.clickedSelectTranferTo = true;
+        }
         //function to get date/time 
 //if we are going to use this function for other things like if 
 //someone updates something or posts something and we need to save the time, we are going to have to

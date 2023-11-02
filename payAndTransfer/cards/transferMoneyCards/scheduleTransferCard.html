@@ -7,15 +7,26 @@
         <div>
             <div>
                 <div><h1>Transfer from</h1></div>
-                <select ng-options="account as account.account for account in sampleChaseAccount track by account" ng-model="selected"></select>
-                <option value="" disabled selected>View current values</option>
+                <div>
+                <select ng-click="toggleSelectTransferFrom()">
+                    <option ng-if="clickedSelectTransferFrom === false" value="choose">Choose an account</option>
+                <option ng-if="clickedSelect" ng-repeat="i in [].constructor(sampleChaseAccountLength) track by $index">{{sampleChaseAccount[$index].account}}</option>
+                </select>
+                </div>
+                <div><p>Don't see your account?</p><button>Add an external checking or savings account</button></div>
+            </div>
 
-                <!--
-                    <select>
-        <option ng-repeat="i in [].constructor(length) track by $index">{{items[$index].label}}</option>
-      </select>
-    </div>
-                -->
+            <div>
+                <div><h2>Transfer To</h2></div>
+                <div>
+                    <select ng-click="toggleSelectTransferTo">
+                        <option ng-if="clickedSelectTransferTo === false" value="choose">Choose an account</option>
+                        <option ng-repeat="ng-repeat="i in [].constructor(sampleExternalAccountsLength)">{{sampleExternalAccounts[$index].account}}</option>
+                    </select>
+                </div>
+                <div><div><p>Don't see your account?</p><button>Add an external checking or savings account</button></div></div>
+            </div>
+               
             </div>
             
         </div>
