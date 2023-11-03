@@ -5,6 +5,24 @@
     </head>
     <body>
         <div>
+           <div>
+            <div><h1>Manage external accounts</h1></div>
+            <div><button><span class="material-symbols-outlined">add_circle</span></button></div>
+           </div>
+           <div>
+            <table>
+                <tr>
+                    <th>Account <span class="material-symbols-outlined">arrow_drop_up</span></th>
+                    <th>Status <span class="material-symbols-outlined">expand_all</span></th>
+                    <th>Account type <span class="material-symbols-outlined">expand_all</span></th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                <td ng-repeat="account in sampleExternalAccounts"><div><div>{{account.account}}</div> <div>{{account.status}}</div> <div>{{account.type}}</div> <div><button>See details</button></div> </div></td>
+                </tr>
+            </table>
+           </div>
             
         </div>
     </body>
