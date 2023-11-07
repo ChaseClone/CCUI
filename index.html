@@ -49,10 +49,16 @@
 
 
     <!-- pay and transfer -->
-    <div ng-style="{'background-color': greyBackground, 'margin': '0'}" class="pay-and-transfer-container" ng-if="state === 'payAndTransfer'" >
+    <div ng-style="{'margin': '0'}" class="pay-and-transfer-container" ng-if="state === 'payAndTransfer'" >
         <div class="nav-section">
             <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
-        </div>
+            </div>
+             
+             <div ng-sty ng-if="payAndTransferSec === 'sendAGiftTemp'" class="nav-file" ng-include="'./payAndTransfer/navs/sendAGiftNav.html'"></div>
+             <div ng-if="payAndTransferSec === 'payBillsZelleTemp'" class="nav-file" ng-include="'./payAndTransfer/navs/payBillSendMoneyWithZelleNav.html'"></div>
+             <div ng-if="payAndTransferSec === 'paymentActivityTemp'" class="nav-file" ng-include="'./payAndTransfer/navs/paymentActivityNav.html'"></div>
+             <div ng-if="payAndTransferSec === 'transferMoneyTemp'" class="nav-file" ng-include="'./payAndTransfer/navs/transferMoneyNav.html'"></div>
+             
         <div class="pay-and-transfer-child-bottom">
             <div ng-include="'./payAndTransfer/templates/payAndTransferTemplate.html'"></div>
         </div>
