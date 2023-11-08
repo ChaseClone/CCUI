@@ -7,7 +7,12 @@
 }
 
 .security-body-leftContainer {
-    width: 55%;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.security-body-rightContainer {
+    width: 50%;
 }
 
 .security-title-header {
@@ -94,9 +99,10 @@
 
 /* ====================== */
 .security-body-container {
-    width: 90%;
     margin: 18px 24px 0 24px;
     background-color: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .security-card-container {
@@ -199,3 +205,35 @@ dd {
 
 
 
+/* ========== */
+
+.linked-cards-bot{
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.linked-cards-bot img {
+    height: 72px;
+    width: 72px;
+}
+
+.linked-card-msg {
+    font-weight: 400;
+    padding-top: 4px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    color: #565a5d;
+    font-size: 14px;
+    line-height: 1.25rem;
+}
+
+
+/* ======= */
+
+.market-bot .market-card {
+    border-bottom: none!important;
+    margin-top: .6em;
+}
