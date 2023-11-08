@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./payAndTransfer/css/cards.css">
+    </head>
+    <body>
+        <div>
+            <div><button>Set up recurring payments</button><span class="material-symbols-outlined">arrow_forward_ios</span></div>
+            <div><div ng-include="'./payAndTransfer/icons/collapse-icon.html'"></div></div>
+            <div><span class="material-symbols-outlined">print</span></div>
+        </div>
+        <div>
+            <div><button>Payee</button><span class="material-symbols-outlined">arrow_drop_up</span></div>
+            <div><button>Frequency</button><span class="material-symbols-outlined">arrow_drop_down</span></div>
+            <div><button>Next payment</button><span class="material-symbols-outlined">arrow_drop_down</span></div>
+            <div><button>Amount</button><span class="material-symbols-outlined">arrow_drop_down</span></div>
+        </div>
+        <div>
+            <div><p>{{sampleUserData[0].repeatingPaymentSeriesMessage}}</p></div>
+            <div><p>The <button>Bill Payments and Transfers Agreement</button> applies.</p></div>
+        </div>
+    </body>
+</html>

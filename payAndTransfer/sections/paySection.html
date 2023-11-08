@@ -2,10 +2,20 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./payAndTransfer/css/sections.css">
     </head>
     <body>
-        <div>
-            <div>sOME RanDom ContEnt3</div>
+        <div id="pay-section-container">
+            <div id="pay-section-left-container">
+            <div class="pay-section-cards" ng-include="'./payAndTransfer/cards/payCards/paymentsDueCard.html'"></div>
+            <div class="pay-section-cards"  ng-include="'./payAndTransfer/cards/payCards/recipientListCard.html'"></div>
+            </div>
+
+            <div id="pay-section-right-container">
+                <div class="pay-section-cards"  ng-include="'./payAndTransfer/cards/payCards/accountBalanceCard.html'"></div>
+                <div class="pay-section-cards"  ng-include="'./payAndTransfer/cards/payCards/recentPaymentsCard.html'"></div>
+            </div>
+            
         </div>
 
     </body>

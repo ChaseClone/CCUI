@@ -1,0 +1,13 @@
+.nav-file {
+margin-top: -1%;
+}
+
+#send-a-gift-template-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+#transfer-money-template-container {
+    background-color: white;
+}

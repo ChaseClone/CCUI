@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./payAndTransfer/css/cards.css">
+    </head>
+    <body>
+        <div>
+            <div>
+            <div>
+                <div><h1>Transfer from</h1></div>
+                <div>
+                <select ng-click="toggleSelectTransferFrom()">
+                    <option ng-if="clickedSelectTransferFrom === false" value="choose">Choose an account</option>
+                <option ng-if="clickedSelect" ng-repeat="i in [].constructor(sampleChaseAccountLength) track by $index">{{sampleChaseAccount[$index].account}}</option>
+                </select>
+                </div>
+                <div><p>Don't see your account?</p><button>Add an external checking or savings account</button></div>
+            </div>
+
+            <div>
+                <div><h2>Transfer To</h2></div>
+                <div>
+                    <select ng-click="toggleSelectTransferTo">
+                        <option ng-if="clickedSelectTransferTo === false" value="choose">Choose an account</option>
+                        <option ng-repeat="ng-repeat="i in [].constructor(sampleExternalAccountsLength)">{{sampleExternalAccounts[$index].account}}</option>
+                    </select>
+                </div>
+                <div><div><p>Don't see your account?</p><button>Add an external checking or savings account</button></div></div>
+            </div>
+
+            <div>
+                <div><h3>Amount</h3></div>
+                <div><input type="text"></div>
+            </div>
+
+            <div>
+                <div><h4>Transfer date</h4></div>
+                <div><input type="text"></div>
+            </div>
+
+            <div>
+                <div><h5>Note to self(optional)</h5></div>
+                <div><input type="text"></div>
+                <div><p>Use letters and numbers only(up to 32 characters).</p></div>
+            </div>
+            </div>
+               
+            </div>
+            <div>
+                <div><p>Set up repeating transfers</p><span>slider thing will go here</span></div>
+            </div>
+            <div>
+                <div><button>Cancel</button></div>
+                <div><button>Next</button></div>
+            </div>
+        </div>
+    </body>
+</html>

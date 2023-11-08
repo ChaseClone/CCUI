@@ -1,0 +1,13 @@
+#zelle-logo-icon-container {
+    background-color: white;
+    border-radius: 50%;
+    height: 55px;
+    width: 250%;
+    padding-top: 30%;
+}
+
+#zelle-logo-icon-img {
+   width: 80%;
+   margin-left: 12%;
+   margin-top: 8%;
+}

@@ -2,15 +2,15 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./payAndTransfer/css/templates.css">
     </head>
     <body>
-        <div id="">
-        <div ng-include="'./payAndTransfer/navs/transferMoneyNav.html'"></div>
-        </div>
+        <div id="transfer-money-template-container">
         <div>
-            <div ng-include="'./payAndTransfer/sections/scheduleTransferSection.html'" ng-if="showScheduleTransferSection"></div>
-            <div ng-include="'./payAndTransfer/sections/transferActivitySection.html'" ng-if="showTransferActivitySection"></div>
-            <div ng-include="'./payAndTransfer/sections/externalAccountsSection.html'" ng-if="showExternalAccountsSection"></div>
+            <div ng-if="showScheduleTransferSection" ng-include="'./payAndTransfer/sections/scheduleTransferSection.html'" ng-if="showScheduleTransferSection"></div>
+            <div ng-if="showTransferActivitySection" ng-include="'./payAndTransfer/sections/transferActivitySection.html'" ng-if="showTransferActivitySection"></div>
+            <div ng-if="showExternalAccountsSection" ng-include="'./payAndTransfer/sections/externalAccountsSection.html'" ng-if="showExternalAccountsSection"></div>
+        </div>
         </div>
     </body>
 </html> 

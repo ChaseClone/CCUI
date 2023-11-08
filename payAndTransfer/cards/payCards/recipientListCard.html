@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./payAndTransfer/css/cards.css">
+    </head>
+    <body>
+        <div>
+            <div><h2 id="recipient-list-card-header">Recipient list</h2></div>
+            <div><hr></div>
+            <div><span class="material-symbols-outlined">add_circle</span><button class="recipient-list-card-buttons">Add new recipient</button></div>
+            <div><hr></div>
+            <div id="recipient-list-card-buttons-list">
+                <div><button class="recipient-list-card-buttons">All</button></div>
+                <div><button class="recipient-list-card-buttons">My billers</button></div>
+                <div><button class="recipient-list-card-buttons">My <img alt="zelle logo"> recipients</button></div>
+            </div>
+            <div id="recipient-list-card-logo-and-text-div">
+                <div id="recipient-list-card-zelle-logo-div">
+                <div ng-include="'./payAndTransfer/icons/zelle-logo-icon.html'"></div>
+                </div>
+                <div id="recipient-list-card-header-and-text-div">
+                    <div><h3 id="recipient-list-card-logo-and-text-div-header">Send and recieve money in moments</h3></div>
+                    <div><p>A fast and convenient way to pay people- no matter where they bank in the U.S.</p> <div id="recipient-list-card-button-arrow"><div><button ng-style="{'color': blueButtonColor}" class="recipient-list-card-header-and-text-link-button">Get started</button></div><div><button ng-style="{'color': blueButtonColor}" class="recipient-list-card-header-and-text-link-button"><span class="material-symbols-outlined">chevron_right</span></button></div></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

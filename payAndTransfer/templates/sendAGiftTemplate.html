@@ -2,14 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./payAndTransfer/css/templates.css">
     </head>
     <body>
-        <div id="">
-        <div ng-include="'./payAndTransfer/navs/sendAGiftNav.html'"></div>
-        </div>
+        <div id="send-a-gift-template-container">
         <div>
-            <div ng-include="'./payAndTransfer/sections/sendAGiftSection.html'" ng-if="showSendAGiftSection"></div>
-            <div ng-include="'./payAndTransfer/sections/giftActivitySection.html'" ng-if="showGiftActivitySection"></div>
+            <div ng-if="showSendAGiftSection" ng-include="'./payAndTransfer/sections/sendAGiftSection.html'"></div>
+            <div ng-if="showGiftActivitySection" ng-include="'./payAndTransfer/sections/giftActivitySection.html'"></div>
+        </div>
         </div>
     </body>
 </html> 
