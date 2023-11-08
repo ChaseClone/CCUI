@@ -64,6 +64,16 @@
             <div ng-include="'./payAndTransfer/templates/payAndTransferTemplate.html'"></div>
         </div>
     </div>
+
+    <!-- security & privacy -->
+    <div ng-style="{'background-color': greyBackground, 'margin': '0'}" class="security-privacy-container" ng-if="state === 'security&privacy'" >
+        <div class="nav-section">
+            <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
+        </div>
+        <div class="security-privacy-child-bottom" style="width: 100%; margin-top: -1.1%;">
+            <div ng-include="'./security&privacy/security&privacy.html'"></div>
+        </div>
+    </div>
 </div>
 
 
@@ -201,6 +211,10 @@
             $scope.state = 'testdropdown';
         }
 
+        $scope.securityAndPrivacy = function() {
+            $scope.state = 'security&privacy';
+        }
+
         //pay & transfer sections
 
         $scope.payBillsZelleTemplate = function() {
@@ -332,8 +346,6 @@
             }
             $scope.transformedTime = $scope.transformedHour + ":" + $scope.transformedMinute;
         };
-
-
       
     });
     </script>

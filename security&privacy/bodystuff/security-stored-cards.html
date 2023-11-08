@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div class="security-card-container">
+        <div class="stored-cards-container">
+            <div>
+                <a class="stored-cards-top">
+                    <div>
+                        <div>
+                            <span>
+                                <span class="stored-title">Stored cards</span>
+                            </span>
+                        </div>
+                        <span class="stored-desc">See where you've stored your cards and link them to digital wallets.</span>
+                    </div>
+                    <div class="stored-arrow">
+                        <span>
+                            >
+                        </span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="stored-cards-bot">
+                <dl>
+                    <div ng-include="'../security&privacy/bodystuff/cards/stored-cards-list.html'"></div>
+                    <div ng-include="'../security&privacy/bodystuff/cards/stored-cards-list.html'"></div>
+                    <div ng-include="'../security&privacy/bodystuff/cards/stored-cards-list.html'"></div>
+                </dl>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

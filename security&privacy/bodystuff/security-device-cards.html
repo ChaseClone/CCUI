@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div class="security-card-container">
+        <div class="stored-cards-container">
+            <div>
+                <a class="stored-cards-top">
+                    <div>
+                        <div>
+                            <span>
+                                <span class="stored-title">Devices (3 total)</span>
+                            </span>
+                        </div>
+                        <span class="stored-desc">Keep track of your devices and manage their access to your accounts.</span>
+                    </div>
+                    <div class="stored-arrow">
+                        <span>
+                            >
+                        </span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="stored-cards-bot">
+                <dl>
+                    <div ng-include="'../security&privacy/bodystuff/cards/device-cards-list.html'"></div>
+                    <div ng-include="'../security&privacy/bodystuff/cards/device-cards-list.html'"></div>
+                    <div ng-include="'../security&privacy/bodystuff/cards/device-cards-list.html'"></div>
+                </dl>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
