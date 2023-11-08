@@ -5,9 +5,9 @@
         <link rel="stylesheet" href="./payAndTransfer/css/cards.css">
     </head>
     <body>
-        <div>
-            <div><button><span class="material-symbols-outlined">arrow_right</span></button></div>
-            <div><h2>Payments due {{ sampleUserData[0].paymentsDue }}</h2></div>
+        <div id="payments-due-card-container">
+            <div><button id="payments-due-card-button"><span class="material-symbols-outlined">arrow_right</span></button></div>
+            <div><h2 id="payments-due-card-header">Payments due ({{ sampleUserData[0].paymentsDue }})</h2></div>
         </div>
     </body>
 </html>
