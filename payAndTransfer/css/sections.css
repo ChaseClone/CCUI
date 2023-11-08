@@ -1,6 +1,33 @@
+/* send a gift section */
 #send-a-gift-section-file {
     padding: 2%;
     padding-left: 6%;
     padding-right: 6%;
 
+}
+
+/* pay section */
+
+.pay-section-cards {
+    background-color: white;
+    border: 1px solid #ececec;
+}
+
+#pay-section-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#pay-section-left-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 1%;
+}
+
+#pay-section-right-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 1%;
 }
