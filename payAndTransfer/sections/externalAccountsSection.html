@@ -2,10 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./payAndTransfer/css/sections.css">
     </head>
     <body>
         <div>
-            <div>sOME RanDom ContEnt</div>
+            <div ng-if="showExternalAccountsSection" ng-include="'./payAndTransfer/cards/transferMoneyCards/externalAccountsCard.html'">
         </div>
     </body>
 </html> 

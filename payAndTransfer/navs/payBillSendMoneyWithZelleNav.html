@@ -2,12 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./payAndTransfer/css/navs-styles.css">
     </head>
-    <body>
-        <ul class="nav-ul">
-            <li>Pay bills & send money with Zelle</li>
-            <li><button ng-click="togglePaySection()">Pay</button></li>
-            <li><button ng-click="togglePaymentActivitySection()">Payment Activity</button></li>
-        </ul>
+    <body class="navs-container">
+            
+        <div class="all-navs">
+            <div class="title-in-nav">Pay bills & send money with Zelle</div>
+            <div ng-style="{'color': cardText}" ><button class="all-navs-buttons" ng-click="togglePaySection()">Pay</button></div>
+            <div ng-style="{'color': cardText}"><button class="all-navs-buttons" ng-click="togglePaymentActivitySection()">Payment Activity</button></div>
+        </div>
     </body>
 </html>

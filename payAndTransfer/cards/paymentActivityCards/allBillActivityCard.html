@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./payAndTransfer/css/cards.css">
+    </head>
+    <body>
+        <div>
+            <div>
+                <div><h1>FILTER BY</h1></div>
+                <div>
+                    <div>
+                    <div>
+                        <select>
+                            <option value="date">Date range</option>
+                            <option value="payee">Payee name</option>
+                            <option value="status">Status</option>
+                        </select>
+                    </div>
+                   <div>
+                    <button>Make a payment <span class="material-symbols-outlined">chevron_right</span></button>
+                </div>
+                </div>
+
+
+                <div>
+                    <div>
+                        <span class="material-symbols-outlined">print</span>
+                    </div>
+                    <div>
+                        <div ng-include="'./payAndTransfer/icons/collapse-icon.html'"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div>
+                <div><button>Send on <span class="material-symbols-outlined">arrow_drop_down</span></button></div>
+                <div><button>Deliver by <span class="material-symbols-outlined">arrow_drop_down</span></button></div>
+                <div><button>Status <span class="material-symbols-outlined">arrow_drop_down</span></button></div>
+                <div><button>Payee <span class="material-symbols-outlined">arrow_drop_down</span></button></div>
+                <div><button>Amount <span class="material-symbols-outlined">arrow_drop_down</span></button></div>
+            </div>
+            <div>
+                <div><p></p></div>
+                <div><p>The <button>Bill Payment and transfers Agreement</button> applies</p></div>
+                <div><hr></div>
+             </div>
+             <div>
+                <div><p>Don't see your payment? <a href="">Send us an Inquiry</a></p> <span class="material-symbols-outlined">arrow_forward_ios</span></div>
+             </div>
+            
+            
+        </div>
+    </body>
+</html>

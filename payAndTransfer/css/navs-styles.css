@@ -1,0 +1,45 @@
+/* all navs */
+#nav-file {
+    margin-bottom: 0%;
+}
+
+.navs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.all-navs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: 450;
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+    
+    
+}
+
+.all-uls {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.title-in-nav {
+    display: flex;
+    color: white;
+    background-color: #128842;
+    
+}
+
+.all-navs-buttons {
+    padding: 0.6%;
+    border: none;
+    box-shadow: none;
+    background: white;
+    margin-left: 2%;
+}
