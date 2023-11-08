@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./planAndTrack/css/templates.css">
+    </head>
+    <body>
+        <div id="plan-and-track-template-container">
+            <div id="plan-and-track-template-left-container">
+                <div ng-include="'./planAndTrack/cards/atAGlance.html'"></div>
+                <div>
+                    <div ng-include="'./planAndTrack/cards/spendingAndBudgetingCard.html'"></div>
+                    <div ng-include="'./planAndTrack/cards/netIncomeAndSpendCard.html'"></div>
+                    <div ng-include="'./planAndTrack/cards/netWorthCard.html'"></div>
+                </div>
+                <div ng-include="'./planAndTrack/cards/goalsCard.html'"></div>
+            </div>
+            <div id="plan-and-track-template-right-container">
+                <div ng-include="'./planAndTrack/cards/exploreInvesting.html'"></div>
+                <div ng-include="'./planAndTrack/cards/keyMeasurements.html'"></div>
+                <div ng-include="'./planAndTrack/cards/moreFinancialToolsCard.html'"></div>
+            </div>
+        </div>
+    </body>
+</html>
