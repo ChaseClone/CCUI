@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <div ng-style="{'margin': '0'}" class="pay-and-transfer-container">
+            
+                 
+                 <div ng-if="payAndTransferSec === 'sendAGiftTemp'" class="nav-file" ng-include="'./payAndTransfer/navs/sendAGiftNav.html'"></div>
+                 <div ng-if="payAndTransferSec === 'payBillsZelleTemp'" class="nav-file" ng-include="'./payAndTransfer/navs/payBillSendMoneyWithZelleNav.html'"></div>
+                 <div ng-if="payAndTransferSec === 'paymentActivityTemp'" class="nav-file" ng-include="'./payAndTransfer/navs/paymentActivityNav.html'"></div>
+                 <div ng-if="payAndTransferSec === 'transferMoneyTemp'" class="nav-file" ng-include="'./payAndTransfer/navs/transferMoneyNav.html'"></div>
+                 
+            <div class="pay-and-transfer-child-bottom">
+                <div ng-include="'./payAndTransfer/templates/payAndTransferTemplate.html'"></div>
+            </div>
+        </div>
+    </body>
+</html>

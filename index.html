@@ -15,71 +15,17 @@
     <title>Chase</title>
 
 </head>
-<body ng-style="'background-color': greyBackground" >
+<body ng-style="{'background-color': greyBackground}" >
     <div ng-app="chase-app" ng-controller="appCtrl" >
-        <!--Accounts section-->
-        <div ng-init="currentTime()" ng-style="{'background-color': greyBackground, 'margin': '0'}" class="accounts-container" ng-if="state === 'accounts'">
-            <div class="nav-section">
-                <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
-            </div>
-            <div class="accounts-child-bottom">
-                <div ng-include="'./accounts/templates/accountsTemplate.html'"></div>
-            </div>
-        </div>
-
-        <!--Investments section-->
-        <div ng-style="{'background-color': greyBackground, 'margin': '0'}" class="investments-container" ng-if="state === 'investments'" >
-            <div class="nav-section">
-                <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
-            </div>
-            <div class="investments-child-bottom">
-                <div ng-include="'./investments/investmentsTemplate.html'"></div>
-            </div>
-        </div>
-    
-
-    <!-- test dropdown/ delete this later-->
-    <div ng-style="{'background-color': greyBackground, 'margin': '0'}" class="test-dropdown-container" ng-if="state === 'testdropdown'" >
-        <div class="nav-section">
+      
             <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
-        </div>
-        <div class="test-dropdown-child-bottom">
-            <div ng-include="'./payAndTransfer/testDropDownDeleteLater.html'"></div>
-        </div>
-    </div>
+           
+        <div ng-view></div>
+   
 
-
-    <!-- pay and transfer -->
-    <div ng-style="{'margin': '0'}" class="pay-and-transfer-container" ng-if="state === 'payAndTransfer'" >
-        <div class="nav-section">
-            <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
-            </div>
-             
-             <div ng-if="payAndTransferSec === 'sendAGiftTemp'" class="nav-file" ng-include="'./payAndTransfer/navs/sendAGiftNav.html'"></div>
-             <div ng-if="payAndTransferSec === 'payBillsZelleTemp'" class="nav-file" ng-include="'./payAndTransfer/navs/payBillSendMoneyWithZelleNav.html'"></div>
-             <div ng-if="payAndTransferSec === 'paymentActivityTemp'" class="nav-file" ng-include="'./payAndTransfer/navs/paymentActivityNav.html'"></div>
-             <div ng-if="payAndTransferSec === 'transferMoneyTemp'" class="nav-file" ng-include="'./payAndTransfer/navs/transferMoneyNav.html'"></div>
-             
-        <div class="pay-and-transfer-child-bottom">
-            <div ng-include="'./payAndTransfer/templates/payAndTransferTemplate.html'"></div>
-        </div>
-    </div>
-
-    <!-- security & privacy -->
-    <div ng-style="{'background-color': greyBackground, 'margin': '0'}" class="security-privacy-container" ng-if="state === 'security&privacy'" >
-        <div class="nav-section">
-            <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
-        </div>
-        <div class="security-privacy-child-bottom" style="width: 100%; margin-top: -1.1%;">
-            <div ng-include="'./security&privacy/security&privacy.html'"></div>
-        </div>
-    </div>
 </div>
-
-
-
     <script>
-        var app = angular.module('chase-app', []);
+        var app = angular.module('chase-app', ["ngRoute"]);
         app.controller('appCtrl', function($scope){
         //this will be used to change layout based on the screen size
         $scope.isMobile = false;
@@ -348,6 +294,50 @@
         };
       
     });
+    app.config(function($routeProvider) {
+            $routeProvider
+            .when("#/!", {
+                templateUrl : "accounts.html",
+                controller: 'appCtrl'
+            })
+            .when("/accounts", {
+                templateUrl : "accounts.html",
+                controller: 'appCtrl'
+            })
+            .when("/investments", {
+                templateUrl : "investments.html",
+                controller: 'appCtrl'
+            })
+            .when("/testDropdown", {
+                templateUrl : "testDropdown.html",
+                controller: 'appCtrl'
+            })
+            .when("/securityandprivacy", {
+                templateUrl : "securityAndPrivacy.html",
+                controller: 'appCtrl'
+            })
+            .when("/sendagift", {
+                templateUrl : "sendagift.html",
+                controller: 'appCtrl'
+            })
+            .when("/transfermoney", {
+                templateUrl : "transfermoney.html",
+                controller: 'appCtrl'
+            })
+            .when("/paybillszelle", {
+                templateUrl : "paybillszelle.html",
+                controller: 'appCtrl'
+            })
+            .when("/paymentactivity", {
+                templateUrl : "paymentactivity.html",
+                controller: 'appCtrl'
+            })
+            .when("/planandtrack", {
+                templateUrl : "planandtrack.html",
+                controller: 'appCtrl'
+            })
+            .otherwise({ redirectTo: '/'});
+        });
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
