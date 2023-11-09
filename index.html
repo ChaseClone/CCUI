@@ -15,15 +15,12 @@
     <title>Chase</title>
 
 </head>
-<body ng-style="'background-color': greyBackground" >
+<body ng-style="{'background-color': greyBackground}" >
     <div ng-app="chase-app" ng-controller="appCtrl" >
-     <!--Accounts section-->
-    <!--Investments section-->
-    <!-- test dropdown/ delete this later-->
-    <!-- pay and transfer -->
-    <!-- security & privacy -->
-
-        
+      
+            <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
+           
+        <div ng-view></div>
    
 
 
@@ -297,6 +294,46 @@
         };
       
     });
+    app.config(function($routeProvider) {
+            $routeProvider
+            .when("#/!", {
+                templateUrl : "accounts.html",
+                controller: 'appCtrl'
+            })
+            .when("/accounts", {
+                templateUrl : "accounts.html",
+                controller: 'appCtrl'
+            })
+            .when("/investments", {
+                templateUrl : "investments.html",
+                controller: 'appCtrl'
+            })
+            .when("/testDropdown", {
+                templateUrl : "testDropdown.html",
+                controller: 'appCtrl'
+            })
+            .when("/securityandprivacy", {
+                templateUrl : "securityAndPrivacy.html",
+                controller: 'appCtrl'
+            })
+            .when("/sendagift", {
+                templateUrl : "sendagift.html",
+                controller: 'appCtrl'
+            })
+            .when("/transfermoney", {
+                templateUrl : "transfermoney.html",
+                controller: 'appCtrl'
+            })
+            .when("/paybillszelle", {
+                templateUrl : "paybillszelle.html",
+                controller: 'appCtrl'
+            })
+            .when("/paymentactivity", {
+                templateUrl : "paymentactivity.html",
+                controller: 'appCtrl'
+            })
+            .otherwise({ redirectTo: '/'});
+        });
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
