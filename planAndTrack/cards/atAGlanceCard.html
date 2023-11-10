@@ -5,8 +5,25 @@
         <link rel="stylesheet" href="./planAndTrack/css/cards.css">
     </head>
     <body>
-        <div>
-
+        <div id="plan-and-track-card-container">
+            <div>
+                <h2 class="plan-and-track-cards-titles">At a glance</h2>
+            </div>
+        <div id="at-a-glance-card-content">
+            <div>
+                <div>nav file here</div>
+            </div>
+            <div>
+                <div>
+                    <div><h2>{{ "$" + sampleChaseAccount[0].withdrawalsThisMonth}}</h2></div>
+                    <div><div>Your spending as of {{ date }}</div> <div><div></div></div></div>
+                </div>
+                <div id="plan-and-track-card-graph-div">
+                    <img id="plan-and-track-card-graph-img" src="../images/plan-and-track-graph.png" alt="graph">
+                </div>
+                
+            </div>
+        </div>
         </div>
     </body>
 </html>

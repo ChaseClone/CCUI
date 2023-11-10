@@ -85,6 +85,7 @@
         //time and date
         $scope.hour = new Date().getHours();
         $scope.minute = new Date().getMinutes();
+        $scope.date = new Date();
         $scope.transformedHour = 0;
         $scope.transformedMinute = 0;
         $scope.transformedTime = '00:00';
@@ -333,7 +334,7 @@
                 controller: 'appCtrl'
             })
             .when("/planandtrack", {
-                templateUrl : "planandtrack.html",
+                templateUrl : "planAndTrack.html",
                 controller: 'appCtrl'
             })
             .otherwise({ 

@@ -6,8 +6,21 @@
     </head>
     <body>
         <div id="plan-and-track-template-container">
+            <div id="plan-and-track-template-header-container">
+                <div id="plan-and-track-template-heading">
+                    <div><h1 id="plan-and-track-title">Plan & Track</h1></div>
+                    <div><p id="plan-and-track-template-header-sidenote">+ External</p></div>
+                </div>
+                <div id="plan-and-track-template-header-buttons">
+                    <div class="plan-and-track-template-button-divs"><button class="plan-and-track-template-buttons" ng-style="{'color': blueButtonColor}">Link external accounts</button></div>
+                    <div class="plan-and-track-template-button-divs" class="plan-and-track-template-buttons-234"><button class="plan-and-track-template-buttons" ng-style="{'color': blueButtonColor}">Set a new goal</button></div>
+                    <div class="plan-and-track-template-button-divs" class="plan-and-track-template-buttons-234"><button class="plan-and-track-template-buttons" ng-style="{'color': blueButtonColor}">Update your priorities</button></div>
+                    <div class="plan-and-track-template-button-divs" class="plan-and-track-template-buttons-234"><button class="plan-and-track-template-buttons" ng-style="{'color': blueButtonColor}">Manage external accounts</button></div>
+                </div>
+            </div>
+            <div id="plan-and-track-template-body">
             <div id="plan-and-track-template-left-container">
-                <div ng-include="'./planAndTrack/cards/atAGlance.html'"></div>
+                <div ng-include="'./planAndTrack/cards/atAGlanceCard.html'"></div>
                 <div>
                     <div ng-include="'./planAndTrack/cards/spendingAndBudgetingCard.html'"></div>
                     <div ng-include="'./planAndTrack/cards/netIncomeAndSpendCard.html'"></div>
@@ -16,10 +29,11 @@
                 <div ng-include="'./planAndTrack/cards/goalsCard.html'"></div>
             </div>
             <div id="plan-and-track-template-right-container">
-                <div ng-include="'./planAndTrack/cards/exploreInvesting.html'"></div>
-                <div ng-include="'./planAndTrack/cards/keyMeasurements.html'"></div>
+                <div ng-include="'./planAndTrack/cards/exploreInvestingCard.html'"></div>
+                <div ng-include="'./planAndTrack/cards/keyMeasurementsCard.html'"></div>
                 <div ng-include="'./planAndTrack/cards/moreFinancialToolsCard.html'"></div>
             </div>
+        </div>
         </div>
     </body>
 </html>

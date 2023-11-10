@@ -1,0 +1,92 @@
+/* all cards */
+.plan-and-track-cards-titles {
+    font-size: 18px;
+}
+
+/* exploring investing card*/
+/* IDs */
+#explore-investing-card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#explore-investing-card-content-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+}
+
+#explore-investing-card-top-content {
+    display: flex;
+    flex-direction: row;
+}
+
+#explore-investing-card-top-content {
+    display: flex;
+    flex-direction: row;
+}
+
+/* key measurements card */
+/* classes */
+.key-measurements-card-containers {
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+}
+
+/* at a glance card */
+/* classes */
+/* IDs */
+#at-a-glance-card-content {
+    background-color: rgb(201, 225, 233);
+    border-radius: 6px;
+}
+
+#plan-and-track-card-graph-img {
+    width: 100%;
+}
+
+
+/* goals card */
+/* classes */
+/* IDs */
+#goals-card-container {
+    background-color: white;
+    border: 1px solid #bcbcbc;
+}
+
+
+/* more financial tools card */
+/* classes */
+/* IDs */
+#more-financial-tools-card-container {
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    
+}
+
+/* net income and spend card */
+/* classes */
+/* IDs */
+#net-income-and-spend-card-container {
+    background-color: white;
+    border: 1px solid #bcbcbc;
+}
+
+/* net worth card */ 
+/* classes */
+/* IDs */
+#net-worth-card-container {
+    background-color: white;
+    border: 1px solid #bcbcbc;
+}
+
+/* spending and budgeting card */
+/* classes */
+/* IDs */
+#spending-and-budgeting-card-container {
+    background-color: white;
+    border: 1px solid #bcbcbc;
+}

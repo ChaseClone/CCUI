@@ -1,0 +1,76 @@
+/* classes */
+.plan-and-track-template-buttons {
+    border-radius: 35px;
+    height: 125%;
+    width: 120%;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
+
+
+}
+.plan-and-track-template-button-divs {
+   
+}
+
+.plan-and-track-template-buttons-234 {
+  
+}
+
+/* IDs */
+#plan-and-track-template-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2%;
+
+}
+
+#plan-and-track-title {
+    font-size: 28px;
+
+}
+
+#plan-and-track-template-heading {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin-bottom: 1%;
+ 
+}
+
+#plan-and-track-template-header-sidenote {
+    font-size: 12px;
+}
+
+#plan-and-track-template-body {
+    display: flex;
+    flex-direction: row;
+}
+
+#plan-and-track-template-header-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5%;
+    
+    
+    
+   
+}
+
+#plan-and-track-template-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+#plan-and-track-template-left-container {
+    width: 70%;
+}
