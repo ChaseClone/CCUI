@@ -24,12 +24,22 @@
 }
 
 /* IDs */
+#plan-and-track-template-footer-header {
+    font-size: 12px;
+}
+
+#plan-and-track-template-footer-text {
+    font-size: 12px;
+}
 #plan-and-track-template-header-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 2%;
 
+}
+#plan-and-track-template-left-container {
+    margin-right: 2%;
 }
 
 #plan-and-track-title {

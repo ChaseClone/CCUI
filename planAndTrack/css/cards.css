@@ -3,6 +3,14 @@
     font-size: 18px;
 }
 
+.plan-and-track-cards-second-title {
+    font-size: 18px;
+}
+
+.plan-and-track-cards-text {
+    font-size: 14px;
+}
+
 /* exploring investing card*/
 /* IDs */
 #explore-investing-card-container {
@@ -23,17 +31,28 @@
     flex-direction: row;
 }
 
-#explore-investing-card-top-content {
+#explore-investing-card-bottom-content {
     display: flex;
     flex-direction: row;
 }
 
 /* key measurements card */
 /* classes */
+
 .key-measurements-card-containers {
     background-color: white;
     border: 1px solid #bcbcbc;
     border-radius: 6px;
+}
+
+.key-measurements-card-heading-arrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.key-measurements-card-logo-text {
+    display: flex;
+    flex-direction: row;
 }
 
 /* at a glance card */
@@ -74,6 +93,10 @@
     background-color: white;
     border: 1px solid #bcbcbc;
 }
+#net-income-and-spend-card-title-arrow {
+    display: flex;
+    flex-direction: row;
+}
 
 /* net worth card */ 
 /* classes */
@@ -81,6 +104,10 @@
 #net-worth-card-container {
     background-color: white;
     border: 1px solid #bcbcbc;
+}
+#net-worth-card-title-arrow {
+    display: flex;
+    flex-direction: row;
 }
 
 /* spending and budgeting card */

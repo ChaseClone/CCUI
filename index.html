@@ -99,6 +99,7 @@
         $scope.totalAssetsChangeAmount = '00';
         $scope.totalLiabilitiesDollarAmount = 0;
         $scope.totalLiabilitiesChangeAmount = '00';
+ 
 
         //toggle state of cards
         $scope.hasExtendedExternalAccounts = true;
@@ -127,6 +128,9 @@
         $scope.sampleChaseAccount = [
             { account: "CHASE SECURE BANKING (...0465)", type: "Checking", balance: "103.53", depositsThisMonth: "50.25", withdrawalsThisMonth: "23.76"}
         ];
+
+        $scope.balance = parseInt($scope.sampleChaseAccount[0].balance);
+        $scope.value = parseInt($scope.sampleExternalAccounts[0].value);
         
         $scope.sampleUser = [
             {firstName: 'Raquel', lastName: 'Cruz', username: 'raquelcruz', password: 'testPassword123', birthDate: '06/01/2000'}
@@ -260,6 +264,8 @@
         $scope.toggleSelectTransferTo = function () {
             $scope.clickedSelectTranferTo = true;
         }
+
+
         //function to get date/time 
 //if we are going to use this function for other things like if 
 //someone updates something or posts something and we need to save the time, we are going to have to
