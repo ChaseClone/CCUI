@@ -9,6 +9,7 @@
 
 .plan-and-track-cards-text {
     font-size: 14px;
+    color: #717171;
 }
 
 /* exploring investing card*/
@@ -71,18 +72,53 @@
 /* goals card */
 /* classes */
 /* IDs */
-#goals-card-container {
+#goals-card-content {
     background-color: white;
     border: 1px solid #bcbcbc;
+    border-radius: 6px;
+    padding: 2%;
+}
+
+#goals-card-heading-arrow {
+ display: flex; 
+ flex-direction: row;
 }
 
 
 /* more financial tools card */
 /* classes */
+.more-financial-tools-card-content-sections {
+    display: flex;
+    flex-direction: row;
+}
+
+.more-financial-tools-card-heading-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.more-financial-tools-card-sub-headers {
+    font-size: 14px;
+
+}
+
+.more-financial-tools-card-hr-div {
+   width: 100%;
+   
+}
+
+.more-financial-tools-card-hr {
+    display: flex;
+    flex-direction: row;
+     width: 95%;
+     margin-right: 0;
+    
+ }
 /* IDs */
-#more-financial-tools-card-container {
+#more-financial-tools-card-content {
     background-color: white;
     border: 1px solid #bcbcbc;
+    border-radius: 6px;
     
 }
 
@@ -92,6 +128,7 @@
 #net-income-and-spend-card-container {
     background-color: white;
     border: 1px solid #bcbcbc;
+    border-radius: 6px;
 }
 #net-income-and-spend-card-title-arrow {
     display: flex;
@@ -104,6 +141,7 @@
 #net-worth-card-container {
     background-color: white;
     border: 1px solid #bcbcbc;
+    border-radius: 6px;
 }
 #net-worth-card-title-arrow {
     display: flex;
@@ -116,4 +154,9 @@
 #spending-and-budgeting-card-container {
     background-color: white;
     border: 1px solid #bcbcbc;
+    border-radius: 6px;
+}
+#spending-and-budgeting-card-title-arrow {
+    display: flex;
+    flex-direction: row;
 }

@@ -24,6 +24,10 @@
 }
 
 /* IDs */
+#plan-and-track-template-cards-row {
+    display: flex;
+    flex-direction: row;
+}
 #plan-and-track-template-footer-header {
     font-size: 12px;
 }
