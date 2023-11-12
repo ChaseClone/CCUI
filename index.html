@@ -45,6 +45,7 @@
         $scope.blueButtonColor = '#0360F0';
         $scope.bulletPoint = '#094386';
         $scope.exploreLinks = '#025db8';
+        $scope.monthlySpendingNavButtonColor = '#0061f1';
         
 
         //Grey
@@ -59,6 +60,7 @@
         $scope.lines = '#bcbcbc';
         $scope.state = 'accounts';
         $scope.ptmLines = '#cccccc';
+        $scope.netWorthHistoryButtonColor = $scope.lightGreyText;
 
         //red 
         $scope.stocksNumbers = '#BF2155';
@@ -68,6 +70,7 @@
         $scope.stateOfPayAndTransfer = 'payBillsZelleTemp';
         $scope.clickedSelectTransferFrom = false;
         $scope.clickedSelectTransferTo = false;
+        $scope.atAGlanceCardState = 'Monthly Spending';
 
 
         //orange 
@@ -165,6 +168,8 @@
         $scope.securityAndPrivacy = function() {
             $scope.state = 'security&privacy';
         }
+
+        
 
         //pay & transfer sections
 
@@ -265,6 +270,17 @@
             $scope.clickedSelectTranferTo = true;
         }
 
+        $scope.goToMonthlySpending = function () {
+            $scope.atAGlanceCardState = 'Monthly spending';
+            $scope.monthlySpendingNavButtonColor = '#0061f1';
+            $scope.netWorthHistoryButtonColor = $scope.lightGreyText;
+        }
+
+        $scope.goToNetWorthHistory = function () {
+            $scope.atAGlanceCardState = 'Net worth history';
+            $scope.monthlySpendingNavButtonColor = $scope.lightGreyText;
+            $scope.netWorthHistoryButtonColor = '#0061f1';
+        }
 
         //function to get date/time 
 //if we are going to use this function for other things like if 

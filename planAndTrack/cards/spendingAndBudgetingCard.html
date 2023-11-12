@@ -12,7 +12,7 @@
                             <h3 class="plan-and-track-cards-second-title">Spending & budgeting</h3>
                         </div>
                         <div>
-                            <span class="material-symbols-outlined">chevron_right</span>
+                            <span id="spending-budgeting-card-arrow" ng-style="{'color': '#666666'}" class="material-symbols-outlined">chevron_right</span>
                         </div>
                     </div>
                     <div>
@@ -20,7 +20,7 @@
                             <h2 class="plan-and-track-cards-second-title">{{ "$" + sampleChaseAccount[0].withdrawalsThisMonth}}</h2>
                         </div>
                         <div>
-                            <p class="plan-and-track-cards-text">Spent so far this month</p>
+                            <p class="plan-and-track-cards-row-text" class="plan-and-track-cards-text" ng-style="{'color': cardText}">Spent so far this month</p>
                         </div>
                     </div>
                 </div>

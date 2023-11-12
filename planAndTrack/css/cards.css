@@ -1,7 +1,7 @@
 /* all cards */
 .plan-and-track-cards-titles {
     font-size: 18px;
-    margin-bottom: 4%;
+    margin-bottom: 5%;
 }
 
 .plan-and-track-cards-second-title {
@@ -13,8 +13,20 @@
     font-size: 14px;
     color: #717171;
     margin-bottom: -1%;
-   
+    padding-bottom: 1%;
+
 }
+
+#goals-card-title {
+    margin-bottom: 2.5%;
+}
+
+.plan-and-track-cards-row-text {
+padding-bottom: 1%;
+font-size: 14px;
+}
+
+
 
 /* exploring investing card*/
 /* IDs */
@@ -28,11 +40,11 @@
     flex-direction: column;
     background-color: white;
     border: 1px solid #bcbcbc;
-    border-radius: 6px;
+    border-radius: 8px;
     padding-left: 3%;
     padding-top: 4%;
     padding-right: 4%;
-    margin-bottom: 12%;
+ 
 }
 
 #explore-investing-card-top-content {
@@ -63,13 +75,17 @@
     
 }
 
+#explore-investing-card-arrow {
+    font-size: 180%;
+}
+
 /* key measurements card */
 /* classes */
 
 .key-measurements-card-containers {
     background-color: white;
     border: 1px solid #bcbcbc;
-    border-radius: 6px;
+    border-radius: 8px;
     padding-left: 3%;
     padding-top: 4%;
     padding-right: 4%;
@@ -87,12 +103,25 @@
     flex-direction: row;
 }
 
+/* IDs */
+#key-measurements-card-arrow1 {
+ font-size: 180%;
+}
+
+#key-measurements-card-arrow2 {
+font-size: 180%;
+}
+
 /* at a glance card */
 /* classes */
 /* IDs */
+#at-a-glance-card-title {
+    margin-bottom: 2.5%;
+}
+
 #at-a-glance-card-content {
     background: linear-gradient(to bottom, #eef8ff, #FFFFFF);
-    border-radius: 6px;
+    border-radius: 8px;
     padding: 1%;
 }
 
@@ -123,15 +152,15 @@
 /* classes */
 /* IDs */
 #goals-card-container{
-  
+  width: 100%;
 }
 #goals-card-content {
     background-color: white;
     border: 1px solid #bcbcbc;
     padding: 2%;
     width: 100%;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-top: none;
 }
 
@@ -150,7 +179,14 @@ width: 100%;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     width: 100%;
+    padding-bottom: 1%;
+    background-color: white;
+    margin-bottom: -1%;
    
+}
+
+#goals-card-text {
+    padding-bottom: 2%;
 }
 
 
@@ -160,6 +196,7 @@ width: 100%;
 .more-financial-tools-card-content-sections {
     display: flex;
     flex-direction: row;
+    
 }
 
 .more-financial-tools-card-heading-text {
@@ -184,13 +221,47 @@ width: 100%;
      margin-right: 0;
     
  }
+
+ .more-financial-tools-card-logos {
+    width: 35px;
+    height: 35px;
+ }
+
+ .more-financial-tools-card-text-div {
+    margin-right: 10%;
+ }
+
+ .more-financial-tools-card-arrows {
+   margin-top: 5%;
+   
+   
+
+ }
+
 /* IDs */
 #more-financial-tools-card-content {
     background-color: white;
     border: 1px solid #bcbcbc;
-    border-radius: 6px;
+    border-radius: 8px;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    padding-left: 4%;
     
 }
+
+
+#more-financial-tools-card-arrow1 {
+    font-size: 180%;
+}
+
+#more-financial-tools-card-arrow2 {
+    font-size: 180%;
+}
+
+#more-financial-tools-card-arrow3 {
+    font-size: 180%;
+}
+
 
 /* net income and spend card */
 /* classes */
@@ -200,11 +271,11 @@ width: 100%;
     flex-direction: column;
     background-color: white;
     border: 1px solid #bcbcbc;
-    border-radius: 6px;
+    border-radius: 8px;
     padding: 2%;
     padding-right: 6%;
     padding-left: 8%;
-    padding-top: 8%;
+    padding-top: 6%;
     height: 80%;
 
    
@@ -213,6 +284,11 @@ width: 100%;
 #net-income-and-spend-card-title-arrow {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+#net-income-and-spend-card-arrow {
+    font-size: 180%;
 }
 
 /* net worth card */ 
@@ -223,7 +299,7 @@ width: 100%;
     flex-direction: column;
     background-color: white;
     border: 1px solid #bcbcbc;
-    border-radius: 6px;
+    border-radius: 8px;
     padding: 2%;
     padding-right: 6%;
     padding-left: 8%;
@@ -233,12 +309,16 @@ width: 100%;
    
 }
 
-
-
 #net-worth-card-title-arrow {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
+
+#net-worth-card-arrow {
+    font-size: 180%;
+}
+
 
 /* spending and budgeting card */
 /* classes */
@@ -253,9 +333,13 @@ width: 100%;
     padding-right: 6%;
     padding-left: 8%;
     padding-top: 8%;
-    height: 90%;
+    height: 100%;
 }
 #spending-and-budgeting-card-title-arrow {
     display: flex;
     flex-direction: row;
+}
+
+#spending-budgeting-card-arrow{
+    font-size: 180%;
 }

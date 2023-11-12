@@ -12,15 +12,15 @@
                             <h3 class="plan-and-track-cards-second-title">Net income & spend</h3>
                         </div>
                         <div>
-                            <span class="material-symbols-outlined">chevron_right</span>
+                            <span id="net-income-and-spend-card-arrow" class="material-symbols-outlined" ng-style="{'color': '#666666'}">chevron_right</span>
                         </div>
                     </div>
                     <div>
                         <div>
-                            <h2 class="plan-and-track-cards-second-title">{{ "$" + sampleChaseAccount[0].withdrawalsThisMonth}}</h2>
+                            <h2 class="plan-and-track-cards-second-title">{{ "+$" + sampleChaseAccount[0].withdrawalsThisMonth}}</h2>
                         </div>
                         <div>
-                            <p class="plan-and-track-cards-text">This month</p>
+                            <p class="plan-and-track-cards-row-text" class="plan-and-track-cards-text" ng-style="{'color': cardText}">This month</p>
                         </div>
                     </div>
                 </div>
