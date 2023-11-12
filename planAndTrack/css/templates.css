@@ -1,25 +1,4 @@
 /* classes */
-.plan-and-track-template-buttons {
-    border-radius: 35px;
-    height: 85%;
-    width: 130%;
-    background-color: white;
-    border: none;
-    font-size: 12px;
-    font-weight: 450;
-    padding: 2%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-bottom: 0.8px solid #c9c9c9;
-}
-
-
-.plan-and-track-template-button-divs {
-    display: flex;
-    justify-content: center;
-    width: 10%;
-}
-
 
 
 /* IDs */
@@ -105,23 +84,6 @@ width: 38%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-#plan-and-track-template-header-buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 106%;
-    
-}
-
-#plan-and-track-template-set-new-goal-button {
-    width: 80%;
-}
-
-#plan-and-track-template-manage-external-accounts-button {
-    width: 102%;
-    margin-left: 2%;
 }
 
 

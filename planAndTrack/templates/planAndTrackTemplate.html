@@ -11,12 +11,7 @@
                     <div id="plan-and-track-title-div"><h1 id="plan-and-track-title">Plan & Track</h1></div>
                     <div><p id="plan-and-track-template-header-sidenote">+ External</p></div>
                 </div>
-                <div id="plan-and-track-template-header-buttons">
-                    <div class="plan-and-track-template-button-divs"><button class="plan-and-track-template-buttons" ng-style="{'color': blueButtonColor}">Link external accounts</button></div>
-                    <div class="plan-and-track-template-button-divs"><button class="plan-and-track-template-buttons" ng-style="{'color': blueButtonColor}" id="plan-and-track-template-set-new-goal-button">Set a new goal</button></div>
-                    <div class="plan-and-track-template-button-divs"><button class="plan-and-track-template-buttons" ng-style="{'color': blueButtonColor}">Update your priorities</button></div>
-                    <div id="plan-and-track-template-manage-external-accounts-button-div" class="plan-and-track-template-button-divs"><button class="plan-and-track-template-buttons" ng-style="{'color': blueButtonColor}" id="plan-and-track-template-manage-external-accounts-button">Manage external accounts</button></div>
-                </div>
+                <div ng-include="'./planAndTrack/components/buttons.html'"></div>
             </div>
             <div id="plan-and-track-template-body">
             <div id="plan-and-track-template-left-container">

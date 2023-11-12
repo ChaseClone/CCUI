@@ -1,0 +1,77 @@
+/* classes */
+/* .plan-and-track-template-buttons {
+    border-radius: 35px;
+    height: 85%;
+    width: 130%;
+    background-color: white;
+    border: none;
+    font-size: 12px;
+    font-weight: 450;
+    padding: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 0.8px solid #c9c9c9;
+}
+
+.plan-and-track-template-button-divs {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+}
+
+/* IDs */
+/* #plan-and-track-template-header-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 106%;
+}
+
+#plan-and-track-template-set-new-goal-button {
+    width: 80%;
+}
+
+#plan-and-track-template-manage-external-accounts-button {
+    width: 102%;
+    margin-left: 2%;
+}
+ */
+
+
+
+
+
+.plan-and-track-template-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 35px;
+    width: 100%;
+    border: none;
+    font-size: 12px;
+    font-weight: 450;
+    background-color: white;
+    border-bottom: 0.8px solid #c9c9c9;
+    height: 35px; 
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  
+
+   
+}
+
+
+
+#plan-and-track-template-header-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+   
+}
