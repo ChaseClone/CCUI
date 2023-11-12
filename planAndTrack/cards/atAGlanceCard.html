@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="./planAndTrack/css/cards.css">
     </head>
     <body>
-        <div id="plan-and-track-card-container">
+        <div id="at-a-glance-card-container">
             <div>
                 <h2 class="plan-and-track-cards-titles">At a glance</h2>
             </div>
@@ -18,10 +18,15 @@
                     <div><h2>{{ "$" + sampleChaseAccount[0].withdrawalsThisMonth}}</h2></div>
                     <div><div>Your spending as of {{ date }}</div> <div><div></div></div></div>
                 </div>
-                <div id="plan-and-track-card-graph-div">
-                    <img id="plan-and-track-card-graph-img" src="../images/plan-and-track-graph.png" alt="graph">
+                <div id="at-a-glance-card-graph-div">
+                    <img id="at-a-glance-card-graph-img" src="../images/plan-and-track-graph.png" alt="graph">
                 </div>
-                
+                <div id="at-a-glance-card-graph-dates">
+                    <div ><p>Nov: -</p></div><div>Oct 30: $0.00</div>
+                </div>
+                <div id="at-a-glance-graph-bottom-link-div">
+                  <div><span class="material-symbols-outlined" ng-style="{'color': blueButtonColor}">format_list_bulleted</span></div><div><a href="" id="at-a-glance-graph-bottom-link" ng-style="{'color': blueButtonColor}">See chart as table</a></div>
+                </div>
             </div>
         </div>
         </div>

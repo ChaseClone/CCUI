@@ -1,15 +1,19 @@
 /* all cards */
 .plan-and-track-cards-titles {
     font-size: 18px;
+    margin-bottom: 4%;
 }
 
 .plan-and-track-cards-second-title {
-    font-size: 18px;
+    font-size: 16px;
+    color: #414042;
 }
 
 .plan-and-track-cards-text {
     font-size: 14px;
     color: #717171;
+    margin-bottom: -1%;
+   
 }
 
 /* exploring investing card*/
@@ -25,16 +29,38 @@
     background-color: white;
     border: 1px solid #bcbcbc;
     border-radius: 6px;
+    padding-left: 3%;
+    padding-top: 4%;
+    padding-right: 4%;
+    margin-bottom: 12%;
 }
 
 #explore-investing-card-top-content {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+#explore-investing-card-text {
+    margin-left: -2.5%;
+}
+
+#explore-investing-card-logo-img {
+ height: 70px;
+ width: 70px;
+ margin-top: -20%;
+ margin-left: -15%;
+ 
+}
+
+#explore-investing-card-logo-img-div {
+    width: 20%;
 }
 
 #explore-investing-card-bottom-content {
     display: flex;
     flex-direction: row;
+    
 }
 
 /* key measurements card */
@@ -44,11 +70,16 @@
     background-color: white;
     border: 1px solid #bcbcbc;
     border-radius: 6px;
+    padding-left: 3%;
+    padding-top: 4%;
+    padding-right: 4%;
+    margin-bottom: 2%;
 }
 
 .key-measurements-card-heading-arrow {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .key-measurements-card-logo-text {
@@ -60,29 +91,68 @@
 /* classes */
 /* IDs */
 #at-a-glance-card-content {
-    background-color: rgb(201, 225, 233);
+    background: linear-gradient(to bottom, #eef8ff, #FFFFFF);
     border-radius: 6px;
+    padding: 1%;
 }
 
-#plan-and-track-card-graph-img {
+#at-a-glance-card-graph-img {
     width: 100%;
+    
+}
+
+#at-a-glance-card-graph-dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#at-a-glance-graph-bottom-link-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 4%;
+}
+
+#at-a-glance-graph-bottom-link {
+    font-size: 16px;
 }
 
 
 /* goals card */
 /* classes */
 /* IDs */
+#goals-card-container{
+  
+}
 #goals-card-content {
     background-color: white;
     border: 1px solid #bcbcbc;
-    border-radius: 6px;
     padding: 2%;
+    width: 100%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top: none;
 }
 
 #goals-card-heading-arrow {
  display: flex; 
  flex-direction: row;
+ justify-content: space-between;
 }
+
+
+#goals-card-img-div {
+width: 100%;
+}
+
+#goals-card-img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 100%;
+   
+}
+
 
 
 /* more financial tools card */
@@ -126,9 +196,19 @@
 /* classes */
 /* IDs */
 #net-income-and-spend-card-container {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border: 1px solid #bcbcbc;
     border-radius: 6px;
+    padding: 2%;
+    padding-right: 6%;
+    padding-left: 8%;
+    padding-top: 8%;
+    height: 80%;
+
+   
+    
 }
 #net-income-and-spend-card-title-arrow {
     display: flex;
@@ -139,10 +219,22 @@
 /* classes */
 /* IDs */
 #net-worth-card-container {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border: 1px solid #bcbcbc;
     border-radius: 6px;
+    padding: 2%;
+    padding-right: 6%;
+    padding-left: 8%;
+    padding-top: 8%;
+    padding-bottom: 4%;
+    height: 80%;
+   
 }
+
+
+
 #net-worth-card-title-arrow {
     display: flex;
     flex-direction: row;
@@ -152,9 +244,16 @@
 /* classes */
 /* IDs */
 #spending-and-budgeting-card-container {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border: 1px solid #bcbcbc;
     border-radius: 6px;
+    padding: 2%;
+    padding-right: 6%;
+    padding-left: 8%;
+    padding-top: 8%;
+    height: 90%;
 }
 #spending-and-budgeting-card-title-arrow {
     display: flex;
