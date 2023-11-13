@@ -11,6 +11,7 @@
 .pay-section-cards {
     background-color: white;
     border: 1px solid #ececec;
+    margin-bottom: 2%;
 }
 
 #pay-section-container {
@@ -23,6 +24,7 @@
     flex-direction: column;
     width: 70%;
     margin: 1%;
+   
 }
 
 #pay-section-right-container {
