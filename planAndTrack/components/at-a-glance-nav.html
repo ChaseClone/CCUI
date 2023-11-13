@@ -6,11 +6,21 @@
     </head>
     <body>
         <div id="at-a-glance-nav-container">
-            <div>
+            <div class="at-a-glance-button-line">
+                <div class="at-a-glance-button-text">
                 <button class="at-a-glance-nav-buttons" ng-style="{'color': monthlySpendingNavButtonColor}" ng-click="goToMonthlySpending()">Monthly spending</button>
+                </div>
+                <div>
+                    <div ng-if="atAGlanceCardState === 'Monthly spending'" ng-include="'./planAndTrack/components/nav-underline.html'"></div>
+                </div>
             </div>
-            <div>
+            <div class="at-a-glance-button-line">
+                <div class="at-a-glance-button-text">
                 <button class="at-a-glance-nav-buttons" ng-style="{'color': netWorthHistoryButtonColor}" ng-click="goToNetWorthHistory()">Net worth history</button>
+                </div>
+                <div>
+                    <div ng-if="atAGlanceCardState === 'Net worth history'" ng-include="'./planAndTrack/components/nav-underline.html'"></div>
+                </div>
             </div>
         </div>
     </body>

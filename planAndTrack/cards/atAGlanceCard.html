@@ -19,7 +19,8 @@
                     <div><div>Your spending as of {{ date }}</div> <div><div></div></div></div>
                 </div>
                 <div id="at-a-glance-card-graph-div">
-                    <img id="at-a-glance-card-graph-img" src="../images/plan-and-track-graph.png" alt="graph">
+                    <img ng-if="atAGlanceCardState === 'Monthly spending'" id="at-a-glance-card-graph-img" src="../images/plan-and-track-graph.png" alt="graph">
+                    <img ng-if="atAGlanceCardState === 'Net worth history'" id="at-a-glance-card-graph-img" src="../images/net-worth-history-graph.png" alt="graph">
                 </div>
                 <div id="at-a-glance-card-graph-dates">
                     <div ><p>Nov: -</p></div><div>Oct 30: $0.00</div>

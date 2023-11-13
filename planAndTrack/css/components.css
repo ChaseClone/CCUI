@@ -36,6 +36,17 @@
 .at-a-glance-nav-buttons{
  background: none;
  border: none;
+ font-size: 14px;
+}
+.at-a-glance-button-line {
+    width: 20%;
+}
+
+.at-a-glance-button-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -10%;
 }
 
 /* IDs */
@@ -43,6 +54,12 @@
 #at-a-glance-nav-container {
     display: flex;
     flex-direction: row;
+}
+
+/* nav underline */
+/* IDs */
+#nav-underline {
+    border: 2px solid #0061f1;
 }
 
 
