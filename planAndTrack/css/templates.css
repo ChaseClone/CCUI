@@ -65,7 +65,10 @@ width: 30%;
 
 #plan-and-track-template-footer-list {
     border: 0.6px solid #717171;
-    
+}
+
+#plan-and-track-template-footer-bottom-section {
+    margin-bottom: 2%;
 }
 
 #plan-and-track-template-footer-text {
