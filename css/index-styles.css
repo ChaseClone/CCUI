@@ -4,6 +4,9 @@ body {
     background-color: #eceff1;
 }
 
+button:focus {
+    outline: none;
+}
 
 /*      
         **Do all the media queries here**

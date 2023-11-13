@@ -16,7 +16,8 @@
             <div>
                 <div>
                     <div><h2>{{ "$" + sampleChaseAccount[0].withdrawalsThisMonth}}</h2></div>
-                    <div><div>Your spending as of {{ date }}</div> <div><div></div></div></div>
+                    <div id="at-a-glance-card-message" ng-if="atAGlanceCardState === 'Monthly spending'"><div>Your spending as of {{ date }}</div> <div><span id="at-a-glance-help-icon" ng-style="{'color': infoButtonColor}" class="material-symbols-outlined">help</span></div></div>
+                    <div id="at-a-glance-card-message" ng-if="atAGlanceCardState === 'Net worth history'"><div>Your estimated net worth as of {{ date }}</div> <div><span id="at-a-glance-help-icon" ng-style="{'color': infoButtonColor}"  class="material-symbols-outlined">help</span></div></div>
                 </div>
                 <div id="at-a-glance-card-graph-div">
                     <img ng-if="atAGlanceCardState === 'Monthly spending'" id="at-a-glance-card-graph-img" src="../images/plan-and-track-graph.png" alt="graph">

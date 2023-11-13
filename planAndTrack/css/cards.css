@@ -103,6 +103,19 @@ font-size: 14px;
     flex-direction: row;
 }
 
+#key-measurements-card-text1 {
+    padding-bottom: 5%;
+    width: 85%;
+    margin-left: 1%;
+}
+
+#key-measurements-card-text2 {
+    padding-bottom: 5%;
+    width: 85%;
+    margin-left: 1%;
+}
+
+
 /* IDs */
 #key-measurements-card-arrow1 {
  font-size: 180%;
@@ -122,12 +135,25 @@ font-size: 180%;
 #at-a-glance-card-content {
     background: linear-gradient(to bottom, #eef8ff, #FFFFFF);
     border-radius: 8px;
-    padding: 1%;
+    padding-top: 3%;
+    padding-left: 4%;
+    width: 100%;
+}
+#at-a-glance-card-container {
+    width: 100%;
+}
+
+#at-a-glance-card-message {
+    display: flex;
+    flex-direction: row;
 }
 
 #at-a-glance-card-graph-img {
     width: 100%;
-    
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #at-a-glance-card-graph-dates {
@@ -145,6 +171,16 @@ font-size: 180%;
 
 #at-a-glance-graph-bottom-link {
     font-size: 16px;
+}
+
+#at-a-glance-card-graph-div {
+   width: 95%;
+}
+
+#at-a-glance-help-icon {
+    font-size: 120%;
+    margin-left: 25%;
+    margin-top: 20%;
 }
 
 
@@ -176,8 +212,8 @@ width: 100%;
 }
 
 #goals-card-img {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     width: 100%;
     padding-bottom: 1%;
     background-color: white;
