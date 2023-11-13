@@ -8,6 +8,18 @@ button:focus {
     outline: none;
 }
 
+#nav-file {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+}
+
+#index {
+    margin-top: 8%;
+}
+
+
 /*      
         **Do all the media queries here**
         I couldn't figure out why the media queries aren't working for the individual 
