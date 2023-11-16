@@ -19,6 +19,10 @@ button:focus {
     margin-top: 8%;
 }
 
+input:focus {
+    outline: none;
+}
+
 
 /*      
         **Do all the media queries here**

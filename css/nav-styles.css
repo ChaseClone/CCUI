@@ -85,3 +85,8 @@
 #nav-hamburger-menu {
     color: white;
 }
+
+#nav-search-bar-flex {
+    display: flex;
+    flex-direction: row;
+}
