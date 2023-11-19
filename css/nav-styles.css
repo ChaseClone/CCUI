@@ -1,7 +1,6 @@
 #nav-body {
     background-color: #0946a8;
     color: white;
-   
 }
 
 #nav-flag-icon-img {
@@ -28,17 +27,12 @@
 
 #sign-out-nav-button {
     font-size: 14px;
-    
 }
-
-
 
 .nav-ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    
-    
 }
 
 .nav-button {
@@ -55,8 +49,6 @@
     margin-right: 1%;
 }
 
-
-
 #top-nav-container{
     display: flex;
     flex-direction: row;
@@ -71,8 +63,6 @@
     flex-direction: row;
     padding-bottom: 1%;
     margin-bottom: 0;
-   
-
 }
 
 #explore-prod-nav-button {
@@ -89,4 +79,26 @@
 #nav-search-bar-flex {
     display: flex;
     flex-direction: row;
+    overflow: visible;
+}
+
+#nav-search-bar-li {
+    width: 60%;
+}
+
+/*extended nav*/
+/* classes * /
+
+/* IDs */
+#extended-nav-bottom-ul {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1%;
+    margin-bottom: 0;
+    z-index: 0;
+    margin-top: -340px;
+}
+
+#nav-search-bar-li {
+    z-index: 1;
 }

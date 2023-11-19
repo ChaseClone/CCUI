@@ -11,8 +11,10 @@ button:focus {
 #nav-file {
     position: fixed;
     width: 100%;
-    overflow: hidden;
+    height: 15%;
+    overflow: visible;
     top: 0;
+   
 }
 
 #index {
