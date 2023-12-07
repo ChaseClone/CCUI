@@ -29,7 +29,7 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 .accounts-right-container {
     width: 55%;
-
+    margin-top: 0.7%;
     
 }
 .accounts-body {
@@ -92,11 +92,12 @@ IT WILL NOT WORK, AND THE STYLES WILL OVERLAP IF YOU USE THE TAG NAMES INSTEAD O
 
 /* IDs */
 #accounts-template-greeting {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 500;
     margin-left: 2%;
     color: black;
-    margin-top: 0.5%;
+    margin-top: 2.5%;
+    margin-bottom: 0.4%;
     
 }
 
