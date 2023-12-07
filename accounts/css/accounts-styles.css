@@ -859,6 +859,7 @@ margin-bottom: -10%;
 
 #extended-external-accounts-card-table-hr-2 {
     border: 0.7px dashed #bcbcbc;
+    margin-top: -0.1%;
 }
 
 #extended-external-accounts-card-center-table{
@@ -879,7 +880,12 @@ margin-bottom: -10%;
     justify-content: flex-end;
     margin-right: 5%;
     font-size: 14px;
-    margin-top: 0.5%;
+    margin-top: -1%;
+    margin-bottom: -0.5%;
+}
+
+#extended-external-accounts-card-table-bottom {
+    margin-top: -2%;
 }
 
 /* half extended external accounts card styles */
