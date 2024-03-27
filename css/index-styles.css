@@ -11,12 +11,13 @@ button:focus {
 #nav-file {
     position: fixed;
     width: 100%;
+    height: 111px;
     overflow: hidden;
     top: 0;
 }
 
 #index {
-    margin-top: 7.3%;
+  margin-top: 111px;
 }
 
 

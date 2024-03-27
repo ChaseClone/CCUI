@@ -2,7 +2,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    box-sizing: border-box;
+    margin-top: 0;
     background-color: #eceff1;
 }
 
@@ -18,7 +18,6 @@
 .security-title-header {
     color: #fff!important;
     background-color: #0a4386;
-    margin: 0 auto;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -107,7 +106,6 @@
 
 .security-card-container {
     display: block;
-    position: relative;
     width: 100%;
     margin-bottom: 1.5em;
     background-color: #fff;
