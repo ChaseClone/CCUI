@@ -138,12 +138,14 @@
         ];
 
         $scope.searchData = [
-            { title: "Item 1", link: "https://somelink1.com", image: "someImg1.png"}, 
-            { title: "Item 2", link: "https://somelink2.com", image: "someImg2.png"},
-            { title: "Item 3", link: "https://somelink3.com", image: "someImg3.png"},
-            { title: "Item 4", link: "https://somelink4.com", image: "someImg4.png"},
-            { title: "Item 5", link: "https://somelink5.com", image: "someImg5.png"}
-        ]
+       {label: "Accounts", route: '#!acccounts'},
+       {label: "Investments", route: '#!investments'},
+       {label: "Plan & Track", route: '#!planandtrack'},
+       {label: "Security & Privacy", route: '#!securityandprivacy'}
+        ];
+
+           //search text model
+           $scope.searchText = '';
 
         $scope.balance = parseInt($scope.sampleChaseAccount[0].balance);
         $scope.value = parseInt($scope.sampleExternalAccounts[0].value);
@@ -161,6 +163,13 @@
         $scope.sampleUserLength = $scope.sampleUser.length;
 
         //functions
+        //search function 
+        $scope.filterItems = function () {
+            $scope.filteredItems = $scope.items.filter(function(item) {
+                return item.toLowerCase().include($scope.searchText.toLowerCase());
+            });
+        }
+
         $scope.extendExternalAccounts = function(){
             $scope.hasExtendedExternalAccounts = !$scope.hasExtendedExternalAccounts;
         };

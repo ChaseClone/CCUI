@@ -8,13 +8,14 @@
         <div id="search-bar-container">
             <div id="input-and-hr">
             <div id="input-and-search-icon">
-                <div><button class="nav-button" ng-click="closeSearch()"><span ng-style="{'color': lightGreyText}" class="material-symbols-outlined">search</span></button></div><div><input id="search-bar-input-field" ng-model="search" ng-style="{'background-color': ' white'}" type="text" placeholder="{{searchPlaceholder}}"></div>
+                <div><button class="nav-button" ng-click="closeSearch()"><span ng-style="{'color': lightGreyText}" class="material-symbols-outlined">search</span></button></div><div><input id="search-bar-input-field" ng-model="searchQuery" ng-style="{'background-color': ' white'}" type="text" placeholder="{{searchPlaceholder}}"></div>
                 </div>
                 <div id="search-bar-hr-div">
                     <hr id="search-bar-hr">
                 </div>
             </div>
             <div id="search-bar-popover">
+                <div ng-hide="searchQuery.length > 0">
                 <div>
                 <h4 class="search-bar-popover-headers" ng-style="{'color': cardHeaderColor}">Please don't include personal info on your search.</h4>
                 <h5 id="search-bar-header-2" class="search-bar-popover-headers" ng-style="{'color': cardHeaderColor}">Ask a question like this:</h5>
@@ -35,7 +36,18 @@
                         <div class="search-bar-popover-list-items">Ultimate Rewards</div>
                     </div>
                 </div>
+                </div>
+
+                <div ng-show="searchQuery.length > 0" style="color: black; background-color: white;">
+                    <div>
+                        <ul>
+                            <li style="color: white; margin-bottom: 4%;" ng-repeat="link in searchData| filter:searchQuery"><a ng-href="{{ link.route }}">{{link.label }}</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+
+      
     </body>
 </html>
