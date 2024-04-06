@@ -22,7 +22,7 @@ button:focus {
 #search-bar-file-index {
  position: fixed;
 z-index: 2;
-top: 24px;
+top: 18px;
 left: 58%; 
 }
 

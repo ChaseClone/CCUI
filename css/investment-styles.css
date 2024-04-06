@@ -12,13 +12,14 @@
     display: flex;
     flex-direction: column;
     margin-top: 2%;
+    width: 60%;
 }
 
 
 .rightcontainer {
     display: flex;
     flex-direction: column;
-    width: 28%;
+    width: 40%;
 }
 
 .buttons {
