@@ -6,8 +6,8 @@
     </head>
     <body>
         <div id="transfer-money-template-container">
-        <div>
-            <div ng-if="showScheduleTransferSection" ng-include="'./payAndTransfer/sections/scheduleTransferSection.html'" ng-if="showScheduleTransferSection"></div>
+        <div style="background-color: #edeff1">
+            <div style="background-color: white; margin-left: 2.1%; margin-right: 3%;" ng-if="showScheduleTransferSection" ng-include="'./payAndTransfer/sections/scheduleTransferSection.html'" ng-if="showScheduleTransferSection"></div>
             <div ng-if="showTransferActivitySection" ng-include="'./payAndTransfer/sections/transferActivitySection.html'" ng-if="showTransferActivitySection"></div>
             <div ng-if="showExternalAccountsSection" ng-include="'./payAndTransfer/sections/externalAccountsSection.html'" ng-if="showExternalAccountsSection"></div>
         </div>

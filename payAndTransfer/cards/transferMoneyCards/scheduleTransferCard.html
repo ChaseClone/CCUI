@@ -5,48 +5,52 @@
         <link rel="stylesheet" href="./payAndTransfer/css/cards.css">
     </head>
     <body>
-        <div>
-            <div>
-            <div>
-                <div><h1>Transfer from</h1></div>
+        <div style="padding-left: 1%; padding-right: 1%; padding-top: 1.5%; margin-bottom: 0; padding-bottom: 25%; overflow: hidden; overflow: hidden">
+            <div style="width: 100%">
+                <div style="display: flex; justify-content: space-between; width: 100%">
+            <div style="width: 100%">
+                <div><h1 style="color: #717171; font-size: 14px">Transfer from</h1></div>
                 <div>
-                <select ng-click="toggleSelectTransferFrom()">
+                <select style="width: 95%; height: 42px; padding-left: 2%;"  ng-click="toggleSelectTransferFrom()">
                     <option ng-if="clickedSelectTransferFrom === false" value="choose">Choose an account</option>
                 <option ng-if="clickedSelect" ng-repeat="i in [].constructor(sampleChaseAccountLength) track by $index">{{sampleChaseAccount[$index].account}}</option>
                 </select>
                 </div>
-                <div><p>Don't see your account?</p><button>Add an external checking or savings account</button></div>
+                <div><p>Don't see your account?</p><button style="border: none; background: none;">Add an external checking or savings account</button></div>
             </div>
 
-            <div>
-                <div><h2>Transfer To</h2></div>
+            <div style="width: 100%">
+                <div><h2 style="color: #717171; font-size: 14px">Transfer To</h2></div>
                 <div>
-                    <select ng-click="toggleSelectTransferTo">
+                    <select style="width: 95%; height: 42px; padding-left: 2%;"  ng-click="toggleSelectTransferTo">
                         <option ng-if="clickedSelectTransferTo === false" value="choose">Choose an account</option>
                         <option ng-repeat="ng-repeat="i in [].constructor(sampleExternalAccountsLength)">{{sampleExternalAccounts[$index].account}}</option>
                     </select>
                 </div>
-                <div><div><p>Don't see your account?</p><button>Add an external checking or savings account</button></div></div>
+                <div><div><p>Don't see your account?</p><button  style="border: none; background: none;">Add an external checking or savings account</button></div></div>
             </div>
 
-            <div>
-                <div><h3>Amount</h3></div>
-                <div><input type="text"></div>
+            <div style="width: 100%">
+                <div><h3 style="color: #717171; font-size: 14px">Amount</h3></div>
+                <div><input style="width: 95%; height: 42px; padding-left: 2%;" type="text"></div>
+            </div>
+            </div>
+             
+            <div style="display: flex; justify-content: flex-end;">
+            <div style="width: 34%">
+                <div><h4 style="color: #717171; font-size: 14px">Transfer date</h4></div>
+                <div><input style="width: 95%; height: 42px; padding-left: 2%;" type="text"></div>
             </div>
 
-            <div>
-                <div><h4>Transfer date</h4></div>
-                <div><input type="text"></div>
-            </div>
-
-            <div>
-                <div><h5>Note to self(optional)</h5></div>
-                <div><input type="text"></div>
+            <div style="width: 32.8%">
+                <div><h5 style="color: #717171; font-size: 14px">Note to self(optional)</h5></div>
+                <div><input style="width: 95%; height: 42px; padding-left: 2%;" type="text"></div>
                 <div><p>Use letters and numbers only(up to 32 characters).</p></div>
             </div>
             </div>
-               
             </div>
+               
+           
             <div>
                 <div><p>Set up repeating transfers</p><span>slider thing will go here</span></div>
             </div>

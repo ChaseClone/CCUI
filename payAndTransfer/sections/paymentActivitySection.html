@@ -5,9 +5,14 @@
         <link rel="stylesheet" href="./payAndTransfer/css/sections.css">
     </head>
     <body>
-        <div>
-            <div ng-include="'./payAndTransfer/cards/paymentActivityCards/allBillActivityCard.html'"></div>
-            <div ng-include="'./payAndTransfer/cards/paymentActivityCards/automaticPaymentsCard.html'"></div>
+        <div style="display: flex;">
+            <div style="background-color: white;">
+                <div ng-include="'./payAndTransfer/cards/paymentActivityCards/menuCard.html'"></div>
+            </div>
+            <div style="width: 100%; border-left: 0.5px solid lightgray;">
+            <div ng-if="paymentActivityCards === 'BillPayActivity'" ng-include="'./payAndTransfer/cards/paymentActivityCards/allBillActivityCard.html'"></div>
+            <div ng-if="paymentActivityCards === 'AutomaticPayments'"  ng-include="'./payAndTransfer/cards/paymentActivityCards/automaticPaymentsCard.html'"></div>
+            </div>
         </div>
     </body>
 </html> 

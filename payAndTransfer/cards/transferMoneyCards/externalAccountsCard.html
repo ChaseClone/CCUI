@@ -7,7 +7,7 @@
     <body>
         <div>
            <div>
-            <div><h1>Manage external accounts</h1></div>
+            <div><h1 style="font-size: 24px; font-weight: 250">Manage external accounts</h1></div>
             <div><button><span class="material-symbols-outlined">add_circle</span></button></div>
            </div>
            <div>
@@ -18,9 +18,10 @@
                     <th>Account type <span class="material-symbols-outlined">expand_all</span></th>
                 </tr>
             </table>
+            <div><hr style="border-top: 2px solid #bcbcbc;"></div>
             <table>
                 <tr>
-                <td ng-repeat="account in sampleExternalAccounts"><div><div>{{account.account}}</div> <div>{{account.status}}</div> <div>{{account.type}}</div> <div><button>See details</button></div> </div></td>
+                <td ng-repeat="account in sampleExternalAccounts"><div style="display: flex"><div>{{account.account}}</div> <div>{{account.status}}</div> <div>{{account.type}}</div> <div><button style="border: none; background: none;">See details</button></div> </div> <hr></td>
                 </tr>
             </table>
            </div>

@@ -3,12 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./payAndTransfer/css/cards.css">
+  
     </head>
     <body>
-        <div>
-            <div>
-                <div><button>All bill pay activity</button></div>
-                <div><button>Automatic payments</button></div>
+        <div style="background-color: white; width: 360px;">
+            <div style="padding-top: 10%; display: flex; flex-direction: column; gap: 8px;">
+                <div style="background-color: #eee9e3; font-size: 14px;  color: #666666;"><p style="padding-top: 12px; padding-left: 20px; font-weight: 450">BILL PAY (PENDING/PAST)</p></div>
+                <div style="margin-top: 1%; padding-left: 4%;  display: flex; flex-direction: column; gap: 14px">
+                <div><button style="border: none; background: none; color: #717171" ng-click="showBillPayActivity()">All bill pay activity</button></div>
+                <div><button style="border: none; background: none; color: #717171"  ng-click="showAutomaticPayments()">Automatic payments</button></div>
+                </div>
             </div>
         </div>
     </body>

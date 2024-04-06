@@ -115,6 +115,7 @@
         $scope.hasExtendedExternalAccounts = true;
         $scope.isBankAccountCardExtended =  true;
         $scope.payWithZelleBackground = '';
+        $scope.paymentActivityCards = 'BillPayActivity';
 
         //toggle sections of pay & transfer 
 
@@ -259,7 +260,14 @@
             $scope.showTransferActivitySection = true;
             $scope.showScheduleTransferSection = false;
         }
+        
+        $scope.showBillPayActivity = function () {
+           $scope.paymentActivityCards = 'BillPayActivity'
+        };
 
+        $scope.showAutomaticPayments = function () {
+            $scope.paymentActivityCards = 'AutomaticPayments';
+        }
 
         //functions to toggle cards state
         $scope.extendExternalAccounts = function(){
