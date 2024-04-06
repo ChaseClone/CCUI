@@ -17,10 +17,12 @@
 </head>
 <body ng-style="{'background-color': greyBackground}" >
     <div ng-app="chase-app" ng-controller="appCtrl" >
-      
-        <div id="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
-           
+        <div id="nav-files-div" >
+        <div class="nav-file" ng-style="{'background-color': chaseBlue}" ng-include="'nav.html'"></div>
+        </div>
+        <div id="search-bar-file-index" ng-if="navState === 'extendedNav.html'" ng-include="'searchBar.html'"></div>
         <div id="index" ng-view></div>
+
    
 
 </div>
@@ -71,6 +73,11 @@
         $scope.clickedSelectTransferFrom = false;
         $scope.clickedSelectTransferTo = false;
         $scope.atAGlanceCardState = 'Monthly spending';
+        $scope.searchBarState = 'closed';
+        $scope.navState = 'nav.html';
+
+        //site variables
+        $scope.searchPlaceholder = 'Need anything? Just ask.';
 
 
         //orange 
@@ -132,6 +139,16 @@
             { account: "CHASE SECURE BANKING (...0465)", type: "Checking", balance: "103.53", depositsThisMonth: "50.25", withdrawalsThisMonth: "23.76"}
         ];
 
+        $scope.searchData = [
+       {label: "Accounts", route: '#!acccounts'},
+       {label: "Investments", route: '#!investments'},
+       {label: "Plan & Track", route: '#!planandtrack'},
+       {label: "Security & Privacy", route: '#!securityandprivacy'}
+        ];
+
+           //search text model
+           $scope.searchText = '';
+
         $scope.balance = parseInt($scope.sampleChaseAccount[0].balance);
         $scope.value = parseInt($scope.sampleExternalAccounts[0].value);
         
@@ -148,26 +165,26 @@
         $scope.sampleUserLength = $scope.sampleUser.length;
 
         //functions
+        //search function 
+        $scope.filterItems = function () {
+            $scope.filteredItems = $scope.items.filter(function(item) {
+                return item.toLowerCase().include($scope.searchText.toLowerCase());
+            });
+        }
+
         $scope.extendExternalAccounts = function(){
             $scope.hasExtendedExternalAccounts = !$scope.hasExtendedExternalAccounts;
         };
 
          // nav bar links
-         $scope.investmentsTemplate = function() {
-            $scope.state = 'investments';
+         $scope.extendNav = function() {
+            $scope.navState = 'extendedNav.html';
         }
 
-        $scope.accountsTemplate = function() {
-            $scope.state = 'accounts';
+        $scope.closeSearch = function() {
+            $scope.navState = 'nav.html';
         }
 
-        $scope.payAndTransferDropdown = function() {
-            $scope.state = 'testdropdown';
-        }
-
-        $scope.securityAndPrivacy = function() {
-            $scope.state = 'security&privacy';
-        }
 
         
 
@@ -265,22 +282,25 @@
 
         $scope.toggleSelectTransferFrom = function () {
             $scope.clickedSelectTransferFrom = true;
-        }
+        };
+
         $scope.toggleSelectTransferTo = function () {
             $scope.clickedSelectTranferTo = true;
-        }
+        };
 
         $scope.goToMonthlySpending = function () {
             $scope.atAGlanceCardState = 'Monthly spending';
             $scope.monthlySpendingNavButtonColor = '#0061f1';
             $scope.netWorthHistoryButtonColor = $scope.lightGreyText;
-        }
+        };
 
         $scope.goToNetWorthHistory = function () {
             $scope.atAGlanceCardState = 'Net worth history';
             $scope.monthlySpendingNavButtonColor = $scope.lightGreyText;
             $scope.netWorthHistoryButtonColor = '#0061f1';
-        }
+        };
+
+      
 
         //function to get date/time 
 //if we are going to use this function for other things like if 

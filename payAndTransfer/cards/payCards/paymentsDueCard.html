@@ -6,8 +6,8 @@
     </head>
     <body>
         <div id="payments-due-card-container">
-            <div><button id="payments-due-card-button"><span class="material-symbols-outlined">arrow_right</span></button></div>
-            <div><h2 id="payments-due-card-header">Payments due ({{ sampleUserData[0].paymentsDue }})</h2></div>
+            <div id="payments-due-card-button-div"><button id="payments-due-card-button"><span ng-style="{'color': arrowButtonColor}" id="payments-due-card-arrow" class="material-symbols-outlined">arrow_right</span></button></div>
+            <div id="payments-due-card-header-div"><h2 id="payments-due-card-header" ng-style="{'color': cardHeaderColor}">Payments due ({{ sampleUserData[0].paymentsDue }})</h2></div>
         </div>
     </body>
 </html>

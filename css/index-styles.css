@@ -8,7 +8,7 @@ button:focus {
     outline: none;
 }
 
-#nav-file {
+.nav-file {
     position: fixed;
     width: 100%;
     height: 111px;
@@ -16,8 +16,24 @@ button:focus {
     top: 0;
 }
 
+#nav-files-div {
+    z-index: 1;
+}
+
+#search-bar-file-index {
+ position: fixed;
+z-index: 2;
+top: 28px;
+left: 42%; 
+}
+
 #index {
   margin-top: 111px;
+  z-index: 0;
+}
+
+input:focus {
+    outline: none;
 }
 
 
