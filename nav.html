@@ -7,19 +7,19 @@
     <nav id="nav-flex">
     <div class="nav-container">
         <div id="top-nav-container">
-            <div id="nav-right-links">
+            <div id="nav-left-div">
                 <ul class="nav-ul" id="nav-left-ul">
                 <li><span id="nav-hamburger-menu" class="material-icons">menu</span></li>
                 <li id="nav-chase-icon-button" ><button class="nav-button"><img id="nav-chase-icon-img" src="images/icons8-chase-bank.svg" alt="chase logo"></button></li>
                 </ul>
             </div>
-            <div>
-                <ul class="nav-ul"  id="nav-left-links">
-                <li><button ng-click="extendNav()" class="nav-button"><span class="material-symbols-outlined">search</span></button></li>
+            <div id="nav-right-div">
+                <ul class="nav-ul"  id="nav-right-links">
+                <li ng-hide="navState === 'extendedNav.html'"><button ng-click="extendNav()" class="nav-button"><span class="material-symbols-outlined">search</span></button></li>
                 <li><button class="nav-button"><img id="nav-flag-icon-img" src="images/icons8-flag-48.png" alt="flag logo"></button></li>
                 <li id="nav-profile-icon-button"><button class="nav-button"><img id="nav-profile-icon-img" src="images/profile.icon.png" alt="profile logo"></button></li>
-                <li><button class="nav-button" id="explore-prod-nav-button">Explore Products</button></li>
-                <li><button class="nav-button" id="sign-out-nav-button">Sign Out</button></li>
+                <li class="nav-li"><a href="" class="nav-button" id="explore-prod-nav-button">Explore Products</a></li>
+                <li class="nav-li"><a href="https://www.chase.com/" class="nav-button">Sign Out</a></li>
                 </ul>
             </div>
             </div>
