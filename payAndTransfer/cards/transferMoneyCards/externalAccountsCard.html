@@ -4,24 +4,29 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./payAndTransfer/css/cards.css">
     </head>
-    <body>
-        <div>
-           <div>
+    <body >
+        <div style="background-color: white; margin-left: 2.7%; margin-right: 2.7%; padding-bottom: 80%;">
+           <div style="display: flex; justify-content: space-between; margin-left: 2%; margin-right: 2%; padding-top: 5%; margin-bottom: 3%;">
             <div><h1 style="font-size: 24px; font-weight: 250">Manage external accounts</h1></div>
-            <div><button><span class="material-symbols-outlined">add_circle</span></button></div>
+            <div><button style="background-color: {{blueButtonColor}}; color: white; border-radius: 6px; border: none;">
+                <div style="display: flex; margin-left: 10px; margin-right: 10px; gap: 8px">
+                <div><span style="margin-top: 7px" class="material-symbols-outlined">add_circle</span> </div>
+                <div style="margin-top: 7px; font-size: 16px; font-weight: 400;">Link an external account</div>
+            </div>
+        </button></div>
            </div>
-           <div>
-            <table>
-                <tr>
+           <div style="margin-left: 2%; margin-right: 2%;">
+            <table style="width: 100%">
+                <tr style="color: {{  cardText  }}; display: flex; justify-content: flex-start; gap: 15%;">
                     <th>Account <span class="material-symbols-outlined">arrow_drop_up</span></th>
                     <th>Status <span class="material-symbols-outlined">expand_all</span></th>
                     <th>Account type <span class="material-symbols-outlined">expand_all</span></th>
                 </tr>
             </table>
             <div><hr style="border-top: 2px solid #bcbcbc;"></div>
-            <table>
+            <table style="width: 100%">
                 <tr>
-                <td ng-repeat="account in sampleExternalAccounts"><div style="display: flex"><div>{{account.account}}</div> <div>{{account.status}}</div> <div>{{account.type}}</div> <div><button style="border: none; background: none;">See details</button></div> </div> <hr></td>
+                <td ng-repeat="account in sampleExternalAccounts"><div style="display: flex; justify-content: flex-start; gap: 9%;"><div>{{account.account}}</div> <div>{{account.status}}</div> <div>{{account.type}}</div> <div><button style="border: none; background: none; color: {{blueButtonColor}}">See details</button></div>  <div><button style="border: none; background: none; color: {{blueButtonColor}}">Edit</button></div>  <div><button style="border: none; background: none; color: {{blueButtonColor}}">Delete</button></div></div> <hr></td>
                 </tr>
             </table>
            </div>

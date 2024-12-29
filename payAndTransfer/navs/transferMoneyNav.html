@@ -6,10 +6,30 @@
     </head>
     <body class="navs-container">
         <div class="all-navs" id="transfer-money-nav">
-            <div class="title-in-nav">Transfer Money</div>
-            <div ng-style="{'color': cardText}"><button class="all-navs-buttons" ng-click="toggleScheduleTransferSection()">Schedule transfer</button></div>
-            <div ng-style="{'color': cardText}"><button class="all-navs-buttons" ng-click="toggleTransferActivitySection()">Transfer Activity</button></div>
-            <div ng-style="{'color': cardText}"><button class="all-navs-buttons" ng-click="toggleExternalAccountsSection()">External Accounts</button></div>
+            <div class="title-in-nav">
+                Transfer money
+            </div>
+            <div ng-style="{'color': cardText}"><button class="all-navs-buttons" ng-click="toggleScheduleTransferSection()">
+                <div style="display: flex; flex-direction: column;">
+                    <div>Schedule transfer</div>
+                    <div ng-if="showScheduleTransferSection" style="margin-bottom: -20%; width: 100%; height: 5px; background-color: green"></div>
+                </div>
+            </button></div>
+            <div ng-style="{'color': cardText}"><button class="all-navs-buttons" ng-click="toggleTransferActivitySection()">
+                <div style="display: flex; flex-direction: column;">
+                    <div>Transfer activity</div>
+                    <div ng-if="showTransferActivitySection" style="margin-bottom: -20%; width: 100%; height: 5px; background-color: green"></div>
+                </div>
+            </button></div>
+            <div ng-style="{'color': cardText}">
+                <button class="all-navs-buttons" ng-click="toggleExternalAccountsSection()">
+                    <div style="display: flex; flex-direction: column;">
+                        <div>External Accounts</div>
+                        <div ng-if="showExternalAccountsSection" style="margin-bottom: -20%; width: 100%; height: 5px; background-color: green"></div>
+                    </div>
+                </button>
+                
+            </div>
         </div>
     </body>
 </html>
